@@ -1,0 +1,284 @@
+//GRID
+$columnNo: 12;
+$gutter: 5px;
+
+@for $i from 1 through $columnNo {
+  .col-sm-#{$i} {
+		width: (100 / $columnNo) * $i + %;
+  }
+}
+@for $i from 1 through $columnNo {
+  .col-md-#{$i} {
+		width: (100 / $columnNo) * $i + %;
+  }
+}
+@for $i from 1 through $columnNo {
+  .col-lg-#{$i} {
+		width: (100 / $columnNo) * $i + %;
+  }
+}
+* {
+  box-sizing: border-box;
+	margin: 0;
+}
+body {
+	font-family: 'Lato', sans-serif;
+  font-size: 14px;
+	background-color: #f7f7f7;
+}
+.row:before,
+.row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  min-height: 1px;
+	}
+.collapsed {
+  padding: 0;
+}
+/*
+li:active {
+   color: #626262;
+   text-decoration: none;
+}
+*/
+/*NAVIGATION*/
+.nav {
+  position: fixed;
+  background-color: white;
+  border-right: 1px solid silver;
+  height: 100%;
+}
+
+/*LogotypeMain*/
+.logoBox {
+  padding: 68px 0 32px;
+  text-align: center;
+}
+.logoText {
+    list-style: none;
+    text-decoration: none;
+    color: #626262;
+  }
+.logoTextName {
+  font-size: 27px;
+  font-family: Sacramento;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*NavMain*/
+
+.navList  {
+  padding: 0;
+  padding-left:  25px;
+  li {
+    list-style: none;
+    line-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    width: 90%;
+    font-size: 13px;
+      .decoration {
+        text-decoration: none;
+        color: black;
+      }
+      .active {
+        color: #ef106e;
+      }
+  }
+  li:before {
+    content: "- ";
+    color: #ef106e;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+}
+
+/*MAIN*/
+.mainFloatRight {
+  float: right;
+}
+/*SLIDER HOME*/
+.sliderList  {
+  list-style: none;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+.sliderText {
+	line-height: 37px;
+	color: white;
+  position: absolute;
+  margin-top: 25%;
+  display: block;
+}
+.sliderTextSmall {
+	font-size: 35px;
+	line-height: 37px;
+  display: block;
+}
+.sliderTextLarge {
+	font-size: 50px;
+	line-height: 55px;
+	margin-bottom: 20px;
+	font-weight: 600;
+  display: block;
+}
+.sliderTextMiddle {
+	font-size: 13px;
+  color: white;
+	letter-spacing: 2px;
+	font-weight: 200;
+	line-height: 23px;
+	background-color: black;
+	padding: 5px 15px;
+  text-align: center;
+}
+/*ABOUTEME*/
+.headerText {
+ 	font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  //margin-top: 5%;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.headerText::before {
+	border-bottom: 4px solid #ef106e;
+ 	content: "";
+	margin-left: -25px;
+  position: absolute;
+	top: 15px;
+	width: 12px;
+}
+.headerBox {
+	line-height: 37px;
+	color: white;
+  position: absolute;
+  margin-top: 8%;
+  display: block;
+}
+.relative {
+  position: relative;
+  border: 1px solid yellow;
+}
+.relative {
+  position: relative;
+}
+.textContent  {
+ 	line-height: 22px;
+ 	font-size: 16px;
+ 	margin: 0 0 20px;
+  color: white;
+ }
+ .boxContent {
+ 	line-height: 37px;
+ 	color: white;
+  position: absolute;
+  margin-top: 7%;
+  display: block;
+ }
+ .tableBox {
+ 	line-height: 37px;
+ 	color: white;
+  position: absolute;
+  margin-top: 20%;
+  display: block;
+  td {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 10px 0;
+    width: 50%;
+    font-size: 16px;
+    }
+    .mailFont {
+      color: silver;
+      font-weight: 300;
+    }
+ }
+ /*DZIENNIKARKA OFFER*/
+.offerBox {
+  line-height: 27px;
+  color: white;
+  letter-spacing: 0.02em;
+  margin-top: 5%;
+  padding: 10px;
+}
+.offerHeader {
+	display: block;
+	color: white;
+  font-size: 16px;
+  margin-top: 15%;
+}
+.oferText {
+  margin-right: 10%;
+}
+.timerTextLarge {
+	display: block;
+	font-size: 35px;
+	color: black;
+	font-weight: 600;
+  color: white;
+}
+.timerTextSamll {
+	line-height: 20px;
+  font-size: 11px;
+	text-transform: uppercase;
+	color: white;
+  padding-bottom: 3%
+}
+.textAlign {
+  text-align: center;
+  margin-top: 4%;
+}
+.timerBox {
+	height: 150px;
+	background-color: #ef106e;
+  margin-top: 8%;
+}
+/*PREZENTERKA*/
+.quoteNumber {
+  color: #ababab;
+  line-height: 34px;
+  font-size: 28px;
+}
+.quoteText {
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 0;
+  display: block;
+  padding-left: 5%;
+  line-height: 23px;
+	width: 100%;
+}
+.quoteData {
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  line-height: 37px;
+	margin-top: 15%;
+	color: white;
+	letter-spacing: 0.02em;
+	font-family: Montserrat;
+  //padding: 5%;
+
+}
+.marginBottom {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.quotation {
+  text-transform: uppercase;
+  line-height: 22px;
+  font-size: 15px;
+  color: white;
+  margin-top: 5%;
+
+}
+
+
+
+//
