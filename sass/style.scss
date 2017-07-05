@@ -341,7 +341,170 @@ li:active {
 .textContentEmail {
   margin-top: -5%;
 }
-
 .boxContact {
-  margin-top: 10%;
+  margin-top: 15%;
+  .inputBox {
+    margin-bottom: 15%;
+    line-height: 0;
+    border: 1px solid grey;
+    border-radius: 2px;
+  }
+}
+.buttonBox {
+  margin-top: 22%;
+}
+.inputText,
+.textareaText {
+  width: 100%;
+  height: 60px;
+  padding-left: 16%;
+  padding-right: 16%;
+  font-size: 14px;
+}
+.buttonText {
+  width: 50%;
+  height: 35px;
+  float: right;
+  background-color: black;
+  color: white;
+  border: 1px solid darkgrey;
+  font-size: 13px;
+}
+.textareaText {
+  height: 150px;
+  padding-top: 5%;
+}
+.messageText {
+  z-index: 999;
+  margin-top: -11.5%;
+  padding-right: 5%;
+  text-align: right;
+  font-size: 20px;
+}
+.messageTextarea {
+  margin-top: -23%;
+}
+.labelText {
+  font-size: 16px;
+  margin-top: 2.8%;
+  padding-left: 5.8%;
+  color: grey;
+}
+
+.labelTextName::before {
+  position: absolute;
+  content: 'Wpisz swoje imię!';
+  margin-top: -0.6%;
+  margin-left: 1.7%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px;
+
+}
+.labelTextEmail::before {
+  content: 'Wpisz swój adres e-mail!';
+  position: absolute;
+  margin-top: -0.6%;
+  margin-left: 1.7%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px;
+}
+.labelTextMessage::before {
+  content: 'Wpisz swoją wiadomość!';
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 1.7%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px;
+}
+
+/*ICONS FORM*/
+.name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+.name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+  background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+.email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+.email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+  background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+.comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+//--------------animate ----------------*/
+//RAMKA PO NAJECHANKU ZMIENIA KOLOR
+.inputText:focus,
+.textareaText:focus {
+  border-color: #ef106e;
+  border-width: thin;
+}
+///UWAGA
+/*type="email" to powinno być ponizej nad placeholder w input mail*/
+//TEKST WJEŻDŻA NA GÓRĘ I ZMIENIA KOLOR
+.inputText:focus + .labelText:before {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+          transform: translate(0, -2.3em) scale(0.9, 0.9);
+          margin-top: -2.2em; //ruch p w górę z białym tłem
+          font-weight: 200;
+          color: grey;
+}
+.textareaText:focus + .labelText:before {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+          transform: translate(0, -2.3em) scale(0.9, 0.9);
+          margin-top: -0.1em;
+          font-weight: 200;
+          color: grey;
+}
+
+//USTAWIA TEKST W SPOCZYNKU - POZYCJA WYJŚCIOWA I POWROTNA
+.inputText:focus + .labelText:before,//ruch w górę
+.inputText:valid + .labelText:before {
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+          transform: translate(0, -2.3em) scale(0.9, 0.9);
+}
+.textareaText:focus + .labelText:before,//ruch w górę
+.textareaText:valid + .labelText:before  {
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+  -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
+          transform: translate(0, -10em) scale(0.9, 0.9);
+}
+.inputText + .labelText {
+  display: block;
+  pointer-events: none;
+  margin-top: calc(1em - 15px);
+  margin-bottom: calc((1em));
+
+}
+.textareaText + .labelText {
+  display: block;
+  pointer-events: none;
+  margin-top: calc(1em - 15px);
+  margin-bottom: calc(1em);
 }

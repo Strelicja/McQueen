@@ -378,36 +378,130 @@ class Kontakt extends React.Component {
             <p className='textContent '>Wyłączny przedstawiciel: Iza Ziemińska </p>
             <p className='textContentEmail '>Kontakt e-mail: iza@inmanagement.pl</p>
           </div>
-          <Form />
+          <ContactForm />
         </div>
       </div>
     </div>);
   }
 }
-class Form extends React.Component {
-  render() {
-  return (
-      <div className='row '>
-        <div className='boxContact'>
-          <div>
-            <input></input>
-            <label></label>
-          </div>
-          <div>
-            <input></input>
-            <label></label>
-          </div>
-          <div>
-            <input></input>
-            <label></label>
-          </div>
-          <div>
-            <button>Wyślij wiadomość do agentki!</button>
-          </div>
-        </div>
-      </div>);
-  }
+class ContactForm extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: "",
+            mail: "",
+            message: "",
+            messageToRenderName: "",
+            messageToRenderEmail: '',
+            messageToRenderMessage: '',
+            infoColorName: "green",
+            infoColorEmail: "green",
+            infoColorMessage: "green"
+        }
+    }
+    handleNameChange = (e) => {
+        this.setState({
+            name: e.target.value
+        })
+    }
+    handleMailChange = (e) => {
+        this.setState({
+            mail: e.target.value
+        })
+    }
+    handleDepChange = (e) => {
+        this.setState({
+            dep: e.target.value
+        })
+    }
+    handleMessageChange = (e) => {
+        this.setState({
+            message: e.target.value
+        })
+    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.state.name === ""
+          ? this.setState({
+                messageToRenderName: "✘",
+                infoColorName: "red"
+            })
+          : this.setState({
+                  messageToRenderName: "✔",
+                  infoColorName: "green"
+                }
+              );
+        this.state.mail.indexOf("@")< 0
+          ? this.setState({
+                messageToRenderEmail: "✘",
+                infoColorEmail: "red"
+            })
+          : this.setState({
+                  messageToRenderEmail: "✔",
+                  infoColorEmail: "green"
+                }
+              );
+        this.state.message === ""
+          ? this.setState({
+                messageToRenderMessage: "✘",
+                infoColorMessage: "red"
+            })
+          : this.setState({
+                  messageToRenderMessage: "✔",
+                  infoColorMessage: "green"
+                }
+              );
 }
+    render(){
+        return(
+            <div>
+              <div className='row '>
+                <div className='boxContact col-lg-5'>
+
+                  <div className='inputBox '>
+                    <input className='inputText name'
+                      onChange={this.handleNameChange}
+                      value={this.state.name}
+                      placeholder=''>
+                    </input>
+                    <label className=' labelText labelTextName'></label>
+                    <p style={ {color: this.state.infoColorName} }
+                      className=' messageText'>{this.state.messageToRenderName}</p>
+                  </div>
+                  <div className='inputBox'>
+                    <input className='inputText email'
+                      onChange={this.handleMailChange}
+
+                      placeholder="">
+                    </input>
+                    <label className='labelText labelTextEmail'></label>
+                    <p style={ {color: this.state.infoColorEmail} }
+                      className=' messageText'>{this.state.messageToRenderEmail}
+                    </p>
+                  </div>
+                  <div className='inputBox'>
+                    <textarea className='textareaText comment'
+                      onChange={this.handleMessageChange}
+                      value={this.state.message}
+                      placeholder="">
+                    </textarea>
+                    <label className='labelText labelTextMessage'></label>
+                    <p style={ {color: this.state.infoColorMessage} }
+                      className=' messageText messageTextarea'>{this.state.messageToRenderMessage}
+                    </p>
+                  </div>
+                  <div className='buttonBox '>
+                    <button className='buttonText'
+                      type="submit"
+                      onClick={this.handleSubmit}>Wyślij wiadomość do agentki!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        )
+    }
+}
+
 /*FOOTER*/
 class Footer extends React.Component {
   render() {
@@ -446,6 +540,7 @@ class Content extends React.Component {
   </div>)
   }
 }
+
 
 /*END*/
 class App extends React.Component {
