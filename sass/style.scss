@@ -263,8 +263,6 @@ li:active {
 	color: white;
 	letter-spacing: 0.02em;
 	font-family: Montserrat;
-  //padding: 5%;
-
 }
 .marginBottom {
   margin-bottom: 2%;
@@ -276,9 +274,74 @@ li:active {
   font-size: 15px;
   color: white;
   margin-top: 5%;
-
+}
+/*PISARKA*/
+.timelineHeader {
+  color: white;
+  display: block;
+  line-height: 23px;
+  font-size: 15px;
+}
+.timelineText {
+  line-height: 23px;
+  font-size: 13px;
+	width: 70%;
+	margin-bottom: 13%;
+	font-weight: 300;
+  display: block;
+}
+.timelineDate {
+    padding: 0 13px;
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+    display: block;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 100px;
+    //margin-left: 23%;
+    font-weight: 200;
+}
+.timelineDate:after {
+    border-bottom: 1px solid #000;
+    content: "";
+    position: absolute;
+    width: 75%;
+    top: 50%;
+}
+.marginTop {
+  margin-top: 18%;
+}
+/*AKTORKA*/
+.actBox {
+  color: #626262;
+	letter-spacing: 0.02em;
+	margin-top: -35%;
+	line-height: 37px;
+}
+.actText {
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 50px;
+  display: block;
+}
+.actTexSmall {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 23px;
+  text-align: right;
+  padding-right: 50px;
+  display: block;
+}
+/*KONTAKT*/
+.textContentEmail {
+  margin-top: -5%;
 }
 
-
-
-//
+.boxContact {
+  margin-top: 10%;
+}

@@ -272,61 +272,74 @@ class Prezenterka extends React.Component {
 class Pisarka extends React.Component {
   render() {
   return (
-      <div className='row relative'>
+    <div className='row relative'>
+      <div className='col-lg-12'>
         <img className="col-lg-12" src="./aktorka.jpg" />
-          <div className='headerBox col-lg-12'>
-            <div className="col-lg-1"></div>
+      </div>
+      <div className=" headerBox col-lg-12">
+        <div className="col-lg-1"></div>
+        <div className=' col-lg-11'>
+          <div>
             <h4 className='headerText col-lg-7'>PISARKA</h4>
+          </div>
+          <div className='row'>
+            <div className='marginTop col-lg-12'>
+              <div className='col-lg-2'>
+                <span className='timelineHeader'>IPSUM</span>
+                <span className='timelineHeader'>LOREM </span>
+                <span className='timelineDate'>2012 – 2013</span>
+                <span className='timelineText'>Lorem Ipsum is simply.</span>
+              </div>
+              <div className='col-lg-2'>
+                <span className='timelineHeader'>IPSUM</span>
+                <span className='timelineHeader'>LOREM </span>
+                <span className='timelineDate'>2012 – 2013</span>
+                <span className='timelineText'>Lorem Ipsum is simply.</span>
+              </div>
+              <div className='col-lg-2'>
+                <span className='timelineHeader'>IPSUM</span>
+                <span className='timelineHeader'>LOREM </span>
+                <span className='timelineDate'>2012 – 2013</span>
+                <span className='timelineText'>Lorem Ipsum is simply.</span>
+              </div>
+              <div className='col-lg-2'>
+                <span className='timelineHeader'>IPSUM</span>
+                <span className='timelineHeader'>LOREM </span>
+                <span className='timelineDate'>2012 – 2013</span>
+                <span className='timelineText'>Lorem Ipsum is simply.</span>
+              </div>
+              <div className='col-lg-2'>
+                <span className='timelineHeader'>IPSUM</span>
+                <span className='timelineHeader'>LOREM </span>
+                <span className='timelineDate'>2012 – 2013</span>
+                <span className='timelineText'>Lorem Ipsum is simply.</span>
+              </div>
+              <div className='col-lg-2'>
+                <span className='timelineHeader'>IPSUM</span>
+                <span className='timelineHeader'>LOREM </span>
+                <span className='timelineDate'>2012 – 2013</span>
+                <span className='timelineText'>Lorem Ipsum is simply.</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <div>
-            <span>01</span>
-            <span>LOREM </span>
-            <span>Lorem Ipsum is simply.</span>
-            <span>2012 – 2013</span>
-          </div>
-          <div>
-            <span>01</span>
-            <span>LOREM </span>
-            <span>Lorem Ipsum is simply.</span>
-            <span>2012 – 2013</span>
-          </div>
-          <div>
-            <span>01</span>
-            <span>LOREM </span>
-            <span>Lorem Ipsum is simply.</span>
-            <span>2012 – 2013</span>
-          </div>
-          <div>
-            <span>01</span>
-            <span>LOREM </span>
-            <span>Lorem Ipsum is simply.</span>
-            <span>2012 – 2013</span>
-          </div>
-          <div>
-            <span>01</span>
-            <span>LOREM </span>
-            <span>Lorem Ipsum is simply.</span>
-            <span>2012 – 2013</span>
-          </div>
-          <div>
-            <span>01</span>
-            <span>LOREM </span>
-            <span>Lorem Ipsum is simply.</span>
-            <span>2012 – 2013</span>
-          </div>
-        </div>
-      </div>);
+      </div>
+    </div>);
   }
 }
 class Aktorka extends React.Component {
   render() {
   return (
       <div className='row relative'>
-        <img className="col-lg-12" src="./aktorka.jpg" />
-        <div>
-          <span>"Oto powieść. Świetnie napisana, z niezwykłą biegłością, wrażliwością, czułością dla świata i&nbsp;ludzi. Dobra powieść – pełna tajemnicy, miłości, przyjaźni. Nie dajcie się zwieść. To nie dziennikarka telewizyjna Marzena Rogalska napisała książkę. To pisarka Marzena Rogalska pracuje w telewizji. Z wielką przyjemnością, bezinteresownie, z własnej i nieprzymuszonej woli o tym zaświadczam"</span>
-          <span>Katarzyna Grochola</span>
+        <div className='col-lg-12'>
+          <img className="col-lg-12" src="./aktorka.jpg" />
+        </div>
+        <div className='actBox col-lg-12'>
+          <div className="col-lg-5"></div>
+          <div className="col-lg-7">
+            <p className='actText col-lg-12'>"Oto powieść. Świetnie napisana, z niezwykłą biegłością, wrażliwością, czułością dla świata i&nbsp;ludzi. Dobra powieść – pełna tajemnicy, miłości, przyjaźni. Nie dajcie się zwieść. To nie dziennikarka telewizyjna Marzena Rogalska napisała książkę. To pisarka Marzena Rogalska pracuje w telewizji. Z wielką przyjemnością, bezinteresownie, z własnej i nieprzymuszonej woli o tym zaświadczam"</p>
+            <p className='actTexSmall col-lg-12'>Katarzyna Grochola</p>
+          </div>
         </div>
       </div>);
   }
@@ -351,36 +364,46 @@ class Instagram extends React.Component {
 class Kontakt extends React.Component {
   render() {
   return (
-      <div className='row relative'>
+    <div className='row relative'>
+      <div className='col-lg-12'>
         <img className="col-lg-12" src="./aktorka.jpg" />
-          <div className='headerBox col-lg-12'>
-            <div className="col-lg-1"></div>
+      </div>
+      <div className=" headerBox col-lg-12">
+        <div className="col-lg-1"></div>
+        <div className=' col-lg-11'>
+          <div>
             <h4 className='headerText col-lg-7'>KONTAKT</h4>
           </div>
-        <span>Wyłączny przedstawiciel: Iza Ziemińska </span>
-        <span>Kontakt e-mail: iza@inmanagement.pl</span>
-        <Form />
-      </div>);
+          <div className='boxContent'>
+            <p className='textContent '>Wyłączny przedstawiciel: Iza Ziemińska </p>
+            <p className='textContentEmail '>Kontakt e-mail: iza@inmanagement.pl</p>
+          </div>
+          <Form />
+        </div>
+      </div>
+    </div>);
   }
 }
 class Form extends React.Component {
   render() {
   return (
-      <div className='row relative'>
-        <div>
-          <input></input>
-          <label></label>
-        </div>
-        <div>
-          <input></input>
-          <label></label>
-        </div>
-        <div>
-          <input></input>
-          <label></label>
-        </div>
-        <div>
-          <button>Wyślij wiadomość do agentki!</button>
+      <div className='row '>
+        <div className='boxContact'>
+          <div>
+            <input></input>
+            <label></label>
+          </div>
+          <div>
+            <input></input>
+            <label></label>
+          </div>
+          <div>
+            <input></input>
+            <label></label>
+          </div>
+          <div>
+            <button>Wyślij wiadomość do agentki!</button>
+          </div>
         </div>
       </div>);
   }
