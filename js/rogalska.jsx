@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router,Route,Link,IndexLink,IndexRoute,hashHistory} from 'react-router';
+import FaInstagram from 'react-icons/lib/fa/instagram';
+import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official';
 require('../sass/style.scss');
 
 /*NAVIGATION*/
@@ -353,11 +355,7 @@ class Instagram extends React.Component {
             <div className="col-lg-1"></div>
             <h4 className='headerText col-lg-7'>INSTAGRAM</h4>
         </div>
-        <div>
-          <span>CZEŚĆ, JESTEM</span>
-          <span>MARZENA ROGALSKA</span>
-          <span>PISARKA / DZIENNIKARKA / PREZENTERKA / AKTORKA</span>
-        </div>
+
       </div>);
   }
 }
@@ -396,7 +394,8 @@ class ContactForm extends React.Component {
             messageToRenderMessage: '',
             infoColorName: "green",
             infoColorEmail: "green",
-            infoColorMessage: "green"
+            infoColorMessage: "green",
+            textButton: 'WYŚLIJ WIADOMOŚĆ DO AGENTKI!'
         }
     }
     handleNameChange = (e) => {
@@ -451,13 +450,12 @@ class ContactForm extends React.Component {
                   infoColorMessage: "green"
                 }
               );
-}
+    }
     render(){
         return(
             <div>
               <div className='row '>
                 <div className='boxContact col-lg-5'>
-
                   <div className='inputBox '>
                     <input className='inputText name'
                       onChange={this.handleNameChange}
@@ -493,7 +491,7 @@ class ContactForm extends React.Component {
                   <div className='buttonBox '>
                     <button className='buttonText'
                       type="submit"
-                      onClick={this.handleSubmit}>Wyślij wiadomość do agentki!</button>
+                      onClick={this.handleSubmit}>{this.state.textButton}</button>
                   </div>
                 </div>
               </div>
@@ -507,21 +505,25 @@ class Footer extends React.Component {
   render() {
   return (
     <div className='row relative'>
-      <div className="col-lg-10">
-        <div>
-          <p>
-            <Link to="https://www.facebook.com/">Facebook</Link>
-          </p>
-          <p>
-            <Link to="https://instagram.com/">Instagram</Link>
-          </p>
+      <div className="col-lg-12">
+        <div className='iconBox col-lg-2'>
+          <IconsFooter />
         </div>
-        <div>
-          <p>Marzena Rogalska 2017  ©  Treść serwisu prawnie chroniona | Stworzono z nieukrywaną radością przez  <a href="http://www.webdawca.pl/" target="_blank">webdawca.pl</a></p>
+        <div className='col-lg-10'>
+          <p className='textFooter'>Marzena Rogalska 2017  ©  Treść serwisu prawnie chroniona | Stworzono z nieukrywaną radością przez  <a href="http://www.webdawca.pl/" target="_blank">webdawca.pl</a></p>
         </div>
       </div>
   </div>);
   }
+}
+class IconsFooter extends React.Component {
+    render() {
+        return (
+          <div>
+            <a href='https://www.facebook.com' target='_blank' className='iconSocial'><FaFacebookOfficial /></a>
+            <a href='https://www.instagram.com' target='_blank' className='iconSocial'><FaInstagram /></a>
+          </div>)
+    }
 }
 /*TOTAL CONTENT*/
 class Content extends React.Component {

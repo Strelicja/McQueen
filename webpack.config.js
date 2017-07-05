@@ -1,4 +1,5 @@
 //Konfiguracja Webpack
+
 module.exports = {
     entry: "./js/rogalska.jsx",
     output: { filename: "./js/out.js" },
@@ -6,7 +7,8 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.jsx$/,  exclude: /node_modules/,
+                test: /\.jsx$/,
+                exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: { presets: ['es2015', 'stage-2' , 'react'] }
             },
@@ -18,7 +20,14 @@ module.exports = {
                 test: /\.scss$/,
                 loaders: ['style-loader', 'css-loader',
                 'sass-loader']
-              }
+              },
+              {
+                test: /react-icons\/(.)*(.js)$/,
+                loader: 'babel-loader',
+                query: {
+                  presets: ['es2015', 'stage-2' , 'react']
+                }
+            }
             ]
           },
     devServer: {
