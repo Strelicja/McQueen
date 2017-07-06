@@ -367,7 +367,7 @@ li:active {
   background-color: black;
   color: white;
   border: 1px solid darkgrey;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 3px;
 }
 .buttonText:hover {
@@ -429,6 +429,7 @@ li:active {
 	background-size: 30px 30px;
 	background-position: 11px 17px;
 	background-repeat: no-repeat;
+
 }
 .name:focus{
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
@@ -482,7 +483,9 @@ li:active {
           font-weight: 200;
           color: grey;
 }
-
+.nowaklasa {
+  margin-top: -2.2em;
+}
 //USTAWIA TEKST W SPOCZYNKU - POZYCJA WYJŚCIOWA I POWROTNA
 .inputText:focus + .labelText:before,//ruch w górę
 .inputText:valid + .labelText:before {
@@ -490,6 +493,7 @@ li:active {
           transition-duration: .7s;
   -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
           transform: translate(0, -2.3em) scale(0.9, 0.9);
+
 }
 .textareaText:focus + .labelText:before,//ruch w górę
 .textareaText:valid + .labelText:before  {
@@ -498,6 +502,7 @@ li:active {
   -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
           transform: translate(0, -10em) scale(0.9, 0.9);
 }
+
 .inputText + .labelText {
   display: block;
   pointer-events: none;
@@ -523,11 +528,20 @@ li:active {
     padding-left: 5px;
     display: inline;
 }
-
+.iconSocial:hover {
+  color: #ef106e;
+}
 .textFooter {
   line-height: 20px;
   font-size: 11px;
 	text-transform: uppercase;
 	color: black;
   padding: 2%;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #ef106e;
+  }
 }

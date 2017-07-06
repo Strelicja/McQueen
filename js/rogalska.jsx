@@ -60,23 +60,6 @@ class Template extends React.Component {
   </div>)
   }
 }
-class NavMainRouter extends React.Component {
-  render() {
-  return <Router history={hashHistory}>
-      <Route path='/' component={Template}>
-        <IndexRoute component={AboutMe} />
-        <Route path='/dziennikarka' component={Dziennikarka} />
-        <Route path='/prezenterka' component={Prezenterka} />
-        <Route path='/pisarka' component={Pisarka} />
-        <Route path='/aktorka' component={Aktorka} />
-        <Route path='/instagram' component={Instagram} />
-        <Route path='/kontakt' component={Kontakt} />
-        <Route path='*' component={NotFound}/>
-      </Route>
-  </Router>
-  }
-}
-
 
 class SliderHome extends React.Component {
   render() {
@@ -349,15 +332,23 @@ class Aktorka extends React.Component {
 class Instagram extends React.Component {
   render() {
   return (
-      <div className='row relative'>
-        <img className="col-lg-12" src="./aktorka.jpg" />
-          <div className='headerBox col-lg-12'>
-            <div className="col-lg-1"></div>
-            <h4 className='headerText col-lg-7'>INSTAGRAM</h4>
-        </div>
-
-      </div>);
+    <div className='row relative'>
+            <iframe
+              src="//users.instush.com/bee-gallery-v2/?cols=3&rows=2&size=extra&border=10&round=false&space=10&sl=true&bg=transparent&brd=true&na=false&pin=false&hc=e72476&ltc=3f3f3f&lpc=ffffff&fc=ffffff&user_id=1518133627&username=basic2727&sid=-1&susername=-1&tag=-1&stype=mine&t=999999EvCVNpwn5gLOIiHsvvawCAfW6OGm7cPx04HwrNw8PRkj0WIeLELHsaXw4zswv28jVuTRIbQ9TY8"
+              frameBorder="0"
+              scrolling="no"
+              style={style} >
+            </iframe>
+    </div>);
   }
+}
+const style = {
+  display:'block',
+  width:'980px',
+  height:'660px',
+  border:'none',
+  overflow:'visible',
+  marginLeft: '20px',
 }
 class Kontakt extends React.Component {
   render() {
@@ -395,7 +386,8 @@ class ContactForm extends React.Component {
             infoColorName: "green",
             infoColorEmail: "green",
             infoColorMessage: "green",
-            textButton: 'WYŚLIJ WIADOMOŚĆ DO AGENTKI!'
+            textButton: 'WYŚLIJ WIADOMOŚĆ DO AGENTKI!',
+
         }
     }
     handleNameChange = (e) => {
@@ -427,7 +419,7 @@ class ContactForm extends React.Component {
             })
           : this.setState({
                   messageToRenderName: "✔",
-                  infoColorName: "green"
+                  infoColorName: "green",
                 }
               );
         this.state.mail.indexOf("@")< 0
@@ -460,9 +452,11 @@ class ContactForm extends React.Component {
                     <input className='inputText name'
                       onChange={this.handleNameChange}
                       value={this.state.name}
-                      placeholder=''>
+                      placeholder=''
+                      >
                     </input>
-                    <label className=' labelText labelTextName'></label>
+                    <label
+                      className=' labelText labelTextName'></label>
                     <p style={ {color: this.state.infoColorName} }
                       className=' messageText'>{this.state.messageToRenderName}</p>
                   </div>
@@ -510,7 +504,7 @@ class Footer extends React.Component {
           <IconsFooter />
         </div>
         <div className='col-lg-10'>
-          <p className='textFooter'>Marzena Rogalska 2017  ©  Treść serwisu prawnie chroniona | Stworzono z nieukrywaną radością przez  <a href="http://www.webdawca.pl/" target="_blank">webdawca.pl</a></p>
+          <p className='textFooter'>Marzena Rogalska 2017  ©  Treść serwisu prawnie chroniona | Stworzono z nieukrywaną radością przez  <a href=" http://www.webdawca.pl/" target="_blank">webdawca.pl</a></p>
         </div>
       </div>
   </div>);
@@ -540,6 +534,23 @@ class Content extends React.Component {
       <Kontakt />
       <Footer />
   </div>)
+  }
+}
+
+class NavMainRouter extends React.Component {
+  render() {
+  return <Router history={hashHistory}>
+      <Route path='/' component={Template}>
+        <IndexRoute component={AboutMe} />
+        <Route path='/dziennikarka' component={Dziennikarka} />
+        <Route path='/prezenterka' component={Prezenterka} />
+        <Route path='/pisarka' component={Pisarka} />
+        <Route path='/aktorka' component={Aktorka} />
+        <Route path='/instagram' component={Instagram} />
+        <Route path='/kontakt' component={Kontakt} />
+        <Route path='*' component={NotFound}/>
+      </Route>
+  </Router>
   }
 }
 
