@@ -12,12 +12,10 @@ var Scroll    = require('react-scroll');
 class LogotypeMain extends React.Component {
   render() {
   return (
-    <div className='logoBox col-lg-12'>
-      <p >
-        <Link className='logoText logoTextName' to="/">Marzena Rogalska</Link>
+    <div className=' col-lg-12'>
+      <p className='logoText logoTextName'>Marzena Rogalska
       </p>
-      <p>
-        <Link className='logoText' to="/">STRONA OFICJALNA</Link>
+      <p className='logoText'>STRONA OFICJALNA
       </p>
     </div>);
   }
@@ -62,15 +60,15 @@ class Section extends React.Component {
     return (
     <div className='col-lg-12'>
       <nav className='col-lg-2 nav'>
-        <LogotypeMain/>
         <ul className='col-lg-12 navList'>
-          <li className='decoration' onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 1000,ease:'inExpo'})}>SŁOWEM WSTĘPU</li>
-          <li className='decoration' onClick={() => scrollToComponent(this.Dziennikarka, { offset: 0, align: 'top', duration: 1000,ease:'inExpo'})}>DZIENNIKARKA</li>
-          <li className='decoration' onClick={() => scrollToComponent(this.Prezenterka, { offset: 0, align: 'top', duration: 1000, ease:'inExpo'})}>PREZENTERKA</li>
-          <li className='decoration' onClick={() => scrollToComponent(this.Pisarka, { offset: 0, align: 'top', duration: 1000, ease:'inExpo'})}>PISARKA</li>
-          <li className='decoration' onClick={() => scrollToComponent(this.Aktorka, { offset: 0, align: 'middle', duration: 1000, ease:'inExpo'})}>AKTORKA</li>
-          <li className='decoration' onClick={() => scrollToComponent(this.Instagram, { offset: 0, align: 'top', duration: 1000, ease:'inExpo'})}>INSTAGRAM</li>
-          <li className='decoration' onClick={() => scrollToComponent(this.Kontakt, { offset: 0, align: 'top', duration: 1000, ease:'inCirc'})}>KONTAKT</li>
+          <li className='logoBox' onClick={() => scrollToComponent(this.SliderHome, { offset: 0, align: 'middle', duration: 1500,ease:'inExpo'})}><LogotypeMain/></li>
+          <li className='decoration paddingTop' onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'middle', duration: 1500,ease:'inExpo'})}>SŁOWEM WSTĘPU</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Dziennikarka, { offset: 0, align: 'middle', duration: 1500, ease:'inExpo'})}>DZIENNIKARKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Prezenterka, { offset: 0, align: 'middle', duration: 1500, ease:'inExpo'})}>PREZENTERKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Pisarka, { offset: 0, align: 'middle', duration: 1500, ease:'inExpo'})}>PISARKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Aktorka, { offset: 0, align: 'middle', duration: 1500, ease:'inExpo'})}>AKTORKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Instagram, { offset: 0, align: 'middle', duration: 1500, ease:'inExpo'})}>INSTAGRAM</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Kontakt, { offset: 0, align: 'middle', duration: 1500, ease:'inCirc'})}>KONTAKT</li>
         </ul>
       </nav>
       <div className="col-lg-10 mainFloatRight">

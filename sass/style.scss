@@ -75,22 +75,23 @@ li:active {
 
 .navList  {
   padding: 0;
-  padding-left:  25px;
-  li {
-    list-style: none;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  .decoration {
     line-height: 60px;
     border-bottom: 1px solid rgba(0,0,0,.1);
     width: 90%;
     font-size: 13px;
-      .decoration {
-        text-decoration: none;
-        color: black;
-      }
+    padding-left:  25px;
       .active {
         color: #ef106e;
       }
   }
-  li:before {
+  .paddingTop {
+    margin-top: 60px;
+  }
+  .decoration:before {
     content: "- ";
     color: #ef106e;
     font-size: 20px;
