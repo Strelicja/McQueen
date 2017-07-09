@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router,Route,Link,IndexLink,IndexRoute,hashHistory} from 'react-router';
 import FaInstagram from 'react-icons/lib/fa/instagram';
 import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official';
+import scrollToComponent from 'react-scroll-to-component';
+import { Router,Route,Link,IndexLink,IndexRoute,hashHistory} from 'react-router';
 require('../sass/style.scss');
+var Scroll    = require('react-scroll');
+"use strict";
 
 /*NAVIGATION*/
 class LogotypeMain extends React.Component {
@@ -19,7 +22,9 @@ class LogotypeMain extends React.Component {
     </div>);
   }
 }
+/*
 class NavMain extends React.Component {
+
   render() {
     return(<ul className='col-lg-12 navList'>
       <li>
@@ -46,21 +51,47 @@ class NavMain extends React.Component {
     </ul>);
   }
 }
+////////////
+*/
+/////////
+class Section extends React.Component {
+  componentDidMount() {
+    scrollToComponent(this.SliderHome, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
+  }
+  render() {
+    return (
+    <div className='col-lg-12'>
+      <nav className='col-lg-2 nav'>
+        <LogotypeMain/>
+        <ul className='col-lg-12 navList'>
+          <li className='decoration' onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 1000,ease:'inExpo'})}>SŁOWEM WSTĘPU</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Dziennikarka, { offset: 0, align: 'top', duration: 1000,ease:'inExpo'})}>DZIENNIKARKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Prezenterka, { offset: 0, align: 'top', duration: 1000, ease:'inExpo'})}>PREZENTERKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Pisarka, { offset: 0, align: 'top', duration: 1000, ease:'inExpo'})}>PISARKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Aktorka, { offset: 0, align: 'middle', duration: 1000, ease:'inExpo'})}>AKTORKA</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Instagram, { offset: 0, align: 'top', duration: 1000, ease:'inExpo'})}>INSTAGRAM</li>
+          <li className='decoration' onClick={() => scrollToComponent(this.Kontakt, { offset: 0, align: 'top', duration: 1000, ease:'inCirc'})}>KONTAKT</li>
+        </ul>
+      </nav>
+      <div className="col-lg-10 mainFloatRight">
+        <section className='sliderHome' ref={(section) => { this.SliderHome = section; }}><SliderHome/></section>
+        <section className='aboutMe' ref={(section) => { this.AboutMe = section; }}><AboutMe/></section>
+        <section className='dziennikarka' ref={(section) => { this.Dziennikarka = section; }}><Dziennikarka/></section>
+        <section className='prezenterka' ref={(section) => { this.Prezenterka = section; }}><Prezenterka/></section>
+        <section className='pisarka' ref={(section) => { this.Pisarka = section; }}><Pisarka/></section>
+        <section className='aktorka' ref={(section) => { this.Aktorka = section; }}><Aktorka/></section>
+        <section className='instagram' ref={(section) => { this.Instagram = section; }}><Instagram/></section>
+        <section className='kontakt' ref={(section) => { this.Kontakt = section; }}><Kontakt/></section>
+      </div>)
+    </div>
+    )
+  }
+}
 class NotFound extends React.Component {
   render() {
   return <h1>404,Nothing is here</h1>;
   }
 }
-
-class Template extends React.Component {
-  render() {
-  return (<div className="col-lg-2 nav">
-      <LogotypeMain />
-      <NavMain />
-  </div>)
-  }
-}
-
 class SliderHome extends React.Component {
   render() {
   return (
@@ -68,7 +99,7 @@ class SliderHome extends React.Component {
       <div className="col-lg-12 ">
         <ul className='sliderList'>
           <li>
-            <img className="col-lg-12" src="./aktorka.jpg" />
+            <img className="col-lg-12" src="./img/banner1.jpg" />
           </li>
           <li className='hidden'>
             <img className="col-lg-12" src="./aktorka.jpg" />
@@ -92,9 +123,9 @@ class SliderHome extends React.Component {
 class AboutMe extends React.Component {
   render() {
   return (
-    <div className='row relative'>
+    <div className='test1 row relative'>
       <div className='col-lg-12' >
-        <img className="col-lg-12" src="./aktorka.jpg" />
+        <img className="col-lg-12" src="./img/prezenterka.jpg" />
       </div>
       <div className=" headerBox col-lg-12">
         <div className="col-lg-1"></div>
@@ -135,9 +166,9 @@ class AboutMe extends React.Component {
 class Dziennikarka extends React.Component {
   render() {
   return (
-      <div className='row relative'>
+      <div className='test2 row relative'>
         <div className='col-lg-12' >
-          <img className="col-lg-12" src="./aktorka.jpg" />
+          <img className="col-lg-12" src="./img/prezenterka.jpg" />
         </div>
         <div className=" headerBox col-lg-12">
           <div className="col-lg-1"></div>
@@ -205,9 +236,9 @@ class Dziennikarka extends React.Component {
 class Prezenterka extends React.Component {
   render() {
   return (
-    <div className='row relative'>
+    <div className='test3 row relative'>
       <div className='col-lg-12' >
-        <img className="col-lg-12" src="./aktorka.jpg" />
+        <img className="col-lg-12" src="./img/prezenterka.jpg" />
       </div>
       <div className=" headerBox col-lg-12">
         <div className="col-lg-1"></div>
@@ -257,9 +288,9 @@ class Prezenterka extends React.Component {
 class Pisarka extends React.Component {
   render() {
   return (
-    <div className='row relative'>
+    <div className='test4 row relative'>
       <div className='col-lg-12'>
-        <img className="col-lg-12" src="./aktorka.jpg" />
+        <img className="col-lg-12" src="./img/o_mnie.jpg" />
       </div>
       <div className=" headerBox col-lg-12">
         <div className="col-lg-1"></div>
@@ -315,9 +346,9 @@ class Pisarka extends React.Component {
 class Aktorka extends React.Component {
   render() {
   return (
-      <div className='row relative'>
+      <div className='test5 row relative'>
         <div className='col-lg-12'>
-          <img className="col-lg-12" src="./aktorka.jpg" />
+          <img className="col-lg-12" src="./img/aktorka.jpg" />
         </div>
         <div className='actBox col-lg-12'>
           <div className="col-lg-5"></div>
@@ -332,7 +363,7 @@ class Aktorka extends React.Component {
 class Instagram extends React.Component {
   render() {
   return (
-    <div className='row relative'>
+    <div className='test6 row relative'>
             <iframe
               src="//users.instush.com/bee-gallery-v2/?cols=3&rows=2&size=extra&border=10&round=false&space=10&sl=true&bg=transparent&brd=true&na=false&pin=false&hc=e72476&ltc=3f3f3f&lpc=ffffff&fc=ffffff&user_id=1518133627&username=basic2727&sid=-1&susername=-1&tag=-1&stype=mine&t=999999EvCVNpwn5gLOIiHsvvawCAfW6OGm7cPx04HwrNw8PRkj0WIeLELHsaXw4zswv28jVuTRIbQ9TY8"
               frameBorder="0"
@@ -342,7 +373,7 @@ class Instagram extends React.Component {
     </div>);
   }
 }
-const style = {
+  const style = {
   display:'block',
   width:'980px',
   height:'660px',
@@ -353,9 +384,9 @@ const style = {
 class Kontakt extends React.Component {
   render() {
   return (
-    <div className='row relative'>
+    <div className=' test7 row relative'>
       <div className='col-lg-12'>
-        <img className="col-lg-12" src="./aktorka.jpg" />
+        <img className="col-lg-12" src="./img/kontakt.jpg" />
       </div>
       <div className=" headerBox col-lg-12">
         <div className="col-lg-1"></div>
@@ -364,7 +395,7 @@ class Kontakt extends React.Component {
             <h4 className='headerText col-lg-7'>KONTAKT</h4>
           </div>
           <div className='boxContent'>
-            <p className='textContent '>Wyłączny przedstawiciel: Iza Ziemińska </p>
+            <p className='textContent textBlack'>Wyłączny przedstawiciel: Iza Ziemińska </p>
             <p className='textContentEmail '>Kontakt e-mail: iza@inmanagement.pl</p>
           </div>
           <ContactForm />
@@ -493,7 +524,6 @@ class ContactForm extends React.Component {
         )
     }
 }
-
 /*FOOTER*/
 class Footer extends React.Component {
   render() {
@@ -523,20 +553,10 @@ class IconsFooter extends React.Component {
 class Content extends React.Component {
   render() {
   return (
-    <div className="col-lg-10 mainFloatRight">
-      <SliderHome />
-      <AboutMe />
-      <Dziennikarka />
-      <Prezenterka />
-      <Pisarka />
-      <Aktorka />
-      <Instagram />
-      <Kontakt />
-      <Footer />
-  </div>)
+    <Section/>)
   }
 }
-
+/*
 class NavMainRouter extends React.Component {
   render() {
   return <Router history={hashHistory}>
@@ -554,12 +574,11 @@ class NavMainRouter extends React.Component {
   }
 }
 
-
+*/
 /*END*/
 class App extends React.Component {
   render() {
   return(<div>
-      <NavMainRouter/>
       <Content/>
     </div>)
   }

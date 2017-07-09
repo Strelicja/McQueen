@@ -145,7 +145,7 @@ li:active {
   line-height: 34px;
   font-weight: bold;
   //margin-top: 5%;
-  color: white;
+  color: black;
   font-family: "Lato", sans-serif;
 }
 .headerText::before {
@@ -165,7 +165,6 @@ li:active {
 }
 .relative {
   position: relative;
-  border: 1px solid yellow;
 }
 .relative {
   position: relative;
@@ -176,9 +175,12 @@ li:active {
  	margin: 0 0 20px;
   color: white;
  }
+ .textBlack {
+   color: black;
+ }
  .boxContent {
  	line-height: 37px;
- 	color: white;
+ 	color: black;
   position: absolute;
   margin-top: 7%;
   display: block;
@@ -277,7 +279,7 @@ li:active {
 }
 /*PISARKA*/
 .timelineHeader {
-  color: white;
+  color: black;
   display: block;
   line-height: 23px;
   font-size: 15px;
@@ -289,6 +291,7 @@ li:active {
 	margin-bottom: 13%;
 	font-weight: 300;
   display: block;
+  color: black;
 }
 .timelineDate {
     padding: 0 13px;
@@ -345,12 +348,12 @@ li:active {
   .inputBox {
     margin-bottom: 15%;
     line-height: 0;
-    border: 1px solid grey;
+    //border: 1px solid grey;
     border-radius: 2px;
   }
 }
 .buttonBox {
-  margin-top: 22%;
+  margin-top: 27%;
 }
 .inputText,
 .textareaText {
