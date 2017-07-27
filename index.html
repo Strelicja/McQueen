@@ -2,8 +2,9 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Sacramento&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Alexander McQueen</title>
 </head>
@@ -13,3 +14,48 @@
 
 </body>
 </html>
+<!--
+/*
+$tablet: 1023px;
+$tabletMax: 1023px;
+$phone: 600px;
+$desktop: 1024px;
+
+@mixin phone_small {
+  @media(max-width:#{$phone}){
+    @content;
+  }
+}
+@mixin tablet_small {
+  @media(max-width:#{$tablet}){
+    @content;
+  }
+}
+@mixin desktop_small {
+  @media(min-width:#{$desktop}){
+    @content;
+  }
+}
+@include phone_small{
+  @for $i from 1 through $columnNo {
+    .col-sm-#{$i} {
+  		width: (100 / $columnNo) * $i + %;
+    }
+  }
+}
+@include tablet_small{
+  @for $i from 1 through $columnNo {
+    .col-md-#{$i} {
+  		width: (100 / $columnNo) * $i + %;
+    }
+  }
+}
+@include desktop_small{
+  @for $i from 1 through $columnNo {
+    .col-lg-#{$i} {
+  		width: (100 / $columnNo) * $i + %;
+    }
+  }
+}
+*/
+-->

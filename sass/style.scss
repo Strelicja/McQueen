@@ -499,6 +499,7 @@ li:active {
   padding-left: 16%;
   padding-right: 16%;
   font-size: 16px;
+  border: 1px solid silver;
 }
 .buttonText {
   width: 60%;
@@ -531,33 +532,32 @@ li:active {
   font-size: 16px;
   margin-top: 2.8%;
   padding-left: 5.8%;
+  margin-left: 3.9%;
   color: grey;
+  display: block;
 }
 
-.labelTextName::before {
+.labelTextName {
   position: absolute;
   content: 'Wpisz swoje imię!';
   margin-top: -0.6%;
-  margin-left: 1.7%;
   background-color: white;
   padding: 1%;
   border-radius: 2px;
 
 }
-.labelTextEmail::before {
+.labelTextEmail {
   content: 'Wpisz swój adres e-mail!';
   position: absolute;
   margin-top: -0.6%;
-  margin-left: 1.7%;
   background-color: white;
   padding: 1%;
   border-radius: 2px;
 }
-.labelTextMessage::before {
+.labelTextMessage {
   content: 'Wpisz swoją wiadomość!';
   position: absolute;
   margin-top: 3%;
-  margin-left: 1.7%;
   background-color: white;
   padding: 1%;
   border-radius: 2px;
@@ -602,10 +602,17 @@ li:active {
   border-color: #ef106e;
   border-width: thin;
 }
+.newLabel {
+  margin-top: -2.2em;
+}
+.newLabel3 {
+  margin-top: -0.1em;
+}
+
 ///UWAGA
 /*type="email" to powinno być ponizej nad placeholder w input mail*/
 //TEKST WJEŻDŻA NA GÓRĘ I ZMIENIA KOLOR
-.inputText:focus + .labelText:before {
+.inputText:focus + .labelText {
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
@@ -614,7 +621,7 @@ li:active {
           font-weight: 200;
           color: grey;
 }
-.textareaText:focus + .labelText:before {
+.textareaText:focus + .labelText {
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
@@ -627,16 +634,16 @@ li:active {
   margin-top: -2.2em;
 }
 //USTAWIA TEKST W SPOCZYNKU - POZYCJA WYJŚCIOWA I POWROTNA
-.inputText:focus + .labelText:before,//ruch w górę
-.inputText:valid + .labelText:before {
+.inputText:focus + .labelText,//ruch w górę
+.inputText:valid + .labelText {
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
   -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
           transform: translate(0, -2.3em) scale(0.9, 0.9);
 
 }
-.textareaText:focus + .labelText:before,//ruch w górę
-.textareaText:valid + .labelText:before  {
+.textareaText:focus + .labelText,//ruch w górę
+.textareaText:valid + .labelText  {
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
   -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
@@ -646,6 +653,7 @@ li:active {
 .inputText + .labelText,
 .textareaText + .labelText {
   pointer-events: none;
+
 }
 
 

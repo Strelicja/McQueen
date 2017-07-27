@@ -12,7 +12,10 @@ import CountTo from 'react-count-to';
 import request from 'superagent';
 import collections from './collections';
 import biography from './biography';
-
+import style from '../sass/style.scss';
+import { ResponsiveComponent } from "react-responsive-component";
+require('../css/style.css');
+//./node_modules/.bin/webpack-dev-server --hot
 var Scroll = require('react-scroll');
 var ScrollArea = require('react-scrollbar');
 require('../sass/style.scss');
@@ -113,8 +116,8 @@ class SliderHome extends React.Component {
           </div>
       </div>
       <div className='col-lg-12 sliderText '>
-        <div className="col-lg-1"></div>
-        <div className="col-lg-9">
+        <div className="col-lg-1 col-md-"></div>
+        <div className="col-lg-9 col-md-">
           <span className='sliderTextSmall'>„There is no better designer than nature”</span>
           <span className='sliderTextLarge'>Alexander McQeen</span>
           <p className='sliderTextMiddle'>ARTIST / DESIGNER </p>
@@ -350,14 +353,14 @@ class Kolekcje extends React.Component {
       }
   }
   const listOfCollections = collections.map(collection => {
-  return (
-    <CollectionsList
-    key={collection.name}
-    name={collection.name}
-    year={collection.year}
-    url={collection.url}/>
-  )
-})
+    return (
+      <CollectionsList
+      key={collection.name}
+      name={collection.name}
+      year={collection.year}
+      url={collection.url}/>
+    )
+  })
 class Aktorka extends React.Component {
   render() {
   return (
@@ -411,28 +414,32 @@ class ContactForm extends React.Component {
             infoColorEmail: "green",
             infoColorMessage: "green",
             textButton: 'WYŚLIJ WIADOMOŚĆ!',
+            class:'',
+            class2:'',
+            class3:'',
         }
     }
     handleNameChange = (e) => {
+      this.setState({
+          name: e.target.value,
+          class: e.target.value != '' ? 'newLabel' : ''
+        })
+    }
+
+    handleMessageChange = (e) => {
         this.setState({
-            name: e.target.value
+            message: e.target.value,
+            class3: e.target.value != '' ? 'newLabel3' : ''
         })
     }
     handleMailChange = (e) => {
         this.setState({
-            mail: e.target.value
+            mail: e.target.value,
+            class2: e.target.value != '' ? 'newLabel' : ''
         })
     }
-    handleDepChange = (e) => {
-        this.setState({
-            dep: e.target.value
-        })
-    }
-    handleMessageChange = (e) => {
-        this.setState({
-            message: e.target.value
-        })
-    }
+
+
     handleSubmit = (e) => {
         e.preventDefault();
         this.state.name === ""
@@ -476,20 +483,22 @@ class ContactForm extends React.Component {
                       onChange={this.handleNameChange}
                       value={this.state.name}
                       placeholder=''
+                      type='text'
                       >
                     </input>
                     <label
-                      className=' labelText labelTextName'></label>
+                      className= {this.state.class + ' labelText labelTextName'}>Wpisz swoje imię!</label>
                     <p style={ {color: this.state.infoColorName} }
-                      className=' messageText'>{this.state.messageToRenderName}</p>
+                      className='messageText'>{this.state.messageToRenderName}</p>
                   </div>
                   <div className='inputBox'>
                     <input className='inputText email'
                       onChange={this.handleMailChange}
-
-                      placeholder="">
+                      value={this.state.mail}
+                      placeholder=""
+                      type='text'>
                     </input>
-                    <label className='labelText labelTextEmail'></label>
+                    <label className= {this.state.class2 + ' labelText labelTextEmail'}>Wpisz swój adres e-mail!</label>
                     <p style={ {color: this.state.infoColorEmail} }
                       className=' messageText'>{this.state.messageToRenderEmail}
                     </p>
@@ -500,7 +509,7 @@ class ContactForm extends React.Component {
                       value={this.state.message}
                       placeholder="">
                     </textarea>
-                    <label className='labelText labelTextMessage'></label>
+                    <label className= {this.state.class3 + ' labelText labelTextMessage'}>Wpisz swoją wiadomość!</label>
                     <p style={ {color: this.state.infoColorMessage} }
                       className=' messageText messageTextarea'>{this.state.messageToRenderMessage}
                     </p>
@@ -568,13 +577,13 @@ class NavMainRouter extends React.Component {
 
 class App extends React.Component {
   render() {
-  return(<div>
-      <Content/>
-    </div>)
+    return(<div>
+        <Content/>
+      </div>)
+    }
   }
-}
 
 ReactDOM.render(
   <App />,
   document.getElementById('app')
-);
+  );
