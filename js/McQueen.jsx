@@ -25,7 +25,7 @@ require('../sass/style.scss');
 class LogotypeMain extends React.Component {
   render() {
   return (
-    <div className=' col-lg-12'>
+    <div className=' col-lg-'>
       <p className='logoText logoTextName hoverLogo'>
         <img className="logoImg" src='img/Alexander-McQueen.jpg'/>
       </p>
@@ -101,6 +101,7 @@ class NotFound extends React.Component {
   return <h1>404,Nothing is here</h1>;
   }
 }
+/*MAIN*/
 class SliderHome extends React.Component {
   render() {
   return (
@@ -400,7 +401,7 @@ class Kontakt extends React.Component {
     </div>);
   }
 }
-class ContactForm extends React.Component {
+  class ContactForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -417,6 +418,7 @@ class ContactForm extends React.Component {
             class:'',
             class2:'',
             class3:'',
+            display:'',
         }
     }
     handleNameChange = (e) => {
@@ -473,11 +475,25 @@ class ContactForm extends React.Component {
                 }
               );
     }
-    render(){
+    componentDidMount(){
+        this.myInterval = setInterval(() => {
+           this.state.messageToRenderName == "✔" && this.state.messageToRenderEmail ==  "✔" && this.state.messageToRenderMessage == "✔"
+           ? this.setState({
+                 display: 'none',
+                 displayNone: 'block'
+           })
+           : this.setState({
+                 display: '',
+                 displayNone: 'none'
+           })
+     },3000);}
+
+        render(){
         return(
             <div>
               <div className='row '>
-                <div className='boxContact col-lg-5'>
+                <div className='boxContact col-lg-5'
+                      style={{display: this.state.display}}>
                   <div className='inputBox '>
                     <input className='inputText name'
                       onChange={this.handleNameChange}
@@ -521,6 +537,10 @@ class ContactForm extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className='boxContactHidden col-lg-5'
+                style={{display: this.state.displayNone}}>
+                <div className='boxTextHidden'>Dziękujemy! <br />  Wiadomość została wysłana do przedstawicieli marki McQueen.</div>
+            </div>
             </div>
         )
     }
@@ -555,8 +575,7 @@ class Content extends React.Component {
   render() {
   return (
     <NavMainRouter/>
-  )
-  }
+  )}
 }
 class NavMainRouter extends React.Component {
   render() {

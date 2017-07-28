@@ -57,7 +57,7 @@ li:active {
 
 /*LogotypeMain*/
 .logoImg {
-  width: 200px;
+  width: 100%;
 }
 .logoBox {
   padding: 68px 0 32px;
@@ -483,11 +483,28 @@ li:active {
 }
 .boxContact {
   margin-top: 10%;
+  display: block;
   .inputBox {
     margin-bottom: 15%;
     line-height: 0;
     border-radius: 2px;
   }
+}
+.boxContactHidden {
+  margin-top: 10%;
+  display: none;
+  background-color: white;
+  border: 1px solid silver;
+  //height: 21em;
+}
+.boxTextHidden {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding: 1em;
+  //padding-top: 2em;
+//  padding-left: 0.5em;
+//  padding-right: 0.5em;
 }
 .buttonBox {
   margin-top: 27%;
