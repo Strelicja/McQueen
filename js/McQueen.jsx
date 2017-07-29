@@ -34,7 +34,6 @@ class LogotypeMain extends React.Component {
     </div>);
   }
 }
-
 /*NAVIGATION*/
 class Section extends React.Component {
   constructor(props) {
@@ -93,7 +92,7 @@ class Section extends React.Component {
     )
   }
 }
-  const active = {
+      const active = {
       color: '#626262'
   }
 class NotFound extends React.Component {
@@ -170,7 +169,14 @@ class AboutMe extends React.Component {
     </div>);
   }
 }
+
+
+
+
+
+
 class Biografia extends React.Component {
+
   render() {
   return (
       <div className='test2 row relative'>
@@ -183,36 +189,138 @@ class Biografia extends React.Component {
             <div>
               <h4 className='headerText col-lg-7'>BIOGRAFIA</h4>
             </div>
-            <div className='offerBox col-lg-12'>
-              {listOfBiography}
-            </div>
+            <div className='col-lg-12'>
+              <div className='offerNameBox col-lg-2'>
+                {listOfBiographyName}
+              </div>
+              <div className='offerBox col-lg-10'>
+                {listOfBiography}
+              </div>
           </div>
-          <Timer />
+        </div>
         </div>
       </div>);
   }
 }
-  class BiographyList extends React.Component {
-    render() {
-      return(
-        <div className='offer col-lg-'>
-          <span className='offerHeader'>{this.props.name}</span>
-          <p className='oferText'>{this.props.text} </p>
-          <div className='arrow'>
-            <FaAngleDoubleDown />
+////////NAME
+      class BiographyName extends React.Component {
+        constructor(props){
+          super(props);
+          this.state = {
+            newArr: [],
+            display: 'none',
+          }
+        }
+        showText = (e) =>{
+          this.setState({
+            display: 'block',
+          })
+          console.log("klik działa");
+        }
+        render() {
+          return(
+            <div className='offerName col-lg-'>
+              <p className='offerHeaderName'>{this.props.name}</p>
+              <div className='offerOpacityBox'
+                onClick = {this.showText}>
+              </div>
+            </div>
+          )}
+        }
+      const listOfBiographyName = biography.map(biography => {
+        return (
+          <BiographyName
+          key={biography.name}
+          name={biography.name}/>
+        )
+      })
+
+///////TEXT
+      class BiographyList extends React.Component {
+        render() {
+          return(
+            <div className='offer col-lg-'>
+              <p className='offerText'>{this.props.text} </p>
+            </div>
+          )}
+        }
+      const listOfBiography = biography.map(biography => {
+        return (
+          <BiographyList
+          key={biography.name}
+          text={biography.text}/>
+        )
+      })
+
+
+
+/*
+class Biografia extends React.Component {
+
+  render() {
+  return (
+      <div className='test2 row relative'>
+        <div className='col-lg-12' >
+          <img className="heightImgDz col-lg-12"  />
+        </div>
+        <div className=" headerBox col-lg-12">
+          <div className="col-lg-1"></div>
+          <div className=' col-lg-11'>
+            <div>
+              <h4 className='headerText col-lg-7'>BIOGRAFIA</h4>
+            </div>
+            <div className='col-lg-12'>
+              {listOfBiographyName}
           </div>
         </div>
-      )}
-    }
-  const listOfBiography = biography.map(biography => {
-    return (
-      <BiographyList
-      key={biography.name}
-      name={biography.name}
-      text={biography.text}/>
-    )
-  })
-  class Timer extends React.Component {
+        </div>
+      </div>);
+  }
+}
+      class BiographyName extends React.Component {
+        constructor(props){
+          super(props);
+          this.state = {
+            newArr: [],
+            display: 'none',
+          }
+        }
+        showText = (e) =>{
+          setState({
+            display: 'block'
+          })
+
+        }
+        render() {
+          return(
+            <div>
+            <div className='offerNameBox col-lg-2'>
+              <div className='offerName col-lg-'>
+                <p className='offerHeaderName'>{this.props.name}</p>
+                <div className='offerOpacityBox'>
+                </div>
+              </div>
+            </div>
+            <div className='offerBox col-lg-10'>
+              <div className='offer col-lg-'>
+                <p className='oferText'
+                >{this.props.text} </p>
+              </div>
+            </div>
+            </div>
+          )}
+        }
+      const listOfBiographyName = biography.map(biography => {
+        return (
+          <BiographyName
+          key={biography.name}
+          name={biography.name}
+          text={biography.text}/>
+        )
+      })
+      */
+
+      class Timer extends React.Component {
     constructor() {
       super();
       this.state = {
@@ -343,17 +451,17 @@ class Kolekcje extends React.Component {
     </div>);
   }
 }
-  class CollectionsList extends React.Component {
-    render() {
-      return(
-        <div className='margin-right col-lg-'>
-          <span className='timelineHeader'>{this.props.name}</span>
-          <img className='imgCollection' src={this.props.url}></img>
-          <span className=' timelineDate'>{this.props.year}</span>
-        </div>)
+      class CollectionsList extends React.Component {
+        render() {
+          return(
+            <div className='margin-right col-lg-'>
+              <span className='timelineHeader'>{this.props.name}</span>
+              <img className='imgCollection' src={this.props.url}></img>
+              <span className=' timelineDate'>{this.props.year}</span>
+            </div>)
+          }
       }
-  }
-  const listOfCollections = collections.map(collection => {
+      const listOfCollections = collections.map(collection => {
     return (
       <CollectionsList
       key={collection.name}
@@ -401,150 +509,150 @@ class Kontakt extends React.Component {
     </div>);
   }
 }
-  class ContactForm extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            name: "",
-            mail: "",
-            message: "",
-            messageToRenderName: "",
-            messageToRenderEmail: '',
-            messageToRenderMessage: '',
-            infoColorName: "green",
-            infoColorEmail: "green",
-            infoColorMessage: "green",
-            textButton: 'WYŚLIJ WIADOMOŚĆ!',
-            class:'',
-            class2:'',
-            class3:'',
-            display:'',
+      class ContactForm extends React.Component {
+        constructor(props) {
+            super(props)
+            this.state = {
+                name: "",
+                mail: "",
+                message: "",
+                messageToRenderName: "",
+                messageToRenderEmail: '',
+                messageToRenderMessage: '',
+                infoColorName: "green",
+                infoColorEmail: "green",
+                infoColorMessage: "green",
+                textButton: 'WYŚLIJ WIADOMOŚĆ!',
+                class:'',
+                class2:'',
+                class3:'',
+                display:'',
+            }
         }
-    }
-    handleNameChange = (e) => {
-      this.setState({
-          name: e.target.value,
-          class: e.target.value != '' ? 'newLabel' : ''
-        })
-    }
-
-    handleMessageChange = (e) => {
-        this.setState({
-            message: e.target.value,
-            class3: e.target.value != '' ? 'newLabel3' : ''
-        })
-    }
-    handleMailChange = (e) => {
-        this.setState({
-            mail: e.target.value,
-            class2: e.target.value != '' ? 'newLabel' : ''
-        })
-    }
-
-
-    handleSubmit = (e) => {
-        e.preventDefault();
-        this.state.name === ""
-          ? this.setState({
-                messageToRenderName: "✘",
-                infoColorName: "red"
+        handleNameChange = (e) => {
+          this.setState({
+              name: e.target.value,
+              class: e.target.value != '' ? 'newLabel' : ''
             })
-          : this.setState({
-                  messageToRenderName: "✔",
-                  infoColorName: "green",
-                }
-              );
-        this.state.mail.indexOf("@")< 0
-          ? this.setState({
-                messageToRenderEmail: "✘",
-                infoColorEmail: "red"
-            })
-          : this.setState({
-                  messageToRenderEmail: "✔",
-                  infoColorEmail: "green"
-                }
-              );
-        this.state.message === ""
-          ? this.setState({
-                messageToRenderMessage: "✘",
-                infoColorMessage: "red"
-            })
-          : this.setState({
-                  messageToRenderMessage: "✔",
-                  infoColorMessage: "green"
-                }
-              );
-    }
-    componentDidMount(){
-        this.myInterval = setInterval(() => {
-           this.state.messageToRenderName == "✔" && this.state.messageToRenderEmail ==  "✔" && this.state.messageToRenderMessage == "✔"
-           ? this.setState({
-                 display: 'none',
-                 displayNone: 'block'
-           })
-           : this.setState({
-                 display: '',
-                 displayNone: 'none'
-           })
-     },3000);}
+        }
 
-        render(){
-        return(
-            <div>
-              <div className='row '>
-                <div className='boxContact col-lg-5'
-                      style={{display: this.state.display}}>
-                  <div className='inputBox '>
-                    <input className='inputText name'
-                      onChange={this.handleNameChange}
-                      value={this.state.name}
-                      placeholder=''
-                      type='text'
-                      >
-                    </input>
-                    <label
-                      className= {this.state.class + ' labelText labelTextName'}>Wpisz swoje imię!</label>
-                    <p style={ {color: this.state.infoColorName} }
-                      className='messageText'>{this.state.messageToRenderName}</p>
+        handleMessageChange = (e) => {
+            this.setState({
+                message: e.target.value,
+                class3: e.target.value != '' ? 'newLabel3' : ''
+            })
+        }
+        handleMailChange = (e) => {
+            this.setState({
+                mail: e.target.value,
+                class2: e.target.value != '' ? 'newLabel' : ''
+            })
+        }
+
+
+        handleSubmit = (e) => {
+            e.preventDefault();
+            this.state.name === ""
+              ? this.setState({
+                    messageToRenderName: "✘",
+                    infoColorName: "red"
+                })
+              : this.setState({
+                      messageToRenderName: "✔",
+                      infoColorName: "green",
+                    }
+                  );
+            this.state.mail.indexOf("@")< 0
+              ? this.setState({
+                    messageToRenderEmail: "✘",
+                    infoColorEmail: "red"
+                })
+              : this.setState({
+                      messageToRenderEmail: "✔",
+                      infoColorEmail: "green"
+                    }
+                  );
+            this.state.message === ""
+              ? this.setState({
+                    messageToRenderMessage: "✘",
+                    infoColorMessage: "red"
+                })
+              : this.setState({
+                      messageToRenderMessage: "✔",
+                      infoColorMessage: "green"
+                    }
+                  );
+        }
+        componentDidMount(){
+            this.myInterval = setInterval(() => {
+               this.state.messageToRenderName == "✔" && this.state.messageToRenderEmail ==  "✔" && this.state.messageToRenderMessage == "✔"
+               ? this.setState({
+                     display: 'none',
+                     displayNone: 'block'
+               })
+               : this.setState({
+                     display: '',
+                     displayNone: 'none'
+               })
+         },3000);}
+
+            render(){
+            return(
+                <div>
+                  <div className='row '>
+                    <div className='boxContact col-lg-5'
+                          style={{display: this.state.display}}>
+                      <div className='inputBox '>
+                        <input className='inputText name'
+                          onChange={this.handleNameChange}
+                          value={this.state.name}
+                          placeholder=''
+                          type='text'
+                          >
+                        </input>
+                        <label
+                          className= {this.state.class + ' labelText labelTextName'}>Wpisz swoje imię!</label>
+                        <p style={ {color: this.state.infoColorName} }
+                          className='messageText'>{this.state.messageToRenderName}</p>
+                      </div>
+                      <div className='inputBox'>
+                        <input className='inputText email'
+                          onChange={this.handleMailChange}
+                          value={this.state.mail}
+                          placeholder=""
+                          type='text'>
+                        </input>
+                        <label className= {this.state.class2 + ' labelText labelTextEmail'}>Wpisz swój adres e-mail!</label>
+                        <p style={ {color: this.state.infoColorEmail} }
+                          className=' messageText'>{this.state.messageToRenderEmail}
+                        </p>
+                      </div>
+                      <div className='inputBox'>
+                        <textarea className='textareaText comment'
+                          onChange={this.handleMessageChange}
+                          value={this.state.message}
+                          placeholder="">
+                        </textarea>
+                        <label className= {this.state.class3 + ' labelText labelTextMessage'}>Wpisz swoją wiadomość!</label>
+                        <p style={ {color: this.state.infoColorMessage} }
+                          className=' messageText messageTextarea'>{this.state.messageToRenderMessage}
+                        </p>
+                      </div>
+                      <div className='buttonBox '>
+                        <button className='buttonText'
+                          type="submit"
+                          onClick={this.handleSubmit}>{this.state.textButton}</button>
+                      </div>
+                    </div>
                   </div>
-                  <div className='inputBox'>
-                    <input className='inputText email'
-                      onChange={this.handleMailChange}
-                      value={this.state.mail}
-                      placeholder=""
-                      type='text'>
-                    </input>
-                    <label className= {this.state.class2 + ' labelText labelTextEmail'}>Wpisz swój adres e-mail!</label>
-                    <p style={ {color: this.state.infoColorEmail} }
-                      className=' messageText'>{this.state.messageToRenderEmail}
-                    </p>
-                  </div>
-                  <div className='inputBox'>
-                    <textarea className='textareaText comment'
-                      onChange={this.handleMessageChange}
-                      value={this.state.message}
-                      placeholder="">
-                    </textarea>
-                    <label className= {this.state.class3 + ' labelText labelTextMessage'}>Wpisz swoją wiadomość!</label>
-                    <p style={ {color: this.state.infoColorMessage} }
-                      className=' messageText messageTextarea'>{this.state.messageToRenderMessage}
-                    </p>
-                  </div>
-                  <div className='buttonBox '>
-                    <button className='buttonText'
-                      type="submit"
-                      onClick={this.handleSubmit}>{this.state.textButton}</button>
-                  </div>
+                  <div className='boxContactHidden col-lg-5'
+                    style={{display: this.state.displayNone}}>
+                    <div className='boxTextHidden'>Dziękujemy! <br />  Wiadomość została wysłana do przedstawicieli marki McQueen.</div>
                 </div>
-              </div>
-              <div className='boxContactHidden col-lg-5'
-                style={{display: this.state.displayNone}}>
-                <div className='boxTextHidden'>Dziękujemy! <br />  Wiadomość została wysłana do przedstawicieli marki McQueen.</div>
-            </div>
-            </div>
-        )
-    }
-}
+                </div>
+            )
+        }
+      }
 /*FOOTER*/
 class Footer extends React.Component {
   render() {
@@ -561,7 +669,7 @@ class Footer extends React.Component {
   </div>);
   }
 }
-class IconsFooter extends React.Component {
+      class IconsFooter extends React.Component {
     render() {
         return (
           <div>
@@ -593,7 +701,6 @@ class NavMainRouter extends React.Component {
   }
 }
 /*END*/
-
 class App extends React.Component {
   render() {
     return(<div>
@@ -601,7 +708,6 @@ class App extends React.Component {
       </div>)
     }
   }
-
 ReactDOM.render(
   <App />,
   document.getElementById('app')

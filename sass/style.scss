@@ -210,7 +210,7 @@ li:active {
   color: black;
 }
 .headerText::before {
-	border-bottom: 4px solid #ef106e;
+	border-bottom: 4px solid red;
  	content: "";
 	margin-left: -25px;
   position: absolute;
@@ -263,44 +263,46 @@ li:active {
   line-height: 27px;
   color: white;
   letter-spacing: 0.02em;
-  margin-top: 8%;
-  margin-right: 15%;
-  height: 260px;
-  width: 100%;
+  margin-top: 12%;
+  height: 90vh;
 }
-.offer {
-  width: 33.3%;
-  height: 100%;
+.offerNameBox {
+  margin-top: 6%;
+  display: inline-grid;
 }
-.offer:hover {
-  .arrow {
-    display: block;
-  }
+.offerName {
+  margin-top: 40%;
 }
-.arrow {
-  text-align: right;
-  margin-top: -60%;
-  display: none;
-  width: 260px;
-  height: 110px;
-  padding: 0;
-  padding-top: 60%;
-  font-size: 25px;
-}
-.offerHeader {
-	display: block;
+.offerHeaderName  {
+  display: block;
 	color: white;
   font-size: 16px;
   border-bottom: 1px solid white;
   width: 80%;
+  text-align: center;
 }
-.oferText {
-  height: 220px;
-  width: 80%;
+.offerOpacityBox:hover{
+  opacity: 0.2;
+  background-color: silver;
+}
+.offerOpacityBox{
+  border-radius: 5px;
+  height: 80px;
+  margin-top: -25%;
+  margin-left: -15%;
+  z-index: 1;
+}
+.offer {
+  margin-right: 15%;
+}
+
+.offerText {
   margin-top: 2%;
+  padding-left: 5%;
   overflow: scroll;
   padding-bottom: 100px;
   font-size: 17px;
+  //display: none;
 }
 
 //TIMER//
@@ -588,22 +590,10 @@ li:active {
 	background-repeat: no-repeat;
 
 }
-.name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-  background-position: 11px 17px;
-	background-repeat: no-repeat;
-}
 .email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-image: url(https://cdn3.iconfinder.com/data/icons/glyph/227/Email-512.png);
 	background-size: 30px 30px;
 	background-position: 11px 17px;
-	background-repeat: no-repeat;
-}
-.email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-  background-position: 11px 17px;
 	background-repeat: no-repeat;
 }
 .comment{
@@ -616,7 +606,7 @@ li:active {
 //RAMKA PO NAJECHANKU ZMIENIA KOLOR
 .inputText:focus,
 .textareaText:focus {
-  border-color: #ef106e;
+  border-color: red;
   border-width: thin;
 }
 .newLabel {
