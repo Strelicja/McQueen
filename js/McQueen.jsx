@@ -17,6 +17,7 @@ import { ResponsiveComponent } from "react-responsive-component";
 import HamburgerMenu from 'react-hamburger-menu';
 require('../css/style.css');
 //./node_modules/.bin/webpack-dev-server --hot
+//./node_modules/.bin/webpack-dev-server --hot
 var Scroll = require('react-scroll');
 var ScrollArea = require('react-scrollbar');
 require('../sass/style.scss');
