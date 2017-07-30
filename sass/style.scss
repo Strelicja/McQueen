@@ -121,6 +121,7 @@ body {font-family: 'Quicksand', serif;
 }
 .hover:hover {
   color: #626262;
+	background-color: 'silver'!important;
 }
 .hoverLogo:hover {
   color: silver;
@@ -132,7 +133,7 @@ body {font-family: 'Quicksand', serif;
 }
 /*SLIDER HOME*/
 .heightImgSH {
-//  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg');
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg');
   height: 100vh;
   background-size: cover;
   overflow: hidden;
@@ -576,8 +577,8 @@ div {
 .labelText {
   font-size: 16px;
   margin-top: 2.8%;
-  padding-left: 5.8%;
-  margin-left: 3.9%;
+  //padding-left: 5.8%;
+  margin-left: 4.9%;
   color: grey;
   display: block;
 }

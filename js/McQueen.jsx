@@ -21,7 +21,7 @@ var Scroll = require('react-scroll');
 var ScrollArea = require('react-scrollbar');
 require('../sass/style.scss');
 "use strict";
-/////
+////ICON MENU
 class Hambmen extends React.Component {
 	constructor() {
 		super();
@@ -53,13 +53,11 @@ class Hambmen extends React.Component {
 		);
 	}
 };
-
-/////
 /*LOGOTYPE*/
 class LogotypeMain extends React.Component {
   render() {
   return (
-    <div className=' col-lg-2 col-md-2 col-sm-8'>
+    <div className=' col-lg-12 col-md-12 col-sm-12'>
       <p className='logoText logoTextName hoverLogo'>
         <img className="logoImg" src='img/Alexander-McQueen.jpg'/>
       </p>
@@ -82,37 +80,57 @@ class Section extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
   }
   handleScroll() {
-     var winHeight = window.innerHeight;
-     var body = document.body;
-     var html = document.documentElement;
-     var docHeight = Math.max( body.scrollHeight, body.offsetHeight,
-                     html.clientHeight, html.scrollHeight, html.offsetHeight );
-     var value = document.body.scrollTop;
-     var el = document.getElementById('app');
-     var minPixel = el.offsetTop;
-     var maxPixel = minPixel + el.scrollHeight;
-     var value = document.body.scrollTop;
-     var percent = (value - minPixel)/(maxPixel - minPixel);
-     percent = Math.min(1,Math.max(percent, 0))*100;
-     console.log(docHeight,percent);
+    //  var winHeight = window.innerHeight;
+    //  var body = document.body;
+    //  var html = document.documentElement;
+    //  var docHeight = Math.max( body.scrollHeight, body.offsetHeight,
+    //                  html.clientHeight, html.scrollHeight, html.offsetHeight );
+    //  var value = document.body.scrollTop;
+		 //
+    //  var minPixel = el.offsetTop;
+    //  var maxPixel = minPixel + el.scrollHeight;
+    //  var value = document.body.scrollTop;
+    //  var percent = (value - minPixel)/(maxPixel - minPixel);
+    //  percent = Math.min(1,Math.max(percent, 0))*100;
+		var value = document.body.scrollTop;
+		var sliderHomeH = document.querySelector(".sliderHome");
+		sliderHomeH = sliderHomeH.offsetTop;
+		var aboutMeH = document.querySelector(".aboutMe");
+		aboutMeH = aboutMeH.offsetTop -1;
+		var biografiaH = document.querySelector(".biografia");
+		biografiaH = biografiaH.offsetTop -1;
+		var modaH = document.querySelector(".moda");
+		modaH = modaH.offsetTop -1;
+		var kolekcjeH = document.querySelector(".kolekcje");
+		kolekcjeH = kolekcjeH.offsetTop -1;
+		var aktorkaH = document.querySelector(".aktorka");
+		aktorkaH = aktorkaH.offsetTop -1;
+		var kontaktH = document.querySelector(".kontakt");
+		kontaktH = kontaktH.offsetTop -1;
+			console.log(aboutMeH);
+			value > aboutMeH && value < biografiaH ? document.querySelector(".aboutMeLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".aboutMeLi").style.backgroundColor = "white"
+			value > biografiaH && value < modaH ? document.querySelector(".biografiaLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".biografiaLi").style.backgroundColor = "white"
+			value > modaH && value < kolekcjeH ? document.querySelector(".modaLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".modaLi").style.backgroundColor = "white"
+			value > kolekcjeH && value < aktorkaH ? document.querySelector(".kolekcjeLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".kolekcjeLi").style.backgroundColor = "white"
+			value > aktorkaH && value < kontaktH ? document.querySelector(".aktorkaLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".aktorkaLi").style.backgroundColor = "white"
+			value > kontaktH ? document.querySelector(".kontaktLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".kontaktLi").style.backgroundColor = "white"
   }
   render() {
     return (
       <div >
         <div className=''>
-          <nav className='col-lg-2 col-md-2 col-sm-8 nav'>
+          <nav className='col-lg-2 col-md-2 col-sm-2 nav'>
             <ul className=' navList'>
-              <Hambmen/>
-              <li className='logoBox ' onClick={() => scrollToComponent(this.SliderHome, { align: 'middle',ease:'inCirc', duration: 500})}><LogotypeMain/></li>
-              <li> <IndexLink activeStyle={active} to="/aboutMe" className='decoration hover paddingTop' onClick={() => scrollToComponent(this.AboutMe, {align: 'middle',ease:'inCirc',  duration: 1000})}>McQueen</IndexLink></li>
-              <li> <IndexLink activeStyle={active} to="/biografia" className='decoration hover' onClick={() => scrollToComponent(this.Biografia, {align: 'middle', ease:'inCirc', duration: 1000})}>BIOGRAFIA</IndexLink></li>
-              <li> <IndexLink activeStyle={active} to="/moda" className='decoration hover' onClick={() => scrollToComponent(this.Moda, {align: 'middle', ease:'inCirc', duration: 1000})}>MODA</IndexLink></li>
-              <li> <IndexLink activeStyle={active} to="/kolekcje" className='decoration hover' onClick={() => scrollToComponent(this.Kolekcje, { align: 'middle',ease:'inCirc', duration: 1000})}>KOLEKCJE</IndexLink></li>
-              <li> <IndexLink activeStyle={active} to="/aktorka" className='decoration hover' onClick={() => scrollToComponent(this.Aktorka, { align: 'middle',ease:'inCirc', duration: 1000})}>IDEA</IndexLink></li>
-              <li> <IndexLink activeStyle={active} to="/kontakt" className='decoration hover' onClick={() => scrollToComponent(this.Kontakt, {align: 'middle',ease:'inCirc',  duration: 1000})}>KONTAKT</IndexLink></li>
+              <li className='logoBox sliderHome ' onClick={() => scrollToComponent(this.SliderHome, { align: 'middle',ease:'inCirc', duration: 500})}><LogotypeMain/></li>
+              <li> <IndexLink  to="/aboutMe" className='aboutMeLi decoration hover paddingTop' onClick={() => scrollToComponent(this.AboutMe, {align: 'middle',ease:'inCirc',  duration: 1000})}>McQueen</IndexLink></li>
+              <li> <IndexLink  to="/biografia" className='biografiaLi decoration hover' onClick={() => scrollToComponent(this.Biografia, {align: 'middle', ease:'inCirc', duration: 1000})}>BIOGRAFIA</IndexLink></li>
+              <li> <IndexLink  to="/moda" className='modaLi decoration hover' onClick={() => scrollToComponent(this.Moda, {align: 'middle', ease:'inCirc', duration: 1000})}>MODA</IndexLink></li>
+              <li> <IndexLink  to="/kolekcje" className='kolekcjeLi decoration hover' onClick={() => scrollToComponent(this.Kolekcje, { align: 'middle',ease:'inCirc', duration: 1000})}>KOLEKCJE</IndexLink></li>
+              <li> <IndexLink  to="/aktorka" className='aktorkaLi decoration hover' onClick={() => scrollToComponent(this.Aktorka, { align: 'middle',ease:'inCirc', duration: 1000})}>IDEA</IndexLink></li>
+              <li> <IndexLink  to="/kontakt" className='kontaktLi decoration hover' onClick={() => scrollToComponent(this.Kontakt, {align: 'middle',ease:'inCirc',  duration: 1000})}>KONTAKT</IndexLink></li>
             </ul>
           </nav>
-          <div className="col-lg-10 col-md-10 col-sm-4   mainFloatRight">
+          <div className="col-lg-10 col-md-10 col-sm-10   mainFloatRight">
             <section  className='sliderHome' ref={(section) => { this.SliderHome = section; }}><SliderHome/></section>
             <section  className='aboutMe' ref={(section) => { this.AboutMe = section; }}><AboutMe/></section>
             <section  className='biografia' ref={(section) => { this.Biografia = section; }}><Biografia/></section>
@@ -127,9 +145,6 @@ class Section extends React.Component {
     )
   }
 }
-      const active = {
-        color: '#626262'
-      }
 class NotFound extends React.Component {
   render() {
   return <h1>404,Nothing is here</h1>;
@@ -145,7 +160,6 @@ class SliderHome extends React.Component {
           <AtvImg className="heightImgSH col-lg-12 col-md-12 col-sm-12 "
               layers={[
                 'https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg',
-              //  'http://kloc.pm/images/front.png',
               ]}
               staticFallback="http://kloc.pm/images/kloc-icon-flattened.jpg"/>
           </div>
@@ -175,7 +189,7 @@ class AboutMe extends React.Component {
               <h4 className='headerText headerTextBlack col-lg-7 col-md-7 col-sm-7'>McQueen</h4>
             </div>
             <div className= 'row'>
-              <div className='boxContent col-lg-6 col-md-7 col-sm-10'>
+              <div className='boxContent col-lg-5 col-md-7 col-sm-10'>
                 <span className=" textContent ">Jednen z najsłynniejszych projektantów młodego pokolenia. Pomimo jego samobójczej śmierci, potęga jego nazwiska i geniuszu nie słabną. <br />Lee Alexander McQueen - niepokorna dusza współczesnego świata mody</span>
                 <div className=" tableBox col-lg-12 col-md-12 col-sm-12 ">
                   <BioTable />
@@ -243,7 +257,6 @@ class Biografia extends React.Component {
 }
 ///NAME
       class BiographyName extends React.Component {
-
         myFunction(id)  {
           var textEl = document.querySelector('.'+id);
             if (textEl.style.display === 'block') {
@@ -372,12 +385,12 @@ class Moda extends React.Component {
           <div className=' col-lg-12 col-md-12 col-sm-12 '>
             <h4 className='headerText col-lg-7 col-md-9 col-sm-7'>MODA</h4>
           </div>
-          <div className='boxContent col-lg-7 col-md-10 col-sm-7'>
+          <div className='boxContent col-lg-7 col-md-10 col-sm-10'>
             <span className=" textContent ">Po udanym debiucie i akceptacji hermetycznego środowiska mody, młodym geniuszem zainteresował się prezydent koncernu LVMH - Bernard Arnault. <br />
             W 2000 roku Gucci odkupiło 51 procent udziałów we marce McQueena, który całą swoją energię poświęcił na jej rozwój. Nowy inwestor pozwolił na otworzenie butików marki w Nowym Jorku, Mediolanie, Londynie, Las Vegas i Los Angeles. A także na spełnianie najbardziej ekstrawaganckich wizji projektowych oraz realizację spektakularnych pokazów.
             </span>
           </div>
-            <div className='quoteData col-lg-7 col-md-11 col-sm-7'>
+            <div className='quoteData col-lg-7 col-md-11 col-sm-11'>
               <div className='marginBottom col-lg-6 col-md-6 col-sm-6'>
                 <span className='quoteNumber'>GIVENCHY</span>
                 <span className='quoteText'>stanowisko: </span>
@@ -432,14 +445,14 @@ class Kolekcje extends React.Component {
           }
       }
       const listOfCollections = collections.map(collection => {
-    return (
-      <CollectionsList
-      key={collection.name}
-      name={collection.name}
-      year={collection.year}
-      url={collection.url}/>
-    )
-  })
+		    return (
+		      <CollectionsList
+		      key={collection.name}
+		      name={collection.name}
+		      year={collection.year}
+		      url={collection.url}/>
+		    )
+		  })
 class Aktorka extends React.Component {
   render() {
   return (
@@ -563,63 +576,63 @@ class Kontakt extends React.Component {
                      displayNone: 'none'
                })
          },3000);}
-            render(){
-            return(
-                <div>
-                  <div className='row '>
-                    <div className='boxContact col-lg-5 col-md-8 col-sm-5'
-                          style={{display: this.state.display}}>
-                      <div className='inputBox '>
-                        <input className='inputText name'
-                          onChange={this.handleNameChange}
-                          value={this.state.name}
-                          placeholder=''
-                          type='text'
-                          >
-                        </input>
-                        <label
-                          className= {this.state.class + ' labelText labelTextName'}>Wpisz swoje imię!</label>
-                        <p style={ {color: this.state.infoColorName} }
-                          className='messageText'>{this.state.messageToRenderName}</p>
-                      </div>
-                      <div className='inputBox'>
-                        <input className='inputText email'
-                          onChange={this.handleMailChange }
-                          value={this.state.mail}
-                          placeholder=""
-                          type='text'>
-                        </input>
-                        <label className= {this.state.class2 + ' labelText labelTextEmail'}>Wpisz swój adres e-mail!</label>
-                        <p style={ {color: this.state.infoColorEmail} }
-                          className=' messageText'>{this.state.messageToRenderEmail}
-                        </p>
-                      </div>
-                      <div className='inputBox'>
-                        <textarea className='textareaText comment'
-                          onChange={this.handleMessageChange}
-                          value={this.state.message}
-                          placeholder="">
-                        </textarea>
-                        <label className= {this.state.class3 + ' labelText labelTextMessage'}>Wpisz swoją wiadomość!</label>
-                        <p style={ {color: this.state.infoColorMessage} }
-                          className=' messageText messageTextarea'>{this.state.messageToRenderMessage}
-                        </p>
-                      </div>
-                      <div className='buttonBox '>
-                        <button className='buttonText'
-                          type="submit"
-                          onClick={this.handleSubmit}>{this.state.textButton}</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='boxContactHidden col-lg-5 col-md-8 col-sm-5'
-                    style={{display: this.state.displayNone}}>
-                    <div className='boxTextHidden'>Dziękujemy! <br />  Wiadomość została wysłana do przedstawicieli marki McQueen.</div>
-                </div>
-                </div>
-            )
-        }
-      }
+				 render(){
+				 return(
+						 <div>
+							 <div className='row '>
+								 <div className='boxContact col-lg-5 col-md-8 col-sm-5'
+											 style={{display: this.state.display}}>
+									 <div className='inputBox '>
+										 <input className='inputText name'
+											 onChange={this.handleNameChange}
+											 value={this.state.name}
+											 placeholder=''
+											 type='text'
+											 >
+										 </input>
+										 <label
+											 className= {this.state.class + ' labelText labelTextName'}>Wpisz swoje imię!</label>
+										 <p style={ {color: this.state.infoColorName} }
+											 className='messageText'>{this.state.messageToRenderName}</p>
+									 </div>
+									 <div className='inputBox'>
+										 <input className='inputText email'
+											 onChange={this.handleMailChange }
+											 value={this.state.mail}
+											 placeholder=""
+											 type='text'>
+										 </input>
+										 <label className= {this.state.class2 + ' labelText labelTextEmail'}>Wpisz swój adres e-mail!</label>
+										 <p style={ {color: this.state.infoColorEmail} }
+											 className=' messageText'>{this.state.messageToRenderEmail}
+										 </p>
+									 </div>
+									 <div className='inputBox'>
+										 <textarea className='textareaText comment'
+											 onChange={this.handleMessageChange}
+											 value={this.state.message}
+											 placeholder="">
+										 </textarea>
+										 <label className= {this.state.class3 + ' labelText labelTextMessage'}>Wpisz swoją wiadomość!</label>
+										 <p style={ {color: this.state.infoColorMessage} }
+											 className=' messageText messageTextarea'>{this.state.messageToRenderMessage}
+										 </p>
+									 </div>
+									 <div className='buttonBox '>
+										 <button className='buttonText'
+											 type="submit"
+											 onClick={this.handleSubmit}>{this.state.textButton}</button>
+									 </div>
+								 </div>
+							 </div>
+							 <div className='boxContactHidden col-lg-5 col-md-8 col-sm-5'
+								 style={{display: this.state.displayNone}}>
+								 <div className='boxTextHidden'>Dziękujemy! <br />  Wiadomość została wysłana do przedstawicieli marki McQueen.</div>
+						 </div>
+						 </div>
+				 )
+				 }
+			 }
 /*FOOTER*/
 class Footer extends React.Component {
   render() {
