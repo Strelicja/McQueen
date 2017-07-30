@@ -1,21 +1,42 @@
 //GRID
+$tablet-width: 768px;
+$desktop-width: 1024px;
 $columnNo: 12;
-$gutter: 5px;
+$gutter: 20px;
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
 
 @for $i from 1 through $columnNo {
-  .col-sm-#{$i} {
-		width: (100 / $columnNo) * $i + %;
-  }
+	.col-sm-#{$i} {
+		width: 100/$columnNo * $i + %;
+	}
 }
-@for $i from 1 through $columnNo {
-  .col-md-#{$i} {
-		width: (100 / $columnNo) * $i + %;
-  }
+
+@include tablet {
+	@for $i from 1 through $columnNo {
+		.col-md-#{$i} {
+			width: 100/$columnNo * $i + %;
+		}
+	}
 }
-@for $i from 1 through $columnNo {
-  .col-lg-#{$i} {
-		width: (100 / $columnNo) * $i + %;
-  }
+
+@include desktop {
+	@for $i from 1 through $columnNo {
+		.col-lg-#{$i} {
+			width: 100/$columnNo * $i + %;
+		}
+	}
 }
 * {
   box-sizing: border-box;
@@ -40,14 +61,8 @@ body {font-family: 'Quicksand', serif;
 .collapsed {
   padding: 0;
 }
-/*
-li:active {
-   color: #626262;
-   text-decoration: none;
-}
-*/
 
-/*NAVIGATION*/
+//NAV
 .nav {
   position: fixed;
   background-color: white;
@@ -99,7 +114,7 @@ li:active {
   content: "- ";
   color: #626262;
   font-size: 20px;
-  padding-right: 10px;
+  padding-right: 7px;
 }
 .active {
   color: #626262;
@@ -117,7 +132,7 @@ li:active {
 }
 /*SLIDER HOME*/
 .heightImgSH {
-  //background-image: url('https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg');
+//  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg');
   height: 100vh;
   background-size: cover;
   overflow: hidden;
@@ -154,7 +169,11 @@ li:active {
   background-size: cover;
   overflow: hidden;
 }
-
+/*
+div {
+  border: 1px solid red;
+}
+*/
 .heightImgContact {
   background-image: url('http://wallpapercave.com/wp/wkjs1Ur.jpg');
   height: 100vh;
@@ -164,6 +183,7 @@ li:active {
 .sliderList  {
   list-style: none;
   padding: 0;
+  height: 100%;
 }
 .hidden {
   display: none;
@@ -227,30 +247,30 @@ li:active {
 .relative {
   position: relative;
 }
-.relative {
-  position: relative;
-}
+
 .textContent  {
- 	line-height: 22px;
- 	font-size: 16px;
- 	margin: 0 0 20px;
+ 	line-height: 12px;
+ 	font-size: 15px;
+ 	//margin: 0 0 20px;
   color: white;
  }
  .textBlack {
    color: black;
  }
  .boxContent {
- 	line-height: 37px;
+ 	line-height: 27px;
  	color: black;
   position: absolute;
   margin-top: 7%;
   display: block;
+  //height: 200px;
+  margin-top: 7%;
  }
  .tableBox {
  	line-height: 37px;
  	color: white;
   position: absolute;
-  margin-top: 23%;
+
   display: block;
   td {
     border-bottom: 1px solid rgba(0,0,0,.1);
@@ -264,7 +284,9 @@ li:active {
   color: white;
   letter-spacing: 0.02em;
   margin-top: 12%;
-  height: 90vh;
+  height: 60vh;
+  overflow: hidden;
+  padding: 2%;
 }
 .offerNameBox {
   margin-top: 6%;
@@ -288,7 +310,7 @@ li:active {
 .offerOpacityBox{
   border-radius: 5px;
   height: 80px;
-  margin-top: -25%;
+  margin-top: -41%;
   margin-left: -15%;
   z-index: 1;
 }
@@ -302,7 +324,11 @@ li:active {
   overflow: scroll;
   padding-bottom: 100px;
   font-size: 17px;
-  //display: none;
+  height: 100vh;
+  //
+}
+.offerVisible {
+  display: none;
 }
 
 //TIMER//
@@ -357,7 +383,7 @@ li:active {
   border-top: 1px solid silver;
   border-bottom: 1px solid silver;
   line-height: 37px;
-	margin-top: 30%;
+	margin-top: 39%;
 	color: white;
 	letter-spacing: 0.02em;
 	font-family: Montserrat;
@@ -457,11 +483,11 @@ li:active {
 .actBox {
   color: #626262;
 	letter-spacing: 0.02em;
-	margin-top: -50%;
+	margin-top: -60%;
 	line-height: 37px;
 }
 .actText {
-  line-height: 30px;
+  line-height: 25px;
   font-size: 17px;
   font-weight: 300;
   color: white;
