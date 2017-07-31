@@ -1,4 +1,3 @@
-#REACT ONEPAGE
-## Installation
-https://strelicja.github.io/project_end/.
-# McQ-OnePage
+#REACT McQ ONEPAGE
+
+https://strelicja.github.io/project_end/
