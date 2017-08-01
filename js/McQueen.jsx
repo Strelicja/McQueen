@@ -256,26 +256,50 @@ class Biografia extends React.Component {
       </div>);
   }
 }
+
 ///NAME
       class BiographyName extends React.Component {
-        myFunction(id)  {
-          var textEl = document.querySelector('.'+id);
-            if (textEl.style.display === 'block') {
-                textEl.style.display = 'none';
+				constructor(props) {
+            super(props)
+            this.state = {
+                background: '',
+								opacity:'',
+							}
+						}
+        myFunction(name)  {
+          var nameClass = document.querySelector('.'+name);
+					var opacityClass = document.querySelectorAll('.offerOpacityBox');
+					var visibleClass = document.querySelectorAll('.offerVisible');
+
+            if (nameClass.style.display === 'block' ) {
+                nameClass.style.display = 'none';
           } else {
-              var allElm = document.querySelectorAll('.offerVisible');
-              allElm.forEach(function(entry) {
-                  entry.style.display = 'none';
+              visibleClass.forEach(function(entry) {
+              entry.style.display = 'none';
               });
-              textEl.style.display = 'block';
+
+							opacityClass.forEach(function(entry) {
+              entry.style.backgroundColor = '';
+							entry.style.opacity = '';
+              });
+
+              nameClass.style.display = 'block';
+							this.setState({
+								background:'silver',
+								opacity: '0.2',
+							})
+
             }
         }
         render() {
           return(
-            <div className='offerName '>
+            <div className='offerName'>
               <p className='offerHeaderName'>{this.props.name}</p>
-              <div className='offerOpacityBox'
-                onClick={() => this.myFunction(this.props.name)}>
+              <div className='offerOpacityBox '
+                onClick={() => this.myFunction(this.props.name)}
+								style={{
+									backgroundColor:this.state.background,
+									opacity:this.state.opacity}}>
               </div>
             </div>
           )}
@@ -284,7 +308,8 @@ class Biografia extends React.Component {
         return (
           <BiographyName
           key={biography.name}
-          name={biography.name}/>
+          name={biography.name}
+					class={biography.class}/>
         )
       })
 //TEXT
@@ -292,8 +317,8 @@ class Biografia extends React.Component {
         render() {
           return(
             <div className='offer col-lg-'>
-              <p className= {'offerVisible '+this.props.name +' offerText'}
-              >{this.props.text} </p>
+              <p className= {'offerVisible '+this.props.name +' offerText ' }
+							>{this.props.text} </p>
             </div>
           )}
         }
@@ -302,7 +327,8 @@ class Biografia extends React.Component {
           <BiographyList
           key={biography.name}
           text={biography.text}
-          name={biography.name}/>
+          name={biography.name}
+					class={biography.class}/>
         )
       })
       class Timer extends React.Component {
