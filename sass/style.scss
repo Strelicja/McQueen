@@ -1,43 +1,387 @@
-//GRID
+//getRouteID
+$phone-width: 640px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $columnNo: 12;
 $gutter: 20px;
 
+@mixin phone {
+	@media (min-width: #{$phone-width}) {
+		@content;
+		}
+}
 @mixin tablet {
 	@media (min-width: #{$tablet-width}) {
 		@content;
 	}
 }
-
 @mixin desktop {
 	@media (min-width: #{$desktop-width}) {
 		@content;
+
 	}
 }
-
-
 @for $i from 1 through $columnNo {
-	.col-sm-#{$i} {
+	.col-xsm-#{$i} {
 		width: 100/$columnNo * $i + %;
 	}
 }
 
+@include phone {
+	@for $i from 1 through $columnNo {
+		.col-sm-#{$i} {
+			width: 100/$columnNo * $i + %;
+			.sliderPhone {
+				margin-top: 30%;
+			}
+			.sliderTextSmall {
+				font-size: 35px;
+				line-height: 37px;
+			  display: block;
+			}
+			//AboutMe
+			table {
+				margin-top: 20%;
+				td {
+				font-size: 21px;
+			}
+			}
+			.tableBox {
+		  	line-height: 37px;
+		  	color: white;
+		    position: absolute;
+		   // display: block;
+		   td {
+		     border-bottom: 1px solid rgba(0,0,0,.1);
+		     padding: 10px 5px;
+		     }
+		  }
+			.textContent {
+				font-size: 20px;
+				line-height: 20px;
+			}
+			//Biografia
+			.offerOpacityBox{
+			  border-radius: 5px;
+			  height: 60px;
+			  margin-top: -41%;
+			  margin-left: -15%;
+			  z-index: 1;
+			}
+			.offerBox {
+			  line-height: 27px;
+			  color: white;
+			  letter-spacing: 0.02em;
+			  margin-top: 12%;
+			  height: 80vh;
+			  overflow: hidden;
+			  padding: 2%;
+			}
+			.offerHeaderName {
+				font-size: 21px;
+				margin-top: 55%;
+			  margin-left: -3%;
+				width: 100%  ;
+			}
+			.offerText {
+	    	padding-left: 10%;
+			}
+			.offerOpacityBox {
+				margin-right: -15%;
+				margin-top: -62%;
+			}
+			.quoteData {
+			  margin-top: 104%;
+			}
+
+			.headerPhone {
+				margin-bottom: 20%;
+			}
+			.imgCollection {
+			  width: 350px;
+			  height: 504px;
+			}
+			.timelineDate:after {
+			    border-bottom: 1px solid #000;
+			    content: "";
+			    position: absolute;
+			    width: 92%;
+			    top: 50%;
+			}
+			.opacityDiv {
+				margin-top: -11%;
+		    height: 80vh;
+			}
+			.overflow {
+				height:100vh;
+			}
+			.marginTop {
+				margin-top: -3%;
+			}
+			.quoteData {
+			  border-top: 1px solid silver;
+			  border-bottom: 1px solid silver;
+			  line-height: 37px;
+				margin-top: 69%;
+				color: white;
+				letter-spacing: 0.02em;
+				font-family: Montserrat;
+			}
+			/*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/
+			//Aktorka
+			.actBox {
+			  color: #626262;
+				letter-spacing: 0.02em;
+				margin-top: -90%;
+				line-height: 37px;
+			}
+			//Kontakt
+			.boxContact   {
+			 	margin-top: 25%;
+				.labelText{
+					margin-left: 10%;
+				}
+			 }
+			 .boxContactHidden {
+				 margin-top: 50%;
+			 }
+		}
+	}
+}
 @include tablet {
 	@for $i from 1 through $columnNo {
 		.col-md-#{$i} {
 			width: 100/$columnNo * $i + %;
+			.sliderPhone {
+				margin-top: 30%;
+			}
+			.sliderTextSmall {
+				font-size: 35px;
+				line-height: 37px;
+			  display: block;
+			}
+			///AboutMe
+			table {
+				margin-top: 18%;
+				td {
+					font-size: 18px;
+				}
+			}
+			.tableBox {
+		  	line-height: 37px;
+		  	color: white;
+			  position: absolute;
+			  //display: block;
+		   td {
+		     border-bottom: 1px solid rgba(0,0,0,.1);
+		     padding: 10px 5px;
+		     }
+		  }
+
+			.offerText {
+			  font-size: 20px;
+				overflow: scroll;
+			}
+			.offer {
+			  margin-right: 5%;
+			}
+			.offerOpacityBox{
+			  border-radius: 5px;
+			  height: 60px;
+			  margin-top: -41%;
+			  margin-left: -15%;
+			  z-index: 1;
+			}
+			///Moda
+			.textContent {
+				font-size: 18px;
+				line-height: 20px;
+			}
+			.offerBox {
+			  line-height: 27px;
+			  color: white;
+			  letter-spacing: 0.02em;
+			  margin-top: 12%;
+			  height: 80vh;
+			  overflow: hidden;
+			  padding: 2%;
+			}
+			.quoteData {
+			  border-top: 1px solid silver;
+			  border-bottom: 1px solid silver;
+			  line-height: 37px;
+				margin-top: 69%;
+				color: white;
+				letter-spacing: 0.02em;
+				font-family: Montserrat;
+			}
+			.quoteNumber {
+			  color: #ababab;
+			  line-height: 34px;
+			  font-size: 28px;
+			}
+			.lineHeight {
+				overflow: hidden;
+				height: 100%;
+			}
 		}
 	}
 }
-
 @include desktop {
 	@for $i from 1 through $columnNo {
 		.col-lg-#{$i} {
 			width: 100/$columnNo * $i + %;
+			.nav {
+			  position: fixed;
+			  background-color: white;
+			  border-right: 1px solid silver;
+			  height: 100%;
+				display: block;
+			}
+			.sliderTextSmall {
+				font-size: 35px;
+				line-height: 37px;
+			  display: block;
+			}
+			.sliderText {
+				margin-top: 10%;
+			}
+			///AboutMe
+			table {
+				margin-top: 12%;
+				td {
+				font-size: 17px   ;
+				}
+			}
+			.boxContent {
+		    margin-top: 5%;
+		  }
+			//Biografia
+			.offerBox {
+			  line-height: 27px;
+			  color: white;
+			  letter-spacing: 0.02em;
+			  margin-top: 12%;
+			  height: 80vh;
+			  overflow: hidden;
+			  padding: 2%;
+			}
+			.offerHeaderName  {
+			  font-size: 16px;
+			}
+			.offerOpacityBox{
+			  margin-top: -41%;
+			}
+			.offerText {
+			  font-size: 17px;
+			}
+			.offerOpacityBox{
+			  border-radius: 5px;
+			  height: 80px;
+			  margin-top: -41%;
+			  margin-left: -15%;
+			  z-index: 1;
+			}
+			///Moda
+			.textContent {
+				font-size: 16px   ;
+			}
+			.boxContent {
+		  	line-height: 27px;
+		  	color: black;
+		    position: absolute;
+		    margin-top: 7%;
+		    margin-bottom: 15%;
+		  }
+			.quoteData {
+			  border-top: 1px solid silver;
+			  border-bottom: 1px solid silver;
+			  line-height: 37px;
+				margin-top: 33%;
+				color: white;
+				letter-spacing: 0.02em;
+				font-family: Montserrat;
+			}
+			.lineHeight {
+				overflow: hidden;
+			}
+			//Kolekcje
+			.overflow {
+			  height: 400px;
+			}
+			.opacityDiv {
+			  width: 87%;
+			  margin-top: 3%;
+			  height: 420px;
+			}
+			.headerPhone {
+				margin-bottom: 5%;
+			}
+			.margin-right:hover {
+			  opacity: 1;
+			}
+
+			.timelineDate:after {
+			    width: 67%;
+			    top: 50%;
+			}
+			.marginTop {
+			  margin-top: 3%;
+			}
+			.imgCollection {
+			  width: 200px;
+			  height: 291px;
+			}
+			.imgCollection:hover {
+			  width: 250px;
+			  height: 360px;
+			  transition: width 1s;
+			}
+			///Aktorka
+			.actText {
+			  line-height: 35px;
+			}
+			.actBox {
+				margin-top: -55%;
+				line-height: 37px;
+			}
+			//Kontakt
+			.labelText {
+			  font-size: 16px;
+			  margin-left: 1.9%;
+			  color: grey;
+			  display: block;
+			}
+			.boxContact {
+			  margin-top: 2%;
+			  display: block;
+			  .inputBox {
+			    margin-bottom: 15%;
+			    line-height: 0;
+			    border-radius: 2px;
+			  }
+				.labelText{
+					margin-left: 4%;
+				}
+			}
+			.labelTextMessage {
+			  margin-top:3%;
+			  }
+			.quoteNumber {
+				 color: #ababab;
+				 line-height: 34px;
+			  font-size: 28px;
+			}
 		}
 	}
 }
+
+
 * {
   box-sizing: border-box;
 	margin: 0;
@@ -121,7 +465,7 @@ body {font-family: 'Quicksand', serif;
 }
 .hover:hover {
   color: #626262;
-	background-color: 'silver'!important;
+	background-color: 'silver' ;
 }
 .hoverLogo:hover {
   color: silver;
@@ -184,6 +528,9 @@ body {font-family: 'Quicksand', serif;
 .hidden {
   display: none;
 }
+.sliderPhone {
+	margin-top: 40%;
+}
 .sliderText {
 	line-height: 37px;
 	color: white;
@@ -194,7 +541,7 @@ body {font-family: 'Quicksand', serif;
 .sliderTextSmall {
 	font-size: 35px;
 	line-height: 37px;
-  display: block;
+  display: none;
 }
 .sliderTextLarge {
 	font-size: 50px;
@@ -245,9 +592,8 @@ body {font-family: 'Quicksand', serif;
 }
 
 .textContent  {
- 	line-height: 12px;
+ 	line-height: 22px;
  	font-size: 15px;
- 	//margin: 0 0 20px;
   color: white;
  }
  .textBlack {
@@ -259,15 +605,17 @@ body {font-family: 'Quicksand', serif;
   position: absolute;
   margin-top: 7%;
   display: block;
-  //height: 200px;
-  margin-top: 7%;
+ }
+ .boxContentContact {
+  margin-top: 15%;
+ }
+ .tdHidden {
+	 display: none;
  }
  .tableBox {
  	line-height: 37px;
  	color: white;
   position: absolute;
-
-  display: block;
   td {
     border-bottom: 1px solid rgba(0,0,0,.1);
     padding: 10px 5px;
@@ -279,25 +627,25 @@ body {font-family: 'Quicksand', serif;
   line-height: 27px;
   color: white;
   letter-spacing: 0.02em;
-  margin-top: 12%;
-  height: 60vh;
-  overflow: hidden;
+  margin-top: 2%;
+  height: 55vh;
+  overflow: scroll;
   padding: 2%;
+	padding-bottom: 50%;
 }
 .offerNameBox {
   margin-top: 6%;
   display: inline-grid;
 }
-.offerName {
-  margin-top: 40%;
-}
+
 .offerHeaderName  {
   display: block;
 	color: white;
   font-size: 16px;
   border-bottom: 1px solid white;
-  width: 80%;
+  width: 100%;
   text-align: center;
+	padding-right: 10%;
 }
 .offerOpacityBox:hover{
   opacity: 0.2;
@@ -310,9 +658,10 @@ body {font-family: 'Quicksand', serif;
 
 .offerOpacityBox{
   border-radius: 5px;
-  height: 80px;
-  margin-top: -41%;
+  height: 40px;
+  margin-top: -51%;
   margin-left: -15%;
+	margin-right: -15%;
   z-index: 1;
 }
 .offer {
@@ -323,9 +672,9 @@ body {font-family: 'Quicksand', serif;
   margin-top: 2%;
   padding-left: 5%;
   overflow: scroll;
-  padding-bottom: 100px;
+  //padding-bottom: 100px;
   font-size: 17px;
-  height: 100vh;
+  //height: 100vh;
 		visibility: hidden;
     animation-name: showup;
     animation-duration: 2s;
@@ -345,44 +694,18 @@ body {font-family: 'Quicksand', serif;
   display: none;
 }
 
-//TIMER//
-.timerTextLarge {
-	display: block;
-	font-size: 35px;
-	color: black;
-	font-weight: 600;
-  color: white;
 
+/*Moda*/
+.lineHeight {
+	line-height: 18px;
+	font-size: 18px;
+	overflow: scroll;
+	height: 270px;
+	padding-bottom: 50%;
 }
-.timerTextSamll {
-	line-height: 20px;
-  font-size: 11px;
-	text-transform: uppercase;
-	color: white;
-  padding-bottom: 3%
-}
-.textAlign {
-  text-align: center;
-  margin-top: 4%;
-}
-.timerBox {
-	height: 150px;
-	background-color: white;
-  margin-top: 3%;
-  background: rgba(230,230,230,1);
-  background: -moz-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(219,219,219,0.95) 47%, rgba(214,214,214,0.9) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,230,230,1)), color-stop(47%, rgba(219,219,219,0.95)), color-stop(100%, rgba(214,214,214,0.9)));
-  background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(219,219,219,0.95) 47%, rgba(214,214,214,0.9) 100%);
-  background: -o-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(219,219,219,0.95) 47%, rgba(214,214,214,0.9) 100%);
-  background: -ms-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(219,219,219,0.95) 47%, rgba(214,214,214,0.9) 100%);
-  background: linear-gradient(to bottom, rgba(230,230,230,1) 0%, rgba(219,219,219,0.95) 47%, rgba(214,214,214,0.9) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#d6d6d6', GradientType=0 );
-}
-/*PREZENTERKA*/
-.quoteNumber {
+.quoteNumberModa {
   color: #ababab;
-  line-height: 34px;
-  font-size: 28px;
+  font-size: 18px;
 }
 .quoteText {
   font-size: 13px;
@@ -396,18 +719,22 @@ body {font-family: 'Quicksand', serif;
 .quoteData {
   border-top: 1px solid silver;
   border-bottom: 1px solid silver;
-  line-height: 37px;
-	margin-top: 39%;
+  font-size: 10px;
+	margin-top: 99%;
 	color: white;
 	letter-spacing: 0.02em;
 	font-family: Montserrat;
+
 }
 .marginBottom {
   margin-bottom: 2%;
   margin-top: 2%;
 }
-
-/*PISARKA*/
+.boxContentModa {
+	margin-top: 15%;
+	line-height: 5px;
+}
+/*Kolekcje*/
 .overflow {
   overflow: scroll;
   overflow-y: hidden;
@@ -449,7 +776,7 @@ body {font-family: 'Quicksand', serif;
   font-size: 16px;
   height: 30px;
   text-align: center;
-   text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
 }
 .timelineText {
   line-height: 23px;
@@ -497,7 +824,7 @@ body {font-family: 'Quicksand', serif;
 .actBox {
   color: #626262;
 	letter-spacing: 0.02em;
-	margin-top: -60%;
+	margin-top: -160%;
 	line-height: 37px;
 }
 .actText {
@@ -579,7 +906,7 @@ body {font-family: 'Quicksand', serif;
 }
 .messageText {
   z-index: 999;
-  margin-top: -11.5%;
+  margin-top: -10.5%;
   padding-right: 5%;
   text-align: right;
   font-size: 20px;
@@ -591,7 +918,7 @@ body {font-family: 'Quicksand', serif;
   font-size: 16px;
   margin-top: 2.8%;
   //padding-left: 5.8%;
-  margin-left: 4.9%;
+  margin-left: 12.9%;
   color: grey;
   display: block;
 }
@@ -613,10 +940,13 @@ body {font-family: 'Quicksand', serif;
   padding: 1%;
   border-radius: 2px;
 }
+.boxContentContact {
+ margin-top: 15%;
+}
 .labelTextMessage {
   content: 'Wpisz swoją wiadomość!';
   position: absolute;
-  margin-top: 3%;
+  margin-top: 11%;
   background-color: white;
   padding: 1%;
   border-radius: 2px;

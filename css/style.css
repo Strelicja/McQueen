@@ -1,1 +1,3693 @@
-  
+@charset "UTF-8";
+.col-xsm-1 {
+  width: 8.33333%; }
+
+.col-xsm-2 {
+  width: 16.66667%; }
+
+.col-xsm-3 {
+  width: 25%; }
+
+.col-xsm-4 {
+  width: 33.33333%; }
+
+.col-xsm-5 {
+  width: 41.66667%; }
+
+.col-xsm-6 {
+  width: 50%; }
+
+.col-xsm-7 {
+  width: 58.33333%; }
+
+.col-xsm-8 {
+  width: 66.66667%; }
+
+.col-xsm-9 {
+  width: 75%; }
+
+.col-xsm-10 {
+  width: 83.33333%; }
+
+.col-xsm-11 {
+  width: 91.66667%; }
+
+.col-xsm-12 {
+  width: 100%; }
+
+@media (min-width: 640px) {
+  .col-sm-1 {
+    width: 8.33333%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-1 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-1 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-1 table {
+      margin-top: 20%; }
+      .col-sm-1 table td {
+        font-size: 21px; }
+    .col-sm-1 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-1 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-1 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-1 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-1 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-1 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-1 .offerText {
+      padding-left: 10%; }
+    .col-sm-1 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-1 .quoteData {
+      margin-top: 104%; }
+    .col-sm-1 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-1 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-1 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-1 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-1 .overflow {
+      height: 100vh; }
+    .col-sm-1 .marginTop {
+      margin-top: -3%; }
+    .col-sm-1 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-1 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-1 .boxContact {
+      margin-top: 25%; }
+      .col-sm-1 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-1 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-2 {
+    width: 16.66667%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-2 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-2 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-2 table {
+      margin-top: 20%; }
+      .col-sm-2 table td {
+        font-size: 21px; }
+    .col-sm-2 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-2 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-2 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-2 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-2 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-2 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-2 .offerText {
+      padding-left: 10%; }
+    .col-sm-2 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-2 .quoteData {
+      margin-top: 104%; }
+    .col-sm-2 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-2 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-2 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-2 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-2 .overflow {
+      height: 100vh; }
+    .col-sm-2 .marginTop {
+      margin-top: -3%; }
+    .col-sm-2 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-2 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-2 .boxContact {
+      margin-top: 25%; }
+      .col-sm-2 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-2 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-3 {
+    width: 25%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-3 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-3 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-3 table {
+      margin-top: 20%; }
+      .col-sm-3 table td {
+        font-size: 21px; }
+    .col-sm-3 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-3 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-3 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-3 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-3 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-3 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-3 .offerText {
+      padding-left: 10%; }
+    .col-sm-3 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-3 .quoteData {
+      margin-top: 104%; }
+    .col-sm-3 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-3 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-3 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-3 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-3 .overflow {
+      height: 100vh; }
+    .col-sm-3 .marginTop {
+      margin-top: -3%; }
+    .col-sm-3 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-3 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-3 .boxContact {
+      margin-top: 25%; }
+      .col-sm-3 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-3 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-4 {
+    width: 33.33333%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-4 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-4 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-4 table {
+      margin-top: 20%; }
+      .col-sm-4 table td {
+        font-size: 21px; }
+    .col-sm-4 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-4 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-4 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-4 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-4 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-4 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-4 .offerText {
+      padding-left: 10%; }
+    .col-sm-4 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-4 .quoteData {
+      margin-top: 104%; }
+    .col-sm-4 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-4 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-4 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-4 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-4 .overflow {
+      height: 100vh; }
+    .col-sm-4 .marginTop {
+      margin-top: -3%; }
+    .col-sm-4 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-4 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-4 .boxContact {
+      margin-top: 25%; }
+      .col-sm-4 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-4 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-5 {
+    width: 41.66667%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-5 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-5 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-5 table {
+      margin-top: 20%; }
+      .col-sm-5 table td {
+        font-size: 21px; }
+    .col-sm-5 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-5 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-5 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-5 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-5 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-5 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-5 .offerText {
+      padding-left: 10%; }
+    .col-sm-5 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-5 .quoteData {
+      margin-top: 104%; }
+    .col-sm-5 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-5 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-5 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-5 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-5 .overflow {
+      height: 100vh; }
+    .col-sm-5 .marginTop {
+      margin-top: -3%; }
+    .col-sm-5 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-5 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-5 .boxContact {
+      margin-top: 25%; }
+      .col-sm-5 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-5 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-6 {
+    width: 50%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-6 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-6 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-6 table {
+      margin-top: 20%; }
+      .col-sm-6 table td {
+        font-size: 21px; }
+    .col-sm-6 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-6 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-6 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-6 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-6 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-6 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-6 .offerText {
+      padding-left: 10%; }
+    .col-sm-6 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-6 .quoteData {
+      margin-top: 104%; }
+    .col-sm-6 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-6 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-6 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-6 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-6 .overflow {
+      height: 100vh; }
+    .col-sm-6 .marginTop {
+      margin-top: -3%; }
+    .col-sm-6 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-6 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-6 .boxContact {
+      margin-top: 25%; }
+      .col-sm-6 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-6 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-7 {
+    width: 58.33333%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-7 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-7 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-7 table {
+      margin-top: 20%; }
+      .col-sm-7 table td {
+        font-size: 21px; }
+    .col-sm-7 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-7 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-7 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-7 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-7 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-7 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-7 .offerText {
+      padding-left: 10%; }
+    .col-sm-7 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-7 .quoteData {
+      margin-top: 104%; }
+    .col-sm-7 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-7 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-7 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-7 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-7 .overflow {
+      height: 100vh; }
+    .col-sm-7 .marginTop {
+      margin-top: -3%; }
+    .col-sm-7 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-7 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-7 .boxContact {
+      margin-top: 25%; }
+      .col-sm-7 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-7 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-8 {
+    width: 66.66667%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-8 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-8 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-8 table {
+      margin-top: 20%; }
+      .col-sm-8 table td {
+        font-size: 21px; }
+    .col-sm-8 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-8 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-8 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-8 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-8 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-8 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-8 .offerText {
+      padding-left: 10%; }
+    .col-sm-8 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-8 .quoteData {
+      margin-top: 104%; }
+    .col-sm-8 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-8 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-8 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-8 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-8 .overflow {
+      height: 100vh; }
+    .col-sm-8 .marginTop {
+      margin-top: -3%; }
+    .col-sm-8 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-8 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-8 .boxContact {
+      margin-top: 25%; }
+      .col-sm-8 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-8 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-9 {
+    width: 75%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-9 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-9 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-9 table {
+      margin-top: 20%; }
+      .col-sm-9 table td {
+        font-size: 21px; }
+    .col-sm-9 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-9 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-9 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-9 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-9 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-9 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-9 .offerText {
+      padding-left: 10%; }
+    .col-sm-9 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-9 .quoteData {
+      margin-top: 104%; }
+    .col-sm-9 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-9 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-9 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-9 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-9 .overflow {
+      height: 100vh; }
+    .col-sm-9 .marginTop {
+      margin-top: -3%; }
+    .col-sm-9 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-9 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-9 .boxContact {
+      margin-top: 25%; }
+      .col-sm-9 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-9 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-10 {
+    width: 83.33333%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-10 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-10 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-10 table {
+      margin-top: 20%; }
+      .col-sm-10 table td {
+        font-size: 21px; }
+    .col-sm-10 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-10 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-10 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-10 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-10 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-10 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-10 .offerText {
+      padding-left: 10%; }
+    .col-sm-10 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-10 .quoteData {
+      margin-top: 104%; }
+    .col-sm-10 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-10 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-10 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-10 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-10 .overflow {
+      height: 100vh; }
+    .col-sm-10 .marginTop {
+      margin-top: -3%; }
+    .col-sm-10 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-10 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-10 .boxContact {
+      margin-top: 25%; }
+      .col-sm-10 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-10 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-11 {
+    width: 91.66667%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-11 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-11 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-11 table {
+      margin-top: 20%; }
+      .col-sm-11 table td {
+        font-size: 21px; }
+    .col-sm-11 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-11 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-11 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-11 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-11 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-11 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-11 .offerText {
+      padding-left: 10%; }
+    .col-sm-11 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-11 .quoteData {
+      margin-top: 104%; }
+    .col-sm-11 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-11 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-11 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-11 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-11 .overflow {
+      height: 100vh; }
+    .col-sm-11 .marginTop {
+      margin-top: -3%; }
+    .col-sm-11 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-11 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-11 .boxContact {
+      margin-top: 25%; }
+      .col-sm-11 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-11 .boxContactHidden {
+      margin-top: 50%; }
+  .col-sm-12 {
+    width: 100%;
+    /*
+			.imgCollection {
+		    width: 300px  ;
+		    height: 402px  ;
+			}
+			*/ }
+    .col-sm-12 .sliderPhone {
+      margin-top: 30%; }
+    .col-sm-12 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-sm-12 table {
+      margin-top: 20%; }
+      .col-sm-12 table td {
+        font-size: 21px; }
+    .col-sm-12 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-sm-12 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-sm-12 .textContent {
+      font-size: 20px;
+      line-height: 20px; }
+    .col-sm-12 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-sm-12 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-sm-12 .offerHeaderName {
+      font-size: 21px;
+      margin-top: 55%;
+      margin-left: -3%;
+      width: 100%; }
+    .col-sm-12 .offerText {
+      padding-left: 10%; }
+    .col-sm-12 .offerOpacityBox {
+      margin-right: -15%;
+      margin-top: -62%; }
+    .col-sm-12 .quoteData {
+      margin-top: 104%; }
+    .col-sm-12 .headerPhone {
+      margin-bottom: 20%; }
+    .col-sm-12 .imgCollection {
+      width: 350px;
+      height: 504px; }
+    .col-sm-12 .timelineDate:after {
+      border-bottom: 1px solid #000;
+      content: "";
+      position: absolute;
+      width: 92%;
+      top: 50%; }
+    .col-sm-12 .opacityDiv {
+      margin-top: -11%;
+      height: 80vh; }
+    .col-sm-12 .overflow {
+      height: 100vh; }
+    .col-sm-12 .marginTop {
+      margin-top: -3%; }
+    .col-sm-12 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-sm-12 .actBox {
+      color: #626262;
+      letter-spacing: 0.02em;
+      margin-top: -90%;
+      line-height: 37px; }
+    .col-sm-12 .boxContact {
+      margin-top: 25%; }
+      .col-sm-12 .boxContact .labelText {
+        margin-left: 10%; }
+    .col-sm-12 .boxContactHidden {
+      margin-top: 50%; } }
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 8.33333%; }
+    .col-md-1 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-1 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-1 table {
+      margin-top: 18%; }
+      .col-md-1 table td {
+        font-size: 18px; }
+    .col-md-1 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-1 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-1 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-1 .offer {
+      margin-right: 5%; }
+    .col-md-1 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-1 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-1 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-1 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-1 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-1 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-2 {
+    width: 16.66667%; }
+    .col-md-2 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-2 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-2 table {
+      margin-top: 18%; }
+      .col-md-2 table td {
+        font-size: 18px; }
+    .col-md-2 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-2 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-2 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-2 .offer {
+      margin-right: 5%; }
+    .col-md-2 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-2 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-2 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-2 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-2 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-2 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-3 {
+    width: 25%; }
+    .col-md-3 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-3 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-3 table {
+      margin-top: 18%; }
+      .col-md-3 table td {
+        font-size: 18px; }
+    .col-md-3 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-3 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-3 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-3 .offer {
+      margin-right: 5%; }
+    .col-md-3 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-3 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-3 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-3 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-3 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-3 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-4 {
+    width: 33.33333%; }
+    .col-md-4 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-4 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-4 table {
+      margin-top: 18%; }
+      .col-md-4 table td {
+        font-size: 18px; }
+    .col-md-4 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-4 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-4 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-4 .offer {
+      margin-right: 5%; }
+    .col-md-4 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-4 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-4 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-4 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-4 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-4 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-5 {
+    width: 41.66667%; }
+    .col-md-5 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-5 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-5 table {
+      margin-top: 18%; }
+      .col-md-5 table td {
+        font-size: 18px; }
+    .col-md-5 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-5 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-5 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-5 .offer {
+      margin-right: 5%; }
+    .col-md-5 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-5 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-5 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-5 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-5 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-5 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-6 {
+    width: 50%; }
+    .col-md-6 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-6 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-6 table {
+      margin-top: 18%; }
+      .col-md-6 table td {
+        font-size: 18px; }
+    .col-md-6 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-6 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-6 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-6 .offer {
+      margin-right: 5%; }
+    .col-md-6 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-6 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-6 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-6 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-6 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-6 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-7 {
+    width: 58.33333%; }
+    .col-md-7 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-7 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-7 table {
+      margin-top: 18%; }
+      .col-md-7 table td {
+        font-size: 18px; }
+    .col-md-7 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-7 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-7 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-7 .offer {
+      margin-right: 5%; }
+    .col-md-7 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-7 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-7 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-7 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-7 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-7 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-8 {
+    width: 66.66667%; }
+    .col-md-8 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-8 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-8 table {
+      margin-top: 18%; }
+      .col-md-8 table td {
+        font-size: 18px; }
+    .col-md-8 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-8 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-8 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-8 .offer {
+      margin-right: 5%; }
+    .col-md-8 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-8 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-8 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-8 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-8 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-8 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-9 {
+    width: 75%; }
+    .col-md-9 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-9 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-9 table {
+      margin-top: 18%; }
+      .col-md-9 table td {
+        font-size: 18px; }
+    .col-md-9 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-9 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-9 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-9 .offer {
+      margin-right: 5%; }
+    .col-md-9 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-9 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-9 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-9 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-9 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-9 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-10 {
+    width: 83.33333%; }
+    .col-md-10 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-10 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-10 table {
+      margin-top: 18%; }
+      .col-md-10 table td {
+        font-size: 18px; }
+    .col-md-10 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-10 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-10 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-10 .offer {
+      margin-right: 5%; }
+    .col-md-10 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-10 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-10 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-10 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-10 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-10 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-11 {
+    width: 91.66667%; }
+    .col-md-11 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-11 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-11 table {
+      margin-top: 18%; }
+      .col-md-11 table td {
+        font-size: 18px; }
+    .col-md-11 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-11 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-11 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-11 .offer {
+      margin-right: 5%; }
+    .col-md-11 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-11 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-11 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-11 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-11 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-11 .lineHeight {
+      overflow: hidden;
+      height: 100%; }
+  .col-md-12 {
+    width: 100%; }
+    .col-md-12 .sliderPhone {
+      margin-top: 30%; }
+    .col-md-12 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-md-12 table {
+      margin-top: 18%; }
+      .col-md-12 table td {
+        font-size: 18px; }
+    .col-md-12 .tableBox {
+      line-height: 37px;
+      color: white;
+      position: absolute; }
+      .col-md-12 .tableBox td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 5px; }
+    .col-md-12 .offerText {
+      font-size: 20px;
+      overflow: scroll; }
+    .col-md-12 .offer {
+      margin-right: 5%; }
+    .col-md-12 .offerOpacityBox {
+      border-radius: 5px;
+      height: 60px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-md-12 .textContent {
+      font-size: 18px;
+      line-height: 20px; }
+    .col-md-12 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-md-12 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 69%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-md-12 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+    .col-md-12 .lineHeight {
+      overflow: hidden;
+      height: 100%; } }
+
+@media (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33333%; }
+    .col-lg-1 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-1 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-1 .sliderText {
+      margin-top: 10%; }
+    .col-lg-1 table {
+      margin-top: 12%; }
+      .col-lg-1 table td {
+        font-size: 17px; }
+    .col-lg-1 .boxContent {
+      margin-top: 5%; }
+    .col-lg-1 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-1 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-1 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-1 .offerText {
+      font-size: 17px; }
+    .col-lg-1 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-1 .textContent {
+      font-size: 16px; }
+    .col-lg-1 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-1 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-1 .lineHeight {
+      overflow: hidden; }
+    .col-lg-1 .overflow {
+      height: 400px; }
+    .col-lg-1 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-1 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-1 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-1 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-1 .marginTop {
+      margin-top: 3%; }
+    .col-lg-1 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-1 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-1 .actText {
+      line-height: 35px; }
+    .col-lg-1 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-1 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-1 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-1 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-1 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-1 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-1 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-2 {
+    width: 16.66667%; }
+    .col-lg-2 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-2 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-2 .sliderText {
+      margin-top: 10%; }
+    .col-lg-2 table {
+      margin-top: 12%; }
+      .col-lg-2 table td {
+        font-size: 17px; }
+    .col-lg-2 .boxContent {
+      margin-top: 5%; }
+    .col-lg-2 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-2 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-2 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-2 .offerText {
+      font-size: 17px; }
+    .col-lg-2 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-2 .textContent {
+      font-size: 16px; }
+    .col-lg-2 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-2 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-2 .lineHeight {
+      overflow: hidden; }
+    .col-lg-2 .overflow {
+      height: 400px; }
+    .col-lg-2 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-2 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-2 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-2 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-2 .marginTop {
+      margin-top: 3%; }
+    .col-lg-2 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-2 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-2 .actText {
+      line-height: 35px; }
+    .col-lg-2 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-2 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-2 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-2 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-2 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-2 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-2 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-3 {
+    width: 25%; }
+    .col-lg-3 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-3 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-3 .sliderText {
+      margin-top: 10%; }
+    .col-lg-3 table {
+      margin-top: 12%; }
+      .col-lg-3 table td {
+        font-size: 17px; }
+    .col-lg-3 .boxContent {
+      margin-top: 5%; }
+    .col-lg-3 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-3 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-3 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-3 .offerText {
+      font-size: 17px; }
+    .col-lg-3 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-3 .textContent {
+      font-size: 16px; }
+    .col-lg-3 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-3 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-3 .lineHeight {
+      overflow: hidden; }
+    .col-lg-3 .overflow {
+      height: 400px; }
+    .col-lg-3 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-3 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-3 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-3 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-3 .marginTop {
+      margin-top: 3%; }
+    .col-lg-3 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-3 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-3 .actText {
+      line-height: 35px; }
+    .col-lg-3 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-3 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-3 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-3 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-3 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-3 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-3 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-4 {
+    width: 33.33333%; }
+    .col-lg-4 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-4 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-4 .sliderText {
+      margin-top: 10%; }
+    .col-lg-4 table {
+      margin-top: 12%; }
+      .col-lg-4 table td {
+        font-size: 17px; }
+    .col-lg-4 .boxContent {
+      margin-top: 5%; }
+    .col-lg-4 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-4 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-4 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-4 .offerText {
+      font-size: 17px; }
+    .col-lg-4 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-4 .textContent {
+      font-size: 16px; }
+    .col-lg-4 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-4 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-4 .lineHeight {
+      overflow: hidden; }
+    .col-lg-4 .overflow {
+      height: 400px; }
+    .col-lg-4 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-4 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-4 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-4 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-4 .marginTop {
+      margin-top: 3%; }
+    .col-lg-4 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-4 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-4 .actText {
+      line-height: 35px; }
+    .col-lg-4 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-4 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-4 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-4 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-4 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-4 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-4 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-5 {
+    width: 41.66667%; }
+    .col-lg-5 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-5 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-5 .sliderText {
+      margin-top: 10%; }
+    .col-lg-5 table {
+      margin-top: 12%; }
+      .col-lg-5 table td {
+        font-size: 17px; }
+    .col-lg-5 .boxContent {
+      margin-top: 5%; }
+    .col-lg-5 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-5 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-5 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-5 .offerText {
+      font-size: 17px; }
+    .col-lg-5 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-5 .textContent {
+      font-size: 16px; }
+    .col-lg-5 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-5 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-5 .lineHeight {
+      overflow: hidden; }
+    .col-lg-5 .overflow {
+      height: 400px; }
+    .col-lg-5 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-5 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-5 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-5 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-5 .marginTop {
+      margin-top: 3%; }
+    .col-lg-5 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-5 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-5 .actText {
+      line-height: 35px; }
+    .col-lg-5 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-5 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-5 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-5 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-5 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-5 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-5 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-6 {
+    width: 50%; }
+    .col-lg-6 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-6 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-6 .sliderText {
+      margin-top: 10%; }
+    .col-lg-6 table {
+      margin-top: 12%; }
+      .col-lg-6 table td {
+        font-size: 17px; }
+    .col-lg-6 .boxContent {
+      margin-top: 5%; }
+    .col-lg-6 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-6 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-6 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-6 .offerText {
+      font-size: 17px; }
+    .col-lg-6 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-6 .textContent {
+      font-size: 16px; }
+    .col-lg-6 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-6 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-6 .lineHeight {
+      overflow: hidden; }
+    .col-lg-6 .overflow {
+      height: 400px; }
+    .col-lg-6 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-6 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-6 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-6 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-6 .marginTop {
+      margin-top: 3%; }
+    .col-lg-6 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-6 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-6 .actText {
+      line-height: 35px; }
+    .col-lg-6 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-6 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-6 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-6 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-6 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-6 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-6 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-7 {
+    width: 58.33333%; }
+    .col-lg-7 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-7 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-7 .sliderText {
+      margin-top: 10%; }
+    .col-lg-7 table {
+      margin-top: 12%; }
+      .col-lg-7 table td {
+        font-size: 17px; }
+    .col-lg-7 .boxContent {
+      margin-top: 5%; }
+    .col-lg-7 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-7 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-7 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-7 .offerText {
+      font-size: 17px; }
+    .col-lg-7 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-7 .textContent {
+      font-size: 16px; }
+    .col-lg-7 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-7 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-7 .lineHeight {
+      overflow: hidden; }
+    .col-lg-7 .overflow {
+      height: 400px; }
+    .col-lg-7 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-7 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-7 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-7 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-7 .marginTop {
+      margin-top: 3%; }
+    .col-lg-7 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-7 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-7 .actText {
+      line-height: 35px; }
+    .col-lg-7 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-7 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-7 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-7 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-7 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-7 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-7 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-8 {
+    width: 66.66667%; }
+    .col-lg-8 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-8 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-8 .sliderText {
+      margin-top: 10%; }
+    .col-lg-8 table {
+      margin-top: 12%; }
+      .col-lg-8 table td {
+        font-size: 17px; }
+    .col-lg-8 .boxContent {
+      margin-top: 5%; }
+    .col-lg-8 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-8 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-8 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-8 .offerText {
+      font-size: 17px; }
+    .col-lg-8 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-8 .textContent {
+      font-size: 16px; }
+    .col-lg-8 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-8 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-8 .lineHeight {
+      overflow: hidden; }
+    .col-lg-8 .overflow {
+      height: 400px; }
+    .col-lg-8 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-8 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-8 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-8 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-8 .marginTop {
+      margin-top: 3%; }
+    .col-lg-8 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-8 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-8 .actText {
+      line-height: 35px; }
+    .col-lg-8 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-8 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-8 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-8 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-8 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-8 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-8 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-9 {
+    width: 75%; }
+    .col-lg-9 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-9 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-9 .sliderText {
+      margin-top: 10%; }
+    .col-lg-9 table {
+      margin-top: 12%; }
+      .col-lg-9 table td {
+        font-size: 17px; }
+    .col-lg-9 .boxContent {
+      margin-top: 5%; }
+    .col-lg-9 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-9 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-9 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-9 .offerText {
+      font-size: 17px; }
+    .col-lg-9 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-9 .textContent {
+      font-size: 16px; }
+    .col-lg-9 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-9 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-9 .lineHeight {
+      overflow: hidden; }
+    .col-lg-9 .overflow {
+      height: 400px; }
+    .col-lg-9 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-9 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-9 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-9 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-9 .marginTop {
+      margin-top: 3%; }
+    .col-lg-9 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-9 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-9 .actText {
+      line-height: 35px; }
+    .col-lg-9 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-9 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-9 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-9 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-9 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-9 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-9 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-10 {
+    width: 83.33333%; }
+    .col-lg-10 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-10 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-10 .sliderText {
+      margin-top: 10%; }
+    .col-lg-10 table {
+      margin-top: 12%; }
+      .col-lg-10 table td {
+        font-size: 17px; }
+    .col-lg-10 .boxContent {
+      margin-top: 5%; }
+    .col-lg-10 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-10 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-10 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-10 .offerText {
+      font-size: 17px; }
+    .col-lg-10 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-10 .textContent {
+      font-size: 16px; }
+    .col-lg-10 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-10 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-10 .lineHeight {
+      overflow: hidden; }
+    .col-lg-10 .overflow {
+      height: 400px; }
+    .col-lg-10 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-10 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-10 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-10 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-10 .marginTop {
+      margin-top: 3%; }
+    .col-lg-10 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-10 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-10 .actText {
+      line-height: 35px; }
+    .col-lg-10 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-10 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-10 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-10 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-10 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-10 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-10 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-11 {
+    width: 91.66667%; }
+    .col-lg-11 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-11 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-11 .sliderText {
+      margin-top: 10%; }
+    .col-lg-11 table {
+      margin-top: 12%; }
+      .col-lg-11 table td {
+        font-size: 17px; }
+    .col-lg-11 .boxContent {
+      margin-top: 5%; }
+    .col-lg-11 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-11 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-11 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-11 .offerText {
+      font-size: 17px; }
+    .col-lg-11 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-11 .textContent {
+      font-size: 16px; }
+    .col-lg-11 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-11 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-11 .lineHeight {
+      overflow: hidden; }
+    .col-lg-11 .overflow {
+      height: 400px; }
+    .col-lg-11 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-11 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-11 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-11 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-11 .marginTop {
+      margin-top: 3%; }
+    .col-lg-11 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-11 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-11 .actText {
+      line-height: 35px; }
+    .col-lg-11 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-11 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-11 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-11 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-11 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-11 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-11 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; }
+  .col-lg-12 {
+    width: 100%; }
+    .col-lg-12 .nav {
+      position: fixed;
+      background-color: white;
+      border-right: 1px solid silver;
+      height: 100%;
+      display: block; }
+    .col-lg-12 .sliderTextSmall {
+      font-size: 35px;
+      line-height: 37px;
+      display: block; }
+    .col-lg-12 .sliderText {
+      margin-top: 10%; }
+    .col-lg-12 table {
+      margin-top: 12%; }
+      .col-lg-12 table td {
+        font-size: 17px; }
+    .col-lg-12 .boxContent {
+      margin-top: 5%; }
+    .col-lg-12 .offerBox {
+      line-height: 27px;
+      color: white;
+      letter-spacing: 0.02em;
+      margin-top: 12%;
+      height: 80vh;
+      overflow: hidden;
+      padding: 2%; }
+    .col-lg-12 .offerHeaderName {
+      font-size: 16px; }
+    .col-lg-12 .offerOpacityBox {
+      margin-top: -41%; }
+    .col-lg-12 .offerText {
+      font-size: 17px; }
+    .col-lg-12 .offerOpacityBox {
+      border-radius: 5px;
+      height: 80px;
+      margin-top: -41%;
+      margin-left: -15%;
+      z-index: 1; }
+    .col-lg-12 .textContent {
+      font-size: 16px; }
+    .col-lg-12 .boxContent {
+      line-height: 27px;
+      color: black;
+      position: absolute;
+      margin-top: 7%;
+      margin-bottom: 15%; }
+    .col-lg-12 .quoteData {
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+      line-height: 37px;
+      margin-top: 33%;
+      color: white;
+      letter-spacing: 0.02em;
+      font-family: Montserrat; }
+    .col-lg-12 .lineHeight {
+      overflow: hidden; }
+    .col-lg-12 .overflow {
+      height: 400px; }
+    .col-lg-12 .opacityDiv {
+      width: 87%;
+      margin-top: 3%;
+      height: 420px; }
+    .col-lg-12 .headerPhone {
+      margin-bottom: 5%; }
+    .col-lg-12 .margin-right:hover {
+      opacity: 1; }
+    .col-lg-12 .timelineDate:after {
+      width: 67%;
+      top: 50%; }
+    .col-lg-12 .marginTop {
+      margin-top: 3%; }
+    .col-lg-12 .imgCollection {
+      width: 200px;
+      height: 291px; }
+    .col-lg-12 .imgCollection:hover {
+      width: 250px;
+      height: 360px;
+      transition: width 1s; }
+    .col-lg-12 .actText {
+      line-height: 35px; }
+    .col-lg-12 .actBox {
+      margin-top: -55%;
+      line-height: 37px; }
+    .col-lg-12 .labelText {
+      font-size: 16px;
+      margin-left: 1.9%;
+      color: grey;
+      display: block; }
+    .col-lg-12 .boxContact {
+      margin-top: 2%;
+      display: block; }
+      .col-lg-12 .boxContact .inputBox {
+        margin-bottom: 15%;
+        line-height: 0;
+        border-radius: 2px; }
+      .col-lg-12 .boxContact .labelText {
+        margin-left: 4%; }
+    .col-lg-12 .labelTextMessage {
+      margin-top: 3%; }
+    .col-lg-12 .quoteNumber {
+      color: #ababab;
+      line-height: 34px;
+      font-size: 28px; } }
+
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  font-family: 'Quicksand', serif;
+  font-size: 14px;
+  background-color: #f7f7f7; }
+
+.row:before,
+.row:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  min-height: 1px; }
+
+.collapsed {
+  padding: 0; }
+
+.nav {
+  position: fixed;
+  background-color: white;
+  border-right: 1px solid silver;
+  height: 100%; }
+
+/*LogotypeMain*/
+.logoImg {
+  width: 100%; }
+
+.logoBox {
+  padding: 68px 0 32px;
+  text-align: center; }
+
+.logoText {
+  list-style: none;
+  text-decoration: none;
+  color: #626262;
+  font-size: 15px; }
+
+.logoTextName {
+  font-size: 27px;
+  font-family: Sacramento;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/*NavMain*/
+.navList {
+  padding: 0;
+  list-style: none; }
+  .navList .paddingTop {
+    margin-top: 60px; }
+
+.decoration {
+  display: block;
+  line-height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 90%;
+  font-size: 13px;
+  padding-left: 25px;
+  text-decoration: none;
+  color: black; }
+
+.decoration:before {
+  content: "- ";
+  color: #626262;
+  font-size: 20px;
+  padding-right: 7px; }
+
+.active {
+  color: #626262; }
+
+.hover:hover {
+  color: #626262;
+  background-color: 'silver'; }
+
+.hoverLogo:hover {
+  color: silver; }
+
+/*MAIN*/
+.mainFloatRight {
+  float: right; }
+
+/*SLIDER HOME*/
+.heightImgSH {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.heightImgAM {
+  background-image: url("https://i1.wp.com/www.uselessdaily.com/wp-content/uploads/2017/07/alexander-mcqueen-biopic-0.jpg?resize=700%2C300&ssl=1");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.heightImgDz {
+  background-image: url("http://4.bp.blogspot.com/-HxoEqfSV0KI/UWxysE-BcHI/AAAAAAAAJxk/4OxCzfzFdUY/s1600/AdorningTheQueen.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  position: relative; }
+
+.heightImgDesigner {
+  background-image: url("https://pmcwwd.files.wordpress.com/2017/03/a-mcqueen-det-030617-ar0922.jpg?w=1024");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.heightImgSS {
+  background-image: url("http://www.schonmagazine.com/wp-content/uploads/2015/08/Tracy-Ann-Oberman-as-Isabella-Blow-and-Stephen-Wight-as-Lee-in-McQueen-credit-Specular-2.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.heightImgCollection {
+  background-image: url("http://media2.s-nbcnews.com/j/MSNBC/Components/Slideshows/_production/ss-100211-Alexander-McQueen/ss-100211-Alexander-McQueen-2003-show.today-ss-slide-desktop.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.heightImgContact {
+  background-image: url("http://wallpapercave.com/wp/wkjs1Ur.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.sliderList {
+  list-style: none;
+  padding: 0;
+  height: 100%; }
+
+.hidden {
+  display: none; }
+
+.sliderPhone {
+  margin-top: 40%; }
+
+.sliderText {
+  line-height: 37px;
+  color: white;
+  position: absolute;
+  margin-top: 35%;
+  display: block; }
+
+.sliderTextSmall {
+  font-size: 35px;
+  line-height: 37px;
+  display: none; }
+
+.sliderTextLarge {
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  display: block; }
+
+.sliderTextMiddle {
+  font-size: 13px;
+  color: white;
+  letter-spacing: 7px;
+  font-weight: 200;
+  line-height: 23px;
+  background-color: black;
+  padding: 5px 15px;
+  text-align: center; }
+
+/*ABOUTEME*/
+.headerText {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  color: white;
+  font-family: "Lato", sans-serif; }
+
+.headerTextBlack {
+  color: black; }
+
+.headerText::before {
+  border-bottom: 4px solid red;
+  content: "";
+  margin-left: -25px;
+  position: absolute;
+  top: 15px;
+  width: 12px; }
+
+.headerBox {
+  line-height: 37px;
+  color: white;
+  position: absolute;
+  margin-top: 8%;
+  display: block; }
+
+.relative {
+  position: relative; }
+
+.textContent {
+  line-height: 22px;
+  font-size: 15px;
+  color: white; }
+
+.textBlack {
+  color: black; }
+
+.boxContent {
+  line-height: 27px;
+  color: black;
+  position: absolute;
+  margin-top: 7%;
+  display: block; }
+
+.boxContentContact {
+  margin-top: 15%; }
+
+.tdHidden {
+  display: none; }
+
+.tableBox {
+  line-height: 37px;
+  color: white;
+  position: absolute; }
+  .tableBox td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 5px;
+    font-size: 16px; }
+
+/*BIOGRAFIA OFFER*/
+.offerBox {
+  line-height: 27px;
+  color: white;
+  letter-spacing: 0.02em;
+  margin-top: 2%;
+  height: 55vh;
+  overflow: scroll;
+  padding: 2%;
+  padding-bottom: 50%; }
+
+.offerNameBox {
+  margin-top: 6%;
+  display: inline-grid; }
+
+.offerHeaderName {
+  display: block;
+  color: white;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
+  padding-right: 10%; }
+
+.offerOpacityBox:hover {
+  opacity: 0.2;
+  background-color: silver; }
+
+.offerBoxActive {
+  opacity: 0.2;
+  background-color: silver; }
+
+.offerOpacityBox {
+  border-radius: 5px;
+  height: 40px;
+  margin-top: -51%;
+  margin-left: -15%;
+  margin-right: -15%;
+  z-index: 1; }
+
+.offer {
+  margin-right: 15%; }
+
+.offerText {
+  margin-top: 2%;
+  padding-left: 5%;
+  overflow: scroll;
+  font-size: 17px;
+  visibility: hidden;
+  animation-name: showup;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; }
+
+@keyframes showup {
+  from {
+    opacity: 0;
+    visibility: hidden; }
+  to {
+    opacity: 1;
+    visibility: visible; } }
+
+.offerVisible {
+  display: none; }
+
+/*Moda*/
+.lineHeight {
+  line-height: 18px;
+  font-size: 18px;
+  overflow: scroll;
+  height: 270px;
+  padding-bottom: 50%; }
+
+.quoteNumberModa {
+  color: #ababab;
+  font-size: 18px; }
+
+.quoteText {
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 0;
+  display: block;
+  padding-left: 5%;
+  line-height: 23px;
+  width: 100%; }
+
+.quoteData {
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  font-size: 10px;
+  margin-top: 99%;
+  color: white;
+  letter-spacing: 0.02em;
+  font-family: Montserrat; }
+
+.marginBottom {
+  margin-bottom: 2%;
+  margin-top: 2%; }
+
+.boxContentModa {
+  margin-top: 15%;
+  line-height: 5px; }
+
+/*Kolekcje*/
+.overflow {
+  overflow: scroll;
+  overflow-y: hidden;
+  width: 86%;
+  height: 400px;
+  display: flex;
+  padding: 1%;
+  position: absolute;
+  z-index: 999; }
+
+.opacityDiv {
+  position: absolute;
+  width: 87%;
+  margin-top: 3%;
+  height: 420px;
+  background-color: white;
+  opacity: 0.5;
+  z-index: 1; }
+
+.margin-right {
+  margin-right: 7%;
+  opacity: 0.9; }
+
+.margin-right:hover {
+  opacity: 1; }
+
+.timelineHeader {
+  color: white;
+  display: block;
+  line-height: 23px;
+  font-size: 16px;
+  height: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000; }
+
+.timelineText {
+  line-height: 23px;
+  font-size: 13px;
+  width: 100%;
+  margin-bottom: 13%;
+  font-weight: 300;
+  display: block;
+  color: black; }
+
+.timelineDate {
+  padding: 0 13px;
+  font-size: 15px;
+  margin: 10px 0 15px 0;
+  display: block;
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 200px;
+  font-weight: 200;
+  text-align: center; }
+
+.timelineDate:after {
+  border-bottom: 1px solid #000;
+  content: "";
+  position: absolute;
+  width: 75%;
+  top: 50%; }
+
+.marginTop {
+  margin-top: 3%; }
+
+.imgCollection {
+  width: 200px;
+  height: 291px; }
+
+.imgCollection:hover {
+  width: 250px;
+  height: 360px;
+  transition: width 1s; }
+
+/*AKTORKA*/
+.actBox {
+  color: #626262;
+  letter-spacing: 0.02em;
+  margin-top: -160%;
+  line-height: 37px; }
+
+.actText {
+  line-height: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 50px;
+  display: block;
+  text-align: right; }
+
+.actTexSmall {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 23px;
+  text-align: right;
+  padding-right: 50px;
+  display: block; }
+
+/*KONTAKT*/
+.textContentEmail {
+  margin-top: -5%; }
+
+.boxContact {
+  margin-top: 10%;
+  display: block; }
+  .boxContact .inputBox {
+    margin-bottom: 15%;
+    line-height: 0;
+    border-radius: 2px; }
+
+.boxContactHidden {
+  margin-top: 10%;
+  display: none;
+  background-color: white;
+  border: 1px solid silver; }
+
+.boxTextHidden {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding: 1em; }
+
+.buttonBox {
+  margin-top: 27%; }
+
+.inputText,
+.textareaText {
+  width: 100%;
+  height: 60px;
+  padding-left: 16%;
+  padding-right: 16%;
+  font-size: 16px;
+  border: 1px solid silver; }
+
+.buttonText {
+  width: 60%;
+  height: 35px;
+  float: right;
+  background-color: black;
+  color: white;
+  border: 1px solid darkgrey;
+  font-size: 12px;
+  border-radius: 3px; }
+
+.buttonText:hover {
+  color: #626262; }
+
+.textareaText {
+  height: 150px;
+  padding-top: 5%; }
+
+.messageText {
+  z-index: 999;
+  margin-top: -10.5%;
+  padding-right: 5%;
+  text-align: right;
+  font-size: 20px; }
+
+.messageTextarea {
+  margin-top: -23%; }
+
+.labelText {
+  font-size: 16px;
+  margin-top: 2.8%;
+  margin-left: 12.9%;
+  color: grey;
+  display: block; }
+
+.labelTextName {
+  position: absolute;
+  content: 'Wpisz swoje imię!';
+  margin-top: -0.6%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px; }
+
+.labelTextEmail {
+  content: 'Wpisz swój adres e-mail!';
+  position: absolute;
+  margin-top: -0.6%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px; }
+
+.boxContentContact {
+  margin-top: 15%; }
+
+.labelTextMessage {
+  content: 'Wpisz swoją wiadomość!';
+  position: absolute;
+  margin-top: 11%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px; }
+
+/*ICONS FORM*/
+.name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 17px;
+  background-repeat: no-repeat; }
+
+.email {
+  background-image: url(https://cdn3.iconfinder.com/data/icons/glyph/227/Email-512.png);
+  background-size: 30px 30px;
+  background-position: 11px 17px;
+  background-repeat: no-repeat; }
+
+.comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 17px;
+  background-repeat: no-repeat; }
+
+.inputText:focus,
+.textareaText:focus {
+  border-color: red;
+  border-width: thin; }
+
+.newLabel {
+  margin-top: -2.2em; }
+
+.newLabel3 {
+  margin-top: -0.1em; }
+
+/*type="email" to powinno być ponizej nad placeholder w input mail*/
+.inputText:focus + .labelText {
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+  transform: translate(0, -2.3em) scale(0.9, 0.9);
+  margin-top: -2.2em;
+  font-weight: 200;
+  color: grey; }
+
+.textareaText:focus + .labelText {
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+  transform: translate(0, -2.3em) scale(0.9, 0.9);
+  margin-top: -0.1em;
+  font-weight: 200;
+  color: grey; }
+
+.nowaklasa {
+  margin-top: -2.2em; }
+
+.inputText:focus + .labelText,
+.inputText:valid + .labelText {
+  -webkit-transition-duration: .7s;
+  transition-duration: .7s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+  transform: translate(0, -2.3em) scale(0.9, 0.9); }
+
+.textareaText:focus + .labelText,
+.textareaText:valid + .labelText {
+  -webkit-transition-duration: .7s;
+  transition-duration: .7s;
+  -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
+  transform: translate(0, -10em) scale(0.9, 0.9); }
+
+.inputText + .labelText,
+.textareaText + .labelText {
+  pointer-events: none; }
+
+/*FOOTER*/
+.iconBox {
+  padding: 1%;
+  text-align: center; }
+
+.iconSocial {
+  font-size: 25px;
+  color: #575757;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: inline; }
+
+.iconSocial:hover {
+  color: #626262; }
+
+.textFooter {
+  line-height: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: black;
+  padding: 2%; }
+  .textFooter a {
+    text-decoration: none;
+    color: black; }
+  .textFooter a:hover {
+    color: #626262; }

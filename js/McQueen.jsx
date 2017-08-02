@@ -58,7 +58,7 @@ class Hambmen extends React.Component {
 class LogotypeMain extends React.Component {
   render() {
   return (
-    <div className=' col-lg-12 col-md-12 col-sm-12'>
+    <div className='  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
       <p className='logoText logoTextName hoverLogo'>
         <img className="logoImg" src='img/Alexander-McQueen.jpg'/>
       </p>
@@ -120,7 +120,7 @@ class Section extends React.Component {
     return (
       <div >
         <div className=''>
-          <nav className='col-lg-2 col-md-2 col-sm-2 nav'>
+          <nav className='col-lg-2 col-md-3 col-sm-3  nav'>
             <ul className=' navList'>
               <li className='logoBox sliderHome ' onClick={() => scrollToComponent(this.SliderHome, { align: 'middle',ease:'inCirc', duration: 500})}><LogotypeMain/></li>
               <li> <IndexLink  to="/aboutMe" className='aboutMeLi decoration hover paddingTop' onClick={() => scrollToComponent(this.AboutMe, {align: 'middle',ease:'inCirc',  duration: 1000})}>McQueen</IndexLink></li>
@@ -131,7 +131,7 @@ class Section extends React.Component {
               <li> <IndexLink  to="/kontakt" className='kontaktLi decoration hover' onClick={() => scrollToComponent(this.Kontakt, {align: 'middle',ease:'inCirc',  duration: 1000})}>KONTAKT</IndexLink></li>
             </ul>
           </nav>
-          <div className="col-lg-10 col-md-10 col-sm-10   mainFloatRight">
+          <div className="col-lg-10 col-md-9 col-sm-9   mainFloatRight">
             <section  className='sliderHome' ref={(section) => { this.SliderHome = section; }}><SliderHome/></section>
             <section  className='aboutMe' ref={(section) => { this.AboutMe = section; }}><AboutMe/></section>
             <section  className='biografia' ref={(section) => { this.Biografia = section; }}><Biografia/></section>
@@ -156,21 +156,21 @@ class SliderHome extends React.Component {
   render() {
   return (
     <div className='row relative'>
-      <div  className="col-lg-12 col-md-12 col-sm-12  ">
+      <div  className=" col-lg-12 col-md-12 col-sm-12 col-xsm-12 col-xsm-12 ">
         <div className='sliderList ' >
-          <AtvImg className="heightImgSH col-lg-12 col-md-12 col-sm-12 "
+          <AtvImg className="heightImgSH  col-lg-12 col-md-12 col-sm-12 col-xsm-12 col-xsm-12"
               layers={[
                 'https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg',
               ]}
               staticFallback="http://kloc.pm/images/kloc-icon-flattened.jpg"/>
           </div>
       </div>
-      <div className='col-lg-12 col-md-12 col-sm-12 sliderText '>
-        <div className="col-lg-1 col-md-1 col-sm-1"></div>
-        <div className="col-lg-9 col-md-9 col-sm-9 ">
-          <span className='sliderTextSmall col-lg-12 col-md-12 col-sm-12 '>„There is no better designer than nature”</span>
-          <span className='sliderTextLarge col-lg-12 col-md-12 col-sm-12 '>Alexander McQeen</span>
-          <p className='sliderTextMiddle col-lg-12 col-md-12 col-sm-12  '>ARTIST / DESIGNER </p>
+      <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 sliderText '>
+        <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1 col-xsm-1"></div>
+        <div className="sliderPhone col-lg-9 col-md-10 col-sm-9 col-xsm-9">
+          <span className='sliderTextSmall  col-lg-12 col-md-12 col-sm-12  '>„There is no better designer than nature”</span>
+          <span className='sliderTextLarge  col-lg-12 col-md-12 col-sm-12 col-xsm-12 '>Alexander McQeen</span>
+          <p className='sliderTextMiddle  col-lg-12 col-md-12 col-sm-12 col-xsm-12  '>ARTIST / DESIGNER </p>
         </div>
       </div>
     </div>);
@@ -180,19 +180,19 @@ class AboutMe extends React.Component {
   render() {
   return (
       <div className='test1 row relative'>
-        <div className='col-lg-12 col-md-12 col-sm-12 ' >
-          <img className="heightImgAM col-lg-12 col-md-12 col-sm-12 "  />
+        <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 ' >
+          <img className="heightImgAM  col-lg-12 col-md-12 col-sm-12 col-xsm-12 "  />
         </div>
-        <div className=" headerBox col-lg-12 col-md-12 col-sm-12 ">
-          <div className="col-lg-1 col-md-1 col-sm-1"></div>
+        <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
+          <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
           <div className=' col-lg-11 col-md-11 col-sm-11 '>
             <div>
               <h4 className='headerText headerTextBlack col-lg-7 col-md-7 col-sm-7'>McQueen</h4>
             </div>
             <div className= 'row'>
-              <div className='boxContent col-lg-5 col-md-7 col-sm-10'>
-                <span className=" textContent ">Jednen z najsłynniejszych projektantów młodego pokolenia. Pomimo jego samobójczej śmierci, potęga jego nazwiska i geniuszu nie słabną. <br />Lee Alexander McQueen - niepokorna dusza współczesnego świata mody</span>
-                <div className=" tableBox col-lg-12 col-md-12 col-sm-12 ">
+              <div className='boxContent col-lg-5 col-md-9 col-sm-10 col-xsm-10'>
+                <span className=" textContent ">Jednen z najsłynniejszych projektantów młodego pokolenia. Pomimo jego samobójczej śmierci, potęga jego nazwiska i geniuszu nie słabną. <br />Lee Alexander McQueen - niepokorna dusza współczesnego świata mody.</span>
+                <div className=" tableBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
                   <BioTable />
                 </div>
               </div>
@@ -206,15 +206,15 @@ class AboutMe extends React.Component {
         render() {
         return (
           <div className='row'>
-            <table>
+            <table className="col-lg-12 col-md-10 col-sm-10 col-xsm-10">
               <tbody>
                 <tr>
-                  <td>Nazwisko</td>
-                  <td> Lee Alexander McQueen </td>
+                  <td className='tdHidden'>Nazwisko:</td>
+                  <td className='tdHidden'> Lee Alexander McQueen </td>
                 </tr>
                 <tr>
-                  <td>Zawód</td>
-                  <td>Artysta</td>
+                  <td className='tdHidden'>Zawód:</td>
+                  <td className='tdHidden'>Artysta</td>
                 </tr>
                 <tr>
                   <td>Data urodzin:</td>
@@ -234,17 +234,17 @@ class Biografia extends React.Component {
   render() {
   return (
       <div className=' row relative'>
-        <div className='col-lg-12 col-md-12 col-sm-12 ' >
-          <img className="heightImgDz col-lg-12 col-md-12 col-sm-12 "  />
+        <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 ' >
+          <img className="heightImgDz  col-lg-12 col-md-12 col-sm-12 col-xsm-12 "  />
         </div>
-        <div className=" headerBox col-lg-12 col-md-12 col-sm-12 ">
-          <div className="col-lg-1 col-md-1 col-sm-1"></div>
-          <div className=' col-lg-11 col-md-11 col-sm-11 '>
+        <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
+          <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
+          <div className=' col-lg-11 col-md-11 col-sm-11 col-xsm-11'>
             <div>
               <h4 className='headerText col-lg-7 col-md-7 col-sm-7'>BIOGRAFIA</h4>
             </div>
-            <div className='col-lg-12 col-md-12 col-sm-12 '>
-              <div className='offerNameBox col-lg-2 col-md-2 col-sm-2'>
+            <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 '>
+              <div className='offerNameBox col-lg-2 col-md-2 col-sm-2 col-xsm-2'>
                 {listOfBiographyName}
               </div>
               <div className='offerBox col-lg-10 col-md-10 col-sm-10 '>
@@ -268,17 +268,22 @@ class Biografia extends React.Component {
 						}
         myFunction(name)  {
           var nameClass = document.querySelector('.'+name);
-					var opacityClass = document.querySelectorAll('.offerOpacityBox');
-					var visibleClass = document.querySelectorAll('.offerVisible');
 
-            if (nameClass.style.display === 'block' ) {
+            if (nameClass.style.display === 'block') {
                 nameClass.style.display = 'none';
+								this.setState({
+									background:'',
+									opacity: '',
+								})
+
           } else {
+              var visibleClass = document.querySelectorAll('.offerVisible');
               visibleClass.forEach(function(entry) {
               entry.style.display = 'none';
               });
 
-							opacityClass.forEach(function(entry) {
+							var opacityClass = document.querySelectorAll('.offerOpacityBox');
+              opacityClass.forEach(function(entry) {
               entry.style.backgroundColor = '';
 							entry.style.opacity = '';
               });
@@ -403,29 +408,29 @@ class Moda extends React.Component {
   render() {
   return (
     <div className=' row relative'>
-      <div className='col-lg-12 col-md-12 col-sm-12 ' >
-        <img className="heightImgDesigner col-lg-12 col-md-12 col-sm-12 " />
+      <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 ' >
+        <img className="heightImgDesigner  col-lg-12 col-md-12 col-sm-12 col-xsm-12 " />
       </div>
-      <div className=" headerBox col-lg-12 col-md-12 col-sm-12 ">
-        <div className="col-lg-1 col-md-1 col-sm-1"></div>
-        <div className=' col-lg-11 col-md-11 col-sm-11 '>
-          <div className=' col-lg-12 col-md-12 col-sm-12 '>
-            <h4 className='headerText col-lg-7 col-md-9 col-sm-7'>MODA</h4>
+      <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
+        <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
+        <div className=' col-lg-11 col-md-11 col-sm-11 col-xsm-11'>
+          <div className='  col-lg-12 col-md-12 col-sm-12 col-xsm-12 '>
+            <h4 className='headerText col-lg-7 col-md-9 col-sm-7 col-xsm-7'>MODA</h4>
           </div>
-          <div className='boxContent col-lg-7 col-md-10 col-sm-10'>
-            <span className=" textContent ">Po udanym debiucie i akceptacji hermetycznego środowiska mody, młodym geniuszem zainteresował się prezydent koncernu LVMH - Bernard Arnault. <br />
+          <div className='boxContent boxContentModa col-lg-8 col-md-10 col-sm-10 col-xsm-10'>
+            <p className=" textContent lineHeight">Po udanym debiucie i akceptacji hermetycznego środowiska mody, młodym geniuszem zainteresował się prezydent koncernu LVMH - Bernard Arnault. <br />
             W 2000 roku Gucci odkupiło 51 procent udziałów we marce McQueena, który całą swoją energię poświęcił na jej rozwój. Nowy inwestor pozwolił na otworzenie butików marki w Nowym Jorku, Mediolanie, Londynie, Las Vegas i Los Angeles. A także na spełnianie najbardziej ekstrawaganckich wizji projektowych oraz realizację spektakularnych pokazów.
-            </span>
+					</p>
           </div>
-            <div className='quoteData col-lg-7 col-md-11 col-sm-11'>
-              <div className='marginBottom col-lg-6 col-md-6 col-sm-6'>
-                <span className='quoteNumber'>GIVENCHY</span>
+            <div className='quoteData col-lg-7 col-md-11 col-sm-11 col-xsm-11'>
+              <div className='marginBottom col-lg-6 col-md-6 col-sm-6 col-xsm-6'>
+                <span className='quoteNumber quoteNumberModa'>GIVENCHY</span>
                 <span className='quoteText'>stanowisko: </span>
                 <span className='quoteText'>dyrektor kreatywny domu mody </span>
                 <span className='quoteText'>od 1996</span>
               </div>
-              <div className='marginBottom col-lg-6 col-md-6 col-sm-6'>
-                <span className='quoteNumber'>GUCCI</span>
+              <div className='marginBottom col-lg-6 col-md-6 col-sm-6 col-xsm-6'>
+                <span className='quoteNumber quoteNumberModa'>GUCCI</span>
                 <span className='quoteText'>wspólnicy: </span>
                 <span className='quoteText'>wspołwłaściciel marki McQueen</span>
                 <span className='quoteText'>od 2001</span>
@@ -441,18 +446,18 @@ class Kolekcje extends React.Component {
   render() {
   return (
     <div className='test4 row relative'>
-      <div className='col-lg-12 col-md-12 col-sm-12'>
-        <img className="heightImgCollection col-lg-12 col-md-12 col-sm-12" />
+      <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
+        <img className="heightImgCollection  col-lg-12 col-md-12 col-sm-12 col-xsm-12" />
       </div>
-      <div className=" headerBox col-lg-12 col-md-12 col-sm-12">
-        <div className="col-lg-1 col-md-1 col-sm-1"></div>
+      <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12">
+        <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
         <div className=' col-lg-11 col-md-11 col-sm-11'>
           <div>
-            <h4 className='headerText col-lg-7 col-md-7 col-sm-7'>KOLEKCJE</h4>
+            <h4 className='headerText headerPhone col-lg-7 col-md-7 col-sm-7 col-xsm-7'>KOLEKCJE</h4>
           </div>
           <div className='row'>
             <div className='opacityDiv'></div>
-            <div className=' overflow marginTop col-lg-12 col-md-12 col-sm-12'>
+            <div className=' overflow marginTop  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
               {listOfCollections}
             </div>
           </div>
@@ -461,6 +466,7 @@ class Kolekcje extends React.Component {
     </div>);
   }
 }
+
       class CollectionsList extends React.Component {
         render() {
           return(
@@ -484,14 +490,14 @@ class Aktorka extends React.Component {
   render() {
   return (
       <div className='test5 row relative'>
-        <div className='col-lg-12 col-md-12 col-sm-12'>
-          <img className="heightImgSS col-lg-12 col-md-12 col-sm-12"  />
+        <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
+          <img className="heightImgSS  col-lg-12 col-md-12 col-sm-12 col-xsm-12"  />
         </div>
-        <div className='actBox col-lg-12 col-md-12 col-sm-12'>
-          <div className="col-lg-5 col-md-3 col-sm-5"></div>
-          <div className="col-lg-7 col-md-9 col-sm-7">
-            <p className='actText col-lg-12 col-md-12 col-sm-12'>„Z nieba do piekła i z powrotem.<br /> Życie jest zabawne. <br />Piękno <br />może <br />wyłonić się <br /> z najdziwniejszych <br />miejsc, <br />nawet tych <br />najbardziej <br />obrzydliwych”</p>
-            <p className='actTexSmall col-lg-12 col-md-12 col-sm-12'>Lee McQueen</p>
+        <div className='actBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
+          <div className="col-lg-5 col-md-3 col-sm-1"></div>
+          <div className="col-lg-7 col-md-9 col-sm-11">
+            <p className='actText  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>„Z nieba do piekła i z powrotem.<br /> Życie jest zabawne. <br />Piękno <br />może <br />wyłonić się <br /> z najdziwniejszych <br />miejsc, <br />nawet tych <br />najbardziej <br />obrzydliwych”</p>
+            <p className='actTexSmall  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>Lee McQueen</p>
           </div>
         </div>
       </div>);
@@ -501,16 +507,16 @@ class Kontakt extends React.Component {
   render() {
   return (
     <div className=' test7 row relative'>
-      <div className='col-lg-12 col-md-12 col-sm-12'>
-        <img className="heightImgContact col-lg-12 col-md-12 col-sm-12" />
+      <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
+        <img className="heightImgContact  col-lg-12 col-md-12 col-sm-12 col-xsm-12" />
       </div>
-      <div className=" headerBox col-lg-12 col-md-12 col-sm-12">
-        <div className="col-lg-1 col-md-1 col-sm-1"></div>
-        <div className=' col-lg-11 col-md-11 col-sm-11'>
+      <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12">
+        <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
+        <div className=' col-lg-11 col-md-11 col-sm-11 col-xsm-11'>
           <div>
-            <h4 className='headerText headerTextBlack col-lg-7 col-md-7 col-sm-7'>KONTAKT</h4>
+            <h4 className='headerText headerTextBlack col-lg-7 col-md-7 col-sm-7 col-xsm-7'>KONTAKT</h4>
           </div>
-          <div className='boxContent'>
+          <div className='boxContentContact'>
             <p className='textContent textBlack'>Masz pytanie? Napisz do McQ.</p>
           </div>
           <ContactForm />
@@ -607,7 +613,7 @@ class Kontakt extends React.Component {
 				 return(
 						 <div>
 							 <div className='row '>
-								 <div className='boxContact col-lg-5 col-md-8 col-sm-5'
+								 <div className='boxContact col-lg-5 col-md-8 col-sm-11 col-xsm-11'
 											 style={{display: this.state.display}}>
 									 <div className='inputBox '>
 										 <input className='inputText name'
@@ -652,7 +658,7 @@ class Kontakt extends React.Component {
 									 </div>
 								 </div>
 							 </div>
-							 <div className='boxContactHidden col-lg-5 col-md-8 col-sm-5'
+							 <div className='boxContactHidden col-lg-5 col-md-8 col-sm-10'
 								 style={{display: this.state.displayNone}}>
 								 <div className='boxTextHidden'>Dziękujemy! <br />  Wiadomość została wysłana do przedstawicieli marki McQueen.</div>
 						 </div>
@@ -665,7 +671,7 @@ class Footer extends React.Component {
   render() {
   return (
     <div className='row relative'>
-      <div className="col-lg-12 col-md-12 col-sm-12">
+      <div className=" col-lg-12 col-md-12 col-sm-12 col-xsm-12">
         <div className='iconBox col-lg-2 col-md-2 col-sm-2'>
           <IconsFooter />
         </div>

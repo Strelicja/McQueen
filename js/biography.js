@@ -14,7 +14,7 @@ module.exports = [
     {
         text   : 'Alexander McQueen cztery razy z rzędu wyróżniony został nagrodą British Fashion Awards w kategorii projektant roku. W 2004 roku zdobył również nagrodę Men`s Wear Designer of the Year. Rok wcześniej wyróżniony został także przez CFDA nagrodą dla najlepszego międzynarodowego kreatora. Za swoje zasługi dla popularyzowania Wielkiej Brytanii w świecie otrzymał z rąk królowej Elżbiety II Order Imperium Brytyjskiego.',
         name    : 'Nagrody',
-      
+
     },
 
 

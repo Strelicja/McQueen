@@ -1,7 +1,7 @@
 {
   "name": "mcq",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://strelicja.github.io/project_end/",
   "main": "webpack.config.js",
   "dependencies": {
     "css-loader": "^0.28.4",
@@ -44,11 +44,9 @@
     "style-loader": "^0.18.2",
     "webpack-dev-server": "^2.5.1"
   },
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "author": "",
   "license": "ISC",
   "repository": {
