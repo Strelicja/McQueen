@@ -54,6 +54,7 @@ class Hambmen extends React.Component {
 		);
 	}
 };
+
 /*LOGOTYPE*/
 class LogotypeMain extends React.Component {
   render() {
@@ -67,7 +68,7 @@ class LogotypeMain extends React.Component {
     </div>);
   }
 }
-//NAV
+/*NAV*/
 class Section extends React.Component {
   constructor(props) {
       super(props)
@@ -168,7 +169,7 @@ class SliderHome extends React.Component {
       <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 sliderText '>
         <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1 col-xsm-1"></div>
         <div className="sliderPhone col-lg-9 col-md-10 col-sm-9 col-xsm-9">
-          <span className='sliderTextSmall  col-lg-12 col-md-12 col-sm-12  '>„There is no better designer than nature”</span>
+          <span className='sliderTextSmall  col-lg-12 col-md-12 col-sm-12  '>„The­re is no bet­ter de­si­gner than na­tu­re”</span>
           <span className='sliderTextLarge  col-lg-12 col-md-12 col-sm-12 col-xsm-12 '>Alexander McQeen</span>
           <p className='sliderTextMiddle  col-lg-12 col-md-12 col-sm-12 col-xsm-12  '>ARTIST / DESIGNER </p>
         </div>
@@ -191,7 +192,7 @@ class AboutMe extends React.Component {
             </div>
             <div className= 'row'>
               <div className='boxContent col-lg-5 col-md-9 col-sm-10 col-xsm-10'>
-                <span className=" textContent ">Jednen z najsłynniejszych projektantów młodego pokolenia. Pomimo jego samobójczej śmierci, potęga jego nazwiska i geniuszu nie słabną. <br />Lee Alexander McQueen - niepokorna dusza współczesnego świata mody.</span>
+                <span className=" textContent ">Jed­nen z naj­słyn­niej­szych pro­jek­tan­tów mło­de­go po­ko­le­nia. Po­mi­mo je­go sa­mo­bój­czej śmier­ci, po­tę­ga je­go na­zwi­ska i ge­niu­szu nie słab­ną. Lee Ale­xan­der McQu­een – nie­po­kor­na du­sza współ­cze­sne­go świa­ta mo­dy.</span>
                 <div className=" tableBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
                   <BioTable />
                 </div>
@@ -256,8 +257,7 @@ class Biografia extends React.Component {
       </div>);
   }
 }
-
-///NAME
+//NAME BIOGRAFIA
       class BiographyName extends React.Component {
 				constructor(props) {
             super(props)
@@ -317,7 +317,7 @@ class Biografia extends React.Component {
 					class={biography.class}/>
         )
       })
-//TEXT
+//TEXT BIOGRAFIA
       class BiographyList extends React.Component {
         render() {
           return(
@@ -336,74 +336,6 @@ class Biografia extends React.Component {
 					class={biography.class}/>
         )
       })
-      class Timer extends React.Component {
-        constructor() {
-          super();
-          this.state = {
-            isLoading: true,
-            to: 0,
-          };
-          this.onComplete = this.onComplete.bind(this);
-          this.callback = this.callback.bind(this);
-          this.renderCountTo = this.renderCountTo.bind(this);
-          this.renderLoading = this.renderLoading.bind(this);
-        }
-
-        componentDidMount() {
-          request
-            .get('https://api.github.com/repos/facebook/react')
-            .end(this.callback);
-        }
-
-        onComplete() {
-          console.log('completed!');
-        }
-
-        callback(err, res) {
-          this.setState({
-            isLoading: false,
-            to: res.body.stargazers_count,
-          });
-        }
-
-        renderLoading() {
-          return (
-            <span>Loading...</span>
-          );
-        }
-
-        renderCountTo() {
-          return (
-            <CountTo
-              to={this.state.to}
-              speed={10000}
-              onComplete={this.onComplete} />
-          );
-        }
-        render() {
-        return (
-          <div className='row '>
-            <div className='timerBox'>
-              <div className='textAlign col-lg-3'>
-                <span className='timerTextLarge'>{this.state.isLoading ? this.renderLoading() :this.renderCountTo()}</span>
-                <span className='timerTextSamll'>Godzin audycji</span>
-              </div>
-              <div className='textAlign col-lg-3'>
-                <span className='timerTextLarge'>{this.state.isLoading ? this.renderLoading() : this.renderCountTo()}</span>
-                <span className='timerTextSamll'>Godzin audycji</span>
-              </div>
-              <div className='textAlign col-lg-3'>
-                <span className='timerTextLarge'>{this.state.isLoading ? this.renderLoading() : this.renderCountTo()}</span>
-                <span className='timerTextSamll'>Godzin audycji</span>
-              </div>
-              <div className='textAlign col-lg-3'>
-                <span className='timerTextLarge'>{this.state.isLoading ? this.renderLoading() : this.renderCountTo()}</span>
-                <span className='timerTextSamll'>Godzin audycji</span>
-              </div>
-            </div>
-          </div>);
-        }
-      }
 class Moda extends React.Component {
   render() {
   return (
@@ -418,8 +350,8 @@ class Moda extends React.Component {
             <h4 className='headerText col-lg-7 col-md-9 col-sm-7 col-xsm-7'>MODA</h4>
           </div>
           <div className='boxContent boxContentModa col-lg-8 col-md-10 col-sm-10 col-xsm-10'>
-            <p className=" textContent lineHeight">Po udanym debiucie i akceptacji hermetycznego środowiska mody, młodym geniuszem zainteresował się prezydent koncernu LVMH - Bernard Arnault. <br />
-            W 2000 roku Gucci odkupiło 51 procent udziałów we marce McQueena, który całą swoją energię poświęcił na jej rozwój. Nowy inwestor pozwolił na otworzenie butików marki w Nowym Jorku, Mediolanie, Londynie, Las Vegas i Los Angeles. A także na spełnianie najbardziej ekstrawaganckich wizji projektowych oraz realizację spektakularnych pokazów.
+            <p className=" textContent lineHeight">Po uda­nym de­biu­cie i ak­cep­ta­cji her­me­tycz­ne­go śro­do­wi­ska mo­dy, mło­dym ge­niu­szem za­in­te­re­so­wał się pre­zy­dent kon­cer­nu LVMH – Ber­nard Ar­nault.
+							W 2000 ro­ku Guc­ci od­ku­pi­ło 51 pro­cent udzia­łów we mar­ce McQu­eena, któ­ry ca­łą swo­ją ener­gię po­świę­cił na jej roz­wój. No­wy in­we­stor po­zwo­lił na otwo­rze­nie bu­ti­ków mar­ki w No­wym Jor­ku, Me­dio­la­nie, Lon­dy­nie, Las Ve­gas i Los An­ge­les. A tak­że na speł­nia­nie naj­bar­dziej eks­tra­wa­ganc­kich wi­zji pro­jek­to­wych oraz re­ali­za­cję spek­ta­ku­lar­nych po­ka­zów.
 					</p>
           </div>
             <div className='quoteData col-lg-7 col-md-11 col-sm-11 col-xsm-11'>
@@ -466,7 +398,6 @@ class Kolekcje extends React.Component {
     </div>);
   }
 }
-
       class CollectionsList extends React.Component {
         render() {
           return(
@@ -676,7 +607,7 @@ class Footer extends React.Component {
           <IconsFooter />
         </div>
         <div className='col-lg-10 col-md-10 col-sm-10'>
-          <p className='textFooter'>projekt i wykonanie  Iwona janiak  2017   © kod serwisu prawnie chroniony :-) </p>
+          <p className='textFooter'>pro­jekt i wy­ko­na­nie Iwo­na ja­niak 2017 © kod ser­wi­su praw­nie chro­nio­ny: –)</p>
         </div>
       </div>
   </div>);

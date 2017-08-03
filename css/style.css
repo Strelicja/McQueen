@@ -63,7 +63,9 @@
         padding: 10px 5px; }
     .col-sm-1 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-1 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -154,7 +156,9 @@
         padding: 10px 5px; }
     .col-sm-2 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-2 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -245,7 +249,9 @@
         padding: 10px 5px; }
     .col-sm-3 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-3 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -336,7 +342,9 @@
         padding: 10px 5px; }
     .col-sm-4 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-4 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -427,7 +435,9 @@
         padding: 10px 5px; }
     .col-sm-5 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-5 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -518,7 +528,9 @@
         padding: 10px 5px; }
     .col-sm-6 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-6 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -609,7 +621,9 @@
         padding: 10px 5px; }
     .col-sm-7 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-7 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -700,7 +714,9 @@
         padding: 10px 5px; }
     .col-sm-8 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-8 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -791,7 +807,9 @@
         padding: 10px 5px; }
     .col-sm-9 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-9 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -882,7 +900,9 @@
         padding: 10px 5px; }
     .col-sm-10 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-10 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -973,7 +993,9 @@
         padding: 10px 5px; }
     .col-sm-11 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-11 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -1064,7 +1086,9 @@
         padding: 10px 5px; }
     .col-sm-12 .textContent {
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-sm-12 .offerOpacityBox {
       border-radius: 5px;
       height: 60px;
@@ -1162,7 +1186,9 @@
       z-index: 1; }
     .col-md-1 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-1 .offerBox {
       line-height: 27px;
       color: white;
@@ -1218,7 +1244,9 @@
       z-index: 1; }
     .col-md-2 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-2 .offerBox {
       line-height: 27px;
       color: white;
@@ -1274,7 +1302,9 @@
       z-index: 1; }
     .col-md-3 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-3 .offerBox {
       line-height: 27px;
       color: white;
@@ -1330,7 +1360,9 @@
       z-index: 1; }
     .col-md-4 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-4 .offerBox {
       line-height: 27px;
       color: white;
@@ -1386,7 +1418,9 @@
       z-index: 1; }
     .col-md-5 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-5 .offerBox {
       line-height: 27px;
       color: white;
@@ -1442,7 +1476,9 @@
       z-index: 1; }
     .col-md-6 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-6 .offerBox {
       line-height: 27px;
       color: white;
@@ -1498,7 +1534,9 @@
       z-index: 1; }
     .col-md-7 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-7 .offerBox {
       line-height: 27px;
       color: white;
@@ -1554,7 +1592,9 @@
       z-index: 1; }
     .col-md-8 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-8 .offerBox {
       line-height: 27px;
       color: white;
@@ -1610,7 +1650,9 @@
       z-index: 1; }
     .col-md-9 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-9 .offerBox {
       line-height: 27px;
       color: white;
@@ -1666,7 +1708,9 @@
       z-index: 1; }
     .col-md-10 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-10 .offerBox {
       line-height: 27px;
       color: white;
@@ -1722,7 +1766,9 @@
       z-index: 1; }
     .col-md-11 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-11 .offerBox {
       line-height: 27px;
       color: white;
@@ -1778,7 +1824,9 @@
       z-index: 1; }
     .col-md-12 .textContent {
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-md-12 .offerBox {
       line-height: 27px;
       color: white;
@@ -1837,7 +1885,9 @@
     .col-lg-1 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-1 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-1 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -1845,7 +1895,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-1 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-1 .boxContent {
       line-height: 27px;
       color: black;
@@ -1942,7 +1994,9 @@
     .col-lg-2 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-2 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-2 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -1950,7 +2004,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-2 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-2 .boxContent {
       line-height: 27px;
       color: black;
@@ -2047,7 +2103,9 @@
     .col-lg-3 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-3 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-3 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2055,7 +2113,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-3 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-3 .boxContent {
       line-height: 27px;
       color: black;
@@ -2152,7 +2212,9 @@
     .col-lg-4 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-4 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-4 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2160,7 +2222,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-4 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-4 .boxContent {
       line-height: 27px;
       color: black;
@@ -2257,7 +2321,9 @@
     .col-lg-5 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-5 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-5 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2265,7 +2331,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-5 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-5 .boxContent {
       line-height: 27px;
       color: black;
@@ -2362,7 +2430,9 @@
     .col-lg-6 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-6 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-6 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2370,7 +2440,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-6 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-6 .boxContent {
       line-height: 27px;
       color: black;
@@ -2467,7 +2539,9 @@
     .col-lg-7 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-7 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-7 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2475,7 +2549,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-7 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-7 .boxContent {
       line-height: 27px;
       color: black;
@@ -2572,7 +2648,9 @@
     .col-lg-8 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-8 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-8 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2580,7 +2658,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-8 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-8 .boxContent {
       line-height: 27px;
       color: black;
@@ -2677,7 +2757,9 @@
     .col-lg-9 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-9 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-9 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2685,7 +2767,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-9 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-9 .boxContent {
       line-height: 27px;
       color: black;
@@ -2782,7 +2866,9 @@
     .col-lg-10 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-10 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-10 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2790,7 +2876,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-10 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-10 .boxContent {
       line-height: 27px;
       color: black;
@@ -2887,7 +2975,9 @@
     .col-lg-11 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-11 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-11 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -2895,7 +2985,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-11 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-11 .boxContent {
       line-height: 27px;
       color: black;
@@ -2992,7 +3084,9 @@
     .col-lg-12 .offerOpacityBox {
       margin-top: -41%; }
     .col-lg-12 .offerText {
-      font-size: 17px; }
+      font-size: 17px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-12 .offerOpacityBox {
       border-radius: 5px;
       height: 80px;
@@ -3000,7 +3094,9 @@
       margin-left: -15%;
       z-index: 1; }
     .col-lg-12 .textContent {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word; }
     .col-lg-12 .boxContent {
       line-height: 27px;
       color: black;
@@ -3267,7 +3363,9 @@ body {
 .textContent {
   line-height: 22px;
   font-size: 15px;
-  color: white; }
+  color: white;
+  text-align: justify;
+  text-justify: inter-word; }
 
 .textBlack {
   color: black; }
@@ -3685,7 +3783,9 @@ body {
   font-size: 11px;
   text-transform: uppercase;
   color: black;
-  padding: 2%; }
+  padding: 2%;
+  text-align: center;
+  text-justify: inter-word; }
   .textFooter a {
     text-decoration: none;
     color: black; }

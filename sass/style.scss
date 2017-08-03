@@ -59,6 +59,8 @@ $gutter: 20px;
 			.textContent {
 				font-size: 20px;
 				line-height: 20px;
+				text-align: justify;
+  		  text-justify: inter-word;
 			}
 			//Biografia
 			.offerOpacityBox{
@@ -201,6 +203,8 @@ $gutter: 20px;
 			.textContent {
 				font-size: 18px;
 				line-height: 20px;
+				text-align: justify;
+  		  text-justify: inter-word;
 			}
 			.offerBox {
 			  line-height: 27px;
@@ -279,6 +283,8 @@ $gutter: 20px;
 			}
 			.offerText {
 			  font-size: 17px;
+				text-align: justify;
+  		  text-justify: inter-word;
 			}
 			.offerOpacityBox{
 			  border-radius: 5px;
@@ -289,7 +295,9 @@ $gutter: 20px;
 			}
 			///Moda
 			.textContent {
-				font-size: 16px   ;
+				font-size: 16px;
+				text-align: justify;
+  		  text-justify: inter-word;
 			}
 			.boxContent {
 		  	line-height: 27px;
@@ -595,6 +603,8 @@ body {font-family: 'Quicksand', serif;
  	line-height: 22px;
  	font-size: 15px;
   color: white;
+	text-align: justify;
+	text-justify: inter-word;
  }
  .textBlack {
    color: black;
@@ -1055,6 +1065,8 @@ body {font-family: 'Quicksand', serif;
 	text-transform: uppercase;
 	color: black;
   padding: 2%;
+	text-align: center;
+	text-justify: inter-word;
   a {
     text-decoration: none;
     color: black;
