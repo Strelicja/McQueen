@@ -1,32 +1,16 @@
-//getRouteID
-$phone-width: 640px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+@import 'footer';
+@import 'contaktForm';
+@import 'media_queries';
+
 $columnNo: 12;
 $gutter: 20px;
 
-@mixin phone {
-	@media (min-width: #{$phone-width}) {
-		@content;
-		}
-}
-@mixin tablet {
-	@media (min-width: #{$tablet-width}) {
-		@content;
-	}
-}
-@mixin desktop {
-	@media (min-width: #{$desktop-width}) {
-		@content;
-
-	}
-}
+/* ------ GRID ------ */
 @for $i from 1 through $columnNo {
 	.col-xsm-#{$i} {
 		width: 100/$columnNo * $i + %;
 	}
 }
-
 @include phone {
 	@for $i from 1 through $columnNo {
 		.col-sm-#{$i} {
@@ -50,7 +34,6 @@ $gutter: 20px;
 		  	line-height: 37px;
 		  	color: white;
 		    position: absolute;
-		   // display: block;
 		   td {
 		     border-bottom: 1px solid rgba(0,0,0,.1);
 		     padding: 10px 5px;
@@ -62,7 +45,7 @@ $gutter: 20px;
 				text-align: justify;
   		  text-justify: inter-word;
 			}
-			//Biografia
+			//Biography
 			.offerOpacityBox{
 			  border-radius: 5px;
 			  height: 60px;
@@ -129,20 +112,14 @@ $gutter: 20px;
 				letter-spacing: 0.02em;
 				font-family: Montserrat;
 			}
-			/*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/
-			//Aktorka
+			//Idea
 			.actBox {
 			  color: #626262;
 				letter-spacing: 0.02em;
 				margin-top: -90%;
 				line-height: 37px;
 			}
-			//Kontakt
+			//Contact
 			.boxContact   {
 			 	margin-top: 25%;
 				.labelText{
@@ -167,7 +144,7 @@ $gutter: 20px;
 				line-height: 37px;
 			  display: block;
 			}
-			///AboutMe
+			//AboutMe
 			table {
 				margin-top: 18%;
 				td {
@@ -178,13 +155,11 @@ $gutter: 20px;
 		  	line-height: 37px;
 		  	color: white;
 			  position: absolute;
-			  //display: block;
 		   td {
 		     border-bottom: 1px solid rgba(0,0,0,.1);
 		     padding: 10px 5px;
 		     }
 		  }
-
 			.offerText {
 			  font-size: 20px;
 				overflow: scroll;
@@ -199,7 +174,7 @@ $gutter: 20px;
 			  margin-left: -15%;
 			  z-index: 1;
 			}
-			///Moda
+			///Fashion
 			.textContent {
 				font-size: 18px;
 				line-height: 20px;
@@ -255,7 +230,7 @@ $gutter: 20px;
 			.sliderText {
 				margin-top: 10%;
 			}
-			///AboutMe
+			//AboutMe
 			table {
 				margin-top: 12%;
 				td {
@@ -265,7 +240,7 @@ $gutter: 20px;
 			.boxContent {
 		    margin-top: 5%;
 		  }
-			//Biografia
+			//Biography
 			.offerBox {
 			  line-height: 27px;
 			  color: white;
@@ -293,7 +268,7 @@ $gutter: 20px;
 			  margin-left: -15%;
 			  z-index: 1;
 			}
-			///Moda
+			///Fashion
 			.textContent {
 				font-size: 16px;
 				text-align: justify;
@@ -318,7 +293,7 @@ $gutter: 20px;
 			.lineHeight {
 				overflow: hidden;
 			}
-			//Kolekcje
+			//Collection
 			.overflow {
 			  height: 400px;
 			}
@@ -333,7 +308,6 @@ $gutter: 20px;
 			.margin-right:hover {
 			  opacity: 1;
 			}
-
 			.timelineDate:after {
 			    width: 67%;
 			    top: 50%;
@@ -350,7 +324,7 @@ $gutter: 20px;
 			  height: 360px;
 			  transition: width 1s;
 			}
-			///Aktorka
+			///Idea
 			.actText {
 			  line-height: 35px;
 			}
@@ -358,7 +332,7 @@ $gutter: 20px;
 				margin-top: -55%;
 				line-height: 37px;
 			}
-			//Kontakt
+			//Contact
 			.labelText {
 			  font-size: 16px;
 			  margin-left: 1.9%;
@@ -389,22 +363,12 @@ $gutter: 20px;
 	}
 }
 
-
-* {
-  box-sizing: border-box;
-	margin: 0;
-}
-body {font-family: 'Quicksand', serif;
-  font-size: 14px;
-	background-color: #f7f7f7;
-}
 .row:before,
 .row:after {
   content: '';
   clear: both;
   display: table;
 }
-
 [class*='col-'] {
   float: left;
   min-height: 1px;
@@ -414,15 +378,18 @@ body {font-family: 'Quicksand', serif;
   padding: 0;
 }
 
-//NAV
-.nav {
-  position: fixed;
-  background-color: white;
-  border-right: 1px solid silver;
-  height: 100%;
+
+* {
+  box-sizing: border-box;
+	margin: 0;
+}
+body {
+	font-family: 'Quicksand', serif;
+  font-size: 14px;
+	background-color: #f7f7f7;
 }
 
-/*LogotypeMain*/
+/* ------ LogotypeMain ------ */
 .logoImg {
   width: 100%;
 }
@@ -442,15 +409,20 @@ body {font-family: 'Quicksand', serif;
   padding-left: 5px;
   padding-right: 5px;
 }
-/*NavMain*/
 
+/* ------ SectionNav ------ */
+.nav {
+  position: fixed;
+  background-color: white;
+  border-right: 1px solid silver;
+  height: 100%;
+}
 .navList  {
   padding: 0;
   list-style: none;
   .paddingTop {
     margin-top: 60px;
   }
-
 }
 .decoration {
   display: block;
@@ -468,62 +440,20 @@ body {font-family: 'Quicksand', serif;
   font-size: 20px;
   padding-right: 7px;
 }
-.active {
-  color: #626262;
-}
 .hover:hover {
   color: #626262;
-	background-color: 'silver' ;
+	background-color: 'silver';
 }
 .hoverLogo:hover {
   color: silver;
 }
-/*MAIN*/
 .mainFloatRight {
   float: right;
 }
-/*SLIDER HOME*/
+
+/* ------ SliderHome ------ */
 .heightImgSH {
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg');
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-}
-.heightImgAM {
-  background-image: url('https://i1.wp.com/www.uselessdaily.com/wp-content/uploads/2017/07/alexander-mcqueen-biopic-0.jpg?resize=700%2C300&ssl=1');
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-}
-.heightImgDz {
-  background-image: url('http://4.bp.blogspot.com/-HxoEqfSV0KI/UWxysE-BcHI/AAAAAAAAJxk/4OxCzfzFdUY/s1600/AdorningTheQueen.jpg');
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-.heightImgDesigner {
-  background-image: url('https://pmcwwd.files.wordpress.com/2017/03/a-mcqueen-det-030617-ar0922.jpg?w=1024');
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-}
-.heightImgSS {
-  background-image: url('http://www.schonmagazine.com/wp-content/uploads/2015/08/Tracy-Ann-Oberman-as-Isabella-Blow-and-Stephen-Wight-as-Lee-in-McQueen-credit-Specular-2.jpg');
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.heightImgCollection {
-  background-image: url('http://media2.s-nbcnews.com/j/MSNBC/Components/Slideshows/_production/ss-100211-Alexander-McQueen/ss-100211-Alexander-McQueen-2003-show.today-ss-slide-desktop.jpg');
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.heightImgContact {
-  background-image: url('http://wallpapercave.com/wp/wkjs1Ur.jpg');
   height: 100vh;
   background-size: cover;
   overflow: hidden;
@@ -532,9 +462,6 @@ body {font-family: 'Quicksand', serif;
   list-style: none;
   padding: 0;
   height: 100%;
-}
-.hidden {
-  display: none;
 }
 .sliderPhone {
 	margin-top: 40%;
@@ -568,12 +495,17 @@ body {font-family: 'Quicksand', serif;
 	padding: 5px 15px;
   text-align: center;
 }
-/*ABOUTEME*/
+/* ------ AboutMe ------ */
+.heightImgAM {
+  background-image: url('https://i1.wp.com/www.uselessdaily.com/wp-content/uploads/2017/07/alexander-mcqueen-biopic-0.jpg?resize=700%2C300&ssl=1');
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
 .headerText {
  	font-size: 28px;
   line-height: 34px;
   font-weight: bold;
-  //margin-top: 5%;
   color: white;
   font-family: "Lato", sans-serif;
 }
@@ -598,7 +530,6 @@ body {font-family: 'Quicksand', serif;
 .relative {
   position: relative;
 }
-
 .textContent  {
  	line-height: 22px;
  	font-size: 15px;
@@ -606,23 +537,17 @@ body {font-family: 'Quicksand', serif;
 	text-align: justify;
 	text-justify: inter-word;
  }
- .textBlack {
-   color: black;
- }
- .boxContent {
+.boxContent {
  	line-height: 27px;
  	color: black;
   position: absolute;
   margin-top: 7%;
   display: block;
- }
- .boxContentContact {
-  margin-top: 15%;
- }
- .tdHidden {
+}
+.tdHidden {
 	 display: none;
- }
- .tableBox {
+}
+.tableBox {
  	line-height: 37px;
  	color: white;
   position: absolute;
@@ -631,8 +556,16 @@ body {font-family: 'Quicksand', serif;
     padding: 10px 5px;
     font-size: 16px;
     }
- }
- /*BIOGRAFIA OFFER*/
+}
+
+ /* ------ Biography ------ */
+.heightImgBg {
+  background-image: url('http://4.bp.blogspot.com/-HxoEqfSV0KI/UWxysE-BcHI/AAAAAAAAJxk/4OxCzfzFdUY/s1600/AdorningTheQueen.jpg');
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
 .offerBox {
   line-height: 27px;
   color: white;
@@ -647,7 +580,6 @@ body {font-family: 'Quicksand', serif;
   margin-top: 6%;
   display: inline-grid;
 }
-
 .offerHeaderName  {
   display: block;
 	color: white;
@@ -665,7 +597,6 @@ body {font-family: 'Quicksand', serif;
   opacity: 0.2;
   background-color: silver;
 }
-
 .offerOpacityBox{
   border-radius: 5px;
   height: 40px;
@@ -677,14 +608,11 @@ body {font-family: 'Quicksand', serif;
 .offer {
   margin-right: 15%;
 }
-
 .offerText {
   margin-top: 2%;
   padding-left: 5%;
   overflow: scroll;
-  //padding-bottom: 100px;
   font-size: 17px;
-  //height: 100vh;
 		visibility: hidden;
     animation-name: showup;
     animation-duration: 2s;
@@ -704,8 +632,13 @@ body {font-family: 'Quicksand', serif;
   display: none;
 }
 
-
-/*Moda*/
+ /* ------ Fashion ------ */
+.heightImgFashion {
+ 	background-image: url('https://pmcwwd.files.wordpress.com/2017/03/a-mcqueen-det-030617-ar0922.jpg?w=1024');
+ 	height: 100vh;
+ 	background-size: cover;
+ 	overflow: hidden;
+ }
 .lineHeight {
 	line-height: 18px;
 	font-size: 18px;
@@ -713,7 +646,7 @@ body {font-family: 'Quicksand', serif;
 	height: 270px;
 	padding-bottom: 50%;
 }
-.quoteNumberModa {
+.quoteNumberFashion {
   color: #ababab;
   font-size: 18px;
 }
@@ -740,27 +673,27 @@ body {font-family: 'Quicksand', serif;
   margin-bottom: 2%;
   margin-top: 2%;
 }
-.boxContentModa {
+.boxContentFashion {
 	margin-top: 15%;
 	line-height: 5px;
 }
-/*Kolekcje*/
+
+ /* ------ Collection ------ */
+.heightImgCollection {
+  background-image: url('http://media2.s-nbcnews.com/j/MSNBC/Components/Slideshows/_production/ss-100211-Alexander-McQueen/ss-100211-Alexander-McQueen-2003-show.today-ss-slide-desktop.jpg');
+ 	height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
 .overflow {
   overflow: scroll;
   overflow-y: hidden;
   width: 86%;
-  //margin-left: 2%;
-  //margin-right: 2%;
   height: 400px;
   display: flex;
   padding: 1%;
   position: absolute;
   z-index: 999;
-}
-.overflow:hover {
-  //background-color: #f7f7f7;
-  //opacity: 0.7;
-
 }
 .opacityDiv {
   position: absolute;
@@ -777,7 +710,6 @@ body {font-family: 'Quicksand', serif;
 }
 .margin-right:hover {
   opacity: 1;
-  //background-color: silver;
 }
 .timelineHeader {
   color: white;
@@ -787,15 +719,6 @@ body {font-family: 'Quicksand', serif;
   height: 30px;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
-}
-.timelineText {
-  line-height: 23px;
-  font-size: 13px;
-	width: 100%;
-	margin-bottom: 13%;
-	font-weight: 300;
-  display: block;
-  color: black;
 }
 .timelineDate {
     padding: 0 13px;
@@ -823,14 +746,20 @@ body {font-family: 'Quicksand', serif;
 .imgCollection {
   width: 200px;
   height: 291px;
-  //height: 100px;
 }
 .imgCollection:hover {
   width: 250px;
   height: 360px;
   transition: width 1s;
 }
-/*AKTORKA*/
+
+ /* ------ Idea ------ */
+.heightImgIdea {
+  background-image: url('http://www.schonmagazine.com/wp-content/uploads/2015/08/Tracy-Ann-Oberman-as-Isabella-Blow-and-Stephen-Wight-as-Lee-in-McQueen-credit-Specular-2.jpg');
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
 .actBox {
   color: #626262;
 	letter-spacing: 0.02em;
@@ -856,222 +785,20 @@ body {font-family: 'Quicksand', serif;
   padding-right: 50px;
   display: block;
 }
-/*KONTAKT*/
-.textContentEmail {
-  margin-top: -5%;
-}
-.boxContact {
-  margin-top: 10%;
-  display: block;
-  .inputBox {
-    margin-bottom: 15%;
-    line-height: 0;
-    border-radius: 2px;
-  }
-}
-.boxContactHidden {
-  margin-top: 10%;
-  display: none;
-  background-color: white;
-  border: 1px solid silver;
-  //height: 21em;
-}
-.boxTextHidden {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  padding: 1em;
-  //padding-top: 2em;
-//  padding-left: 0.5em;
-//  padding-right: 0.5em;
-}
-.buttonBox {
-  margin-top: 27%;
-}
-.inputText,
-.textareaText {
-  width: 100%;
-  height: 60px;
-  padding-left: 16%;
-  padding-right: 16%;
-  font-size: 16px;
-  border: 1px solid silver;
-}
-.buttonText {
-  width: 60%;
-  height: 35px;
-  float: right;
-  background-color: black;
-  color: white;
-  border: 1px solid darkgrey;
-  font-size: 12px;
-  border-radius: 3px;
-}
-.buttonText:hover {
-  color: #626262;
-}
-.textareaText {
-  height: 150px;
-  padding-top: 5%;
-}
-.messageText {
-  z-index: 999;
-  margin-top: -10.5%;
-  padding-right: 5%;
-  text-align: right;
-  font-size: 20px;
-}
-.messageTextarea {
-  margin-top: -23%;
-}
-.labelText {
-  font-size: 16px;
-  margin-top: 2.8%;
-  //padding-left: 5.8%;
-  margin-left: 12.9%;
-  color: grey;
-  display: block;
-}
 
-.labelTextName {
-  position: absolute;
-  content: 'Wpisz swoje imię!';
-  margin-top: -0.6%;
-  background-color: white;
-  padding: 1%;
-  border-radius: 2px;
-
-}
-.labelTextEmail {
-  content: 'Wpisz swój adres e-mail!';
-  position: absolute;
-  margin-top: -0.6%;
-  background-color: white;
-  padding: 1%;
-  border-radius: 2px;
+ /* ------ Contact ------ */
+.heightImgContact {
+  background-image: url('http://wallpapercave.com/wp/wkjs1Ur.jpg');
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
 }
 .boxContentContact {
  margin-top: 15%;
 }
-.labelTextMessage {
-  content: 'Wpisz swoją wiadomość!';
-  position: absolute;
-  margin-top: 11%;
-  background-color: white;
-  padding: 1%;
-  border-radius: 2px;
-}
-
-/*ICONS FORM*/
-.name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 11px 17px;
-	background-repeat: no-repeat;
-
-}
-.email{
-	background-image: url(https://cdn3.iconfinder.com/data/icons/glyph/227/Email-512.png);
-	background-size: 30px 30px;
-	background-position: 11px 17px;
-	background-repeat: no-repeat;
-}
-.comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 30px 30px;
-	background-position: 11px 17px;
-	background-repeat: no-repeat;
-}
-//--------------animate ----------------*/
-//RAMKA PO NAJECHANKU ZMIENIA KOLOR
-.inputText:focus,
-.textareaText:focus {
-  border-color: red;
-  border-width: thin;
-}
-.newLabel {
-  margin-top: -2.2em;
-}
-.newLabel3 {
-  margin-top: -0.1em;
-}
-
-///UWAGA
-/*type="email" to powinno być ponizej nad placeholder w input mail*/
-//TEKST WJEŻDŻA NA GÓRĘ I ZMIENIA KOLOR
-.inputText:focus + .labelText {
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
-          transform: translate(0, -2.3em) scale(0.9, 0.9);
-          margin-top: -2.2em; //ruch p w górę z białym tłem
-          font-weight: 200;
-          color: grey;
-}
-.textareaText:focus + .labelText {
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
-          transform: translate(0, -2.3em) scale(0.9, 0.9);
-          margin-top: -0.1em;
-          font-weight: 200;
-          color: grey;
-}
-.nowaklasa {
-  margin-top: -2.2em;
-}
-//USTAWIA TEKST W SPOCZYNKU - POZYCJA WYJŚCIOWA I POWROTNA
-.inputText:focus + .labelText,//ruch w górę
-.inputText:valid + .labelText {
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s;
-  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
-          transform: translate(0, -2.3em) scale(0.9, 0.9);
-
-}
-.textareaText:focus + .labelText,//ruch w górę
-.textareaText:valid + .labelText  {
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s;
-  -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
-          transform: translate(0, -10em) scale(0.9, 0.9);
-}
-
-.inputText + .labelText,
-.textareaText + .labelText {
-  pointer-events: none;
-
-}
-
-
-/*FOOTER*/
-.iconBox {
-  padding: 1%;
-  text-align: center;
-}
-.iconSocial {
-    font-size: 25px;
-    color:  #575757;
-    padding-right: 5px;
-    padding-left: 5px;
-    display: inline;
-}
-.iconSocial:hover {
-  color: #626262;
-}
-.textFooter {
-  line-height: 20px;
-  font-size: 11px;
-	text-transform: uppercase;
+.textBlack {
 	color: black;
-  padding: 2%;
-	text-align: center;
-	text-justify: inter-word;
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  a:hover {
-    color: #626262;
-  }
+}
+.boxContentContact {
+  margin-top: 15%;
 }

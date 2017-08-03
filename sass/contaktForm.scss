@@ -1,0 +1,164 @@
+
+/* ------ ICONS FORM ------ */
+.name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+.email{
+	background-image: url(https://cdn3.iconfinder.com/data/icons/glyph/227/Email-512.png);
+	background-size: 30px 30px;
+	background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+.comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 17px;
+	background-repeat: no-repeat;
+}
+/* ------ FORM ------ */
+.boxContact {
+  margin-top: 10%;
+  display: block;
+  .inputBox {
+    margin-bottom: 15%;
+    line-height: 0;
+    border-radius: 2px;
+  }
+}
+.boxContactHidden {
+  margin-top: 10%;
+  display: none;
+  background-color: white;
+  border: 1px solid silver;
+}
+.boxTextHidden {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding: 1em;
+}
+.buttonBox {
+  margin-top: 27%;
+}
+.inputText,
+.textareaText {
+  width: 100%;
+  height: 60px;
+  padding-left: 16%;
+  padding-right: 16%;
+  font-size: 16px;
+  border: 1px solid silver;
+}
+.buttonText {
+  width: 60%;
+  height: 35px;
+  float: right;
+  background-color: black;
+  color: white;
+  border: 1px solid darkgrey;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.buttonText:hover {
+  color: #626262;
+}
+.textareaText {
+  height: 150px;
+  padding-top: 5%;
+}
+.messageText {
+  z-index: 999;
+  margin-top: -10.5%;
+  padding-right: 5%;
+  text-align: right;
+  font-size: 20px;
+}
+.messageTextarea {
+  margin-top: -23%;
+}
+.labelText {
+  font-size: 16px;
+  margin-top: 2.8%;
+  margin-left: 12.9%;
+  color: grey;
+  display: block;
+}
+.labelTextName {
+  position: absolute;
+  content: 'Wpisz swoje imię!';
+  margin-top: -0.6%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px;
+
+}
+.labelTextEmail {
+  content: 'Wpisz swój adres e-mail!';
+  position: absolute;
+  margin-top: -0.6%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px;
+}
+.labelTextMessage {
+  content: 'Wpisz swoją wiadomość!';
+  position: absolute;
+  margin-top: 11%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px;
+}
+
+/* ------ ANIMATE ------ */
+
+.inputText:focus,
+.textareaText:focus {
+  border-color: red;
+  border-width: thin;
+}
+.newLabel {
+  margin-top: -2.2em;
+}
+.newLabel3 {
+  margin-top: -0.1em;
+}
+.inputText:focus + .labelText {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+          transform: translate(0, -2.3em) scale(0.9, 0.9);
+          margin-top: -2.2em;
+          font-weight: 200;
+          color: grey;
+}
+.textareaText:focus + .labelText {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+          transform: translate(0, -2.3em) scale(0.9, 0.9);
+          margin-top: -0.1em;
+          font-weight: 200;
+          color: grey;
+}
+.inputText:focus + .labelText,
+.inputText:valid + .labelText {
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+          transform: translate(0, -2.3em) scale(0.9, 0.9);
+}
+.textareaText:focus + .labelText,
+.textareaText:valid + .labelText  {
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+  -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
+          transform: translate(0, -10em) scale(0.9, 0.9);
+}
+.inputText + .labelText,
+.textareaText + .labelText {
+  pointer-events: none;
+
+}

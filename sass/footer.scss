@@ -1,0 +1,32 @@
+
+/* ------ FOOTER ------ */
+.iconBox {
+  padding: 1%;
+  text-align: center;
+}
+.iconSocial {
+    font-size: 25px;
+    color:  #575757;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: inline;
+}
+.iconSocial:hover {
+  color: #626262;
+}
+.textFooter {
+  line-height: 20px;
+  font-size: 11px;
+	text-transform: uppercase;
+	color: black;
+  padding: 2%;
+	text-align: center;
+	text-justify: inter-word;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #626262;
+  }
+}

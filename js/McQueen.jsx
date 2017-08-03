@@ -3,63 +3,23 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 import FaInstagram from 'react-icons/lib/fa/instagram';
 import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official';
-import FaAngleDoubleDown from 'react-icons/lib/fa/angle-double-down';
 import scrollToComponent from 'react-scroll-to-component';
 import { Router,Route,Link,IndexLink,IndexRoute,hashHistory} from 'react-router';
-import InstagramEmbed from 'react-instagram-embed';
 import AtvImg from 'react-atv-img';
-import CountTo from 'react-count-to';
-import request from 'superagent';
 import collections from './collections';
 import biography from './biography';
 import style from '../sass/style.scss';
-import { ResponsiveComponent } from "react-responsive-component";
-import HamburgerMenu from 'react-hamburger-menu';
-require('../css/style.css');
-//./node_modules/.bin/webpack-dev-server --hot
-
 var Scroll = require('react-scroll');
 var ScrollArea = require('react-scrollbar');
-require('../sass/style.scss');
 "use strict";
-////ICON MENU
-class Hambmen extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			open: [false, true, false, true]
-		};
-  }
-	handleClick(id) {
-		let { open } = this.state;
-    this.setState({
-			open: [...open.slice(0, id), !open[id], ...open.slice(id + 1)]
-		});
-	}
-	render() {
-		return (
-			<div className='menu-row'>
-				<HamburgerMenu
-					isOpen={this.state.open[1]}
-					menuClicked={this.handleClick.bind(this, 1)}
-					width={54}
-					height={45}
-					strokeWidth={3}
-					rotate={0}
-					color='black'
-					borderRadius={5}
-					animationDuration='0.4'
-				></HamburgerMenu>
-			</div>
-		);
-	}
-};
+//./node_modules/.bin/webpack-dev-server --hot
 
-/*LOGOTYPE*/
+
+/* ------ LOGOTYPE Header ------ */
 class LogotypeMain extends React.Component {
   render() {
   return (
-    <div className='  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
+    <div className='col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
       <p className='logoText logoTextName hoverLogo'>
         <img className="logoImg" src='img/Alexander-McQueen.jpg'/>
       </p>
@@ -68,83 +28,116 @@ class LogotypeMain extends React.Component {
     </div>);
   }
 }
-/*NAV*/
-class Section extends React.Component {
-  constructor(props) {
-      super(props)
-      this.state = {
-            color: '',
-            percent: 0
-        }
-      }
+
+/* ------ NAV Scroll to Sections ------ */
+class SectionNav extends React.Component {
   componentDidMount() {
     scrollToComponent(this.SliderHome);
     window.addEventListener('scroll', this.handleScroll);
   }
   handleScroll() {
-    //  var winHeight = window.innerHeight;
-    //  var body = document.body;
-    //  var html = document.documentElement;
-    //  var docHeight = Math.max( body.scrollHeight, body.offsetHeight,
-    //                  html.clientHeight, html.scrollHeight, html.offsetHeight );
-    //  var value = document.body.scrollTop;
-		 //
-    //  var minPixel = el.offsetTop;
-    //  var maxPixel = minPixel + el.scrollHeight;
-    //  var value = document.body.scrollTop;
-    //  var percent = (value - minPixel)/(maxPixel - minPixel);
-    //  percent = Math.min(1,Math.max(percent, 0))*100;
 		var value = document.body.scrollTop;
+
 		var sliderHomeH = document.querySelector(".sliderHome");
-		sliderHomeH = sliderHomeH.offsetTop;
+			sliderHomeH = sliderHomeH.offsetTop;
+
 		var aboutMeH = document.querySelector(".aboutMe");
-		aboutMeH = aboutMeH.offsetTop -1;
-		var biografiaH = document.querySelector(".biografia");
-		biografiaH = biografiaH.offsetTop -1;
-		var modaH = document.querySelector(".moda");
-		modaH = modaH.offsetTop -1;
-		var kolekcjeH = document.querySelector(".kolekcje");
-		kolekcjeH = kolekcjeH.offsetTop -1;
-		var aktorkaH = document.querySelector(".aktorka");
-		aktorkaH = aktorkaH.offsetTop -1;
-		var kontaktH = document.querySelector(".kontakt");
-		kontaktH = kontaktH.offsetTop -1;
-			console.log(aboutMeH);
-			value > aboutMeH && value < biografiaH ? document.querySelector(".aboutMeLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".aboutMeLi").style.backgroundColor = "white"
-			value > biografiaH && value < modaH ? document.querySelector(".biografiaLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".biografiaLi").style.backgroundColor = "white"
-			value > modaH && value < kolekcjeH ? document.querySelector(".modaLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".modaLi").style.backgroundColor = "white"
-			value > kolekcjeH && value < aktorkaH ? document.querySelector(".kolekcjeLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".kolekcjeLi").style.backgroundColor = "white"
-			value > aktorkaH && value < kontaktH ? document.querySelector(".aktorkaLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".aktorkaLi").style.backgroundColor = "white"
-			value > kontaktH ? document.querySelector(".kontaktLi").style.backgroundColor = "#f7f7f7" : document.querySelector(".kontaktLi").style.backgroundColor = "white"
+			aboutMeH = aboutMeH.offsetTop -1;
+
+		var biographyH = document.querySelector(".biography");
+			biographyH = biographyH.offsetTop -1;
+
+		var fashionH = document.querySelector(".fashion");
+			fashionH = fashionH.offsetTop -1;
+
+		var collectionH = document.querySelector(".collection");
+			collectionH = collectionH.offsetTop -1;
+
+		var ideaH = document.querySelector(".idea");
+			ideaH = ideaH.offsetTop -1;
+
+		var contactH = document.querySelector(".contact");
+			contactH = contactH.offsetTop -1;
+
+			value > aboutMeH && value < biographyH
+				? document.querySelector(".aboutMeLi").style.backgroundColor = "#f7f7f7"
+				: document.querySelector(".aboutMeLi").style.backgroundColor = "white"
+			value > biographyH && value < fashionH
+				? document.querySelector(".biographyLi").style.backgroundColor = "#f7f7f7"
+				: document.querySelector(".biographyLi").style.backgroundColor = "white"
+			value > fashionH && value < collectionH
+				? document.querySelector(".fashionLi").style.backgroundColor = "#f7f7f7"
+				: document.querySelector(".fashionLi").style.backgroundColor = "white"
+			value > collectionH && value < ideaH
+				? document.querySelector(".collectionLi").style.backgroundColor = "#f7f7f7"
+				: document.querySelector(".collectionLi").style.backgroundColor = "white"
+			value > ideaH && value < contactH
+				? document.querySelector(".ideaLi").style.backgroundColor = "#f7f7f7"
+				: document.querySelector(".ideaLi").style.backgroundColor = "white"
+			value > contactH
+				? document.querySelector(".contactLi").style.backgroundColor = "#f7f7f7"
+				: document.querySelector(".contactLi").style.backgroundColor = "white"
   }
   render() {
     return (
-      <div >
-        <div className=''>
-          <nav className='col-lg-2 col-md-3 col-sm-3  nav'>
+      <div>
+        <div>
+          <nav className='nav col-lg-2 col-md-3 col-sm-3'>
             <ul className=' navList'>
-              <li className='logoBox sliderHome ' onClick={() => scrollToComponent(this.SliderHome, { align: 'middle',ease:'inCirc', duration: 500})}><LogotypeMain/></li>
-              <li> <IndexLink  to="/aboutMe" className='aboutMeLi decoration hover paddingTop' onClick={() => scrollToComponent(this.AboutMe, {align: 'middle',ease:'inCirc',  duration: 1000})}>McQueen</IndexLink></li>
-              <li> <IndexLink  to="/biografia" className='biografiaLi decoration hover' onClick={() => scrollToComponent(this.Biografia, {align: 'middle', ease:'inCirc', duration: 1000})}>BIOGRAFIA</IndexLink></li>
-              <li> <IndexLink  to="/moda" className='modaLi decoration hover' onClick={() => scrollToComponent(this.Moda, {align: 'middle', ease:'inCirc', duration: 1000})}>MODA</IndexLink></li>
-              <li> <IndexLink  to="/kolekcje" className='kolekcjeLi decoration hover' onClick={() => scrollToComponent(this.Kolekcje, { align: 'middle',ease:'inCirc', duration: 1000})}>KOLEKCJE</IndexLink></li>
-              <li> <IndexLink  to="/aktorka" className='aktorkaLi decoration hover' onClick={() => scrollToComponent(this.Aktorka, { align: 'middle',ease:'inCirc', duration: 1000})}>IDEA</IndexLink></li>
-              <li> <IndexLink  to="/kontakt" className='kontaktLi decoration hover' onClick={() => scrollToComponent(this.Kontakt, {align: 'middle',ease:'inCirc',  duration: 1000})}>KONTAKT</IndexLink></li>
+              <li className='logoBox sliderHome'
+								onClick={() => scrollToComponent(this.SliderHome, { align: 'middle',ease:'inCirc', duration: 500})}><LogotypeMain/>
+							</li>
+              <li>
+								<IndexLink  to="/aboutMe"
+								className='aboutMeLi decoration hover paddingTop'
+								onClick={() => scrollToComponent(this.AboutMe, {align: 'middle',ease:'inCirc',  duration: 1000})}>McQueen</IndexLink>
+							</li>
+              <li>
+								<IndexLink  to="/biography"
+								className='biographyLi decoration hover'
+								onClick={() => scrollToComponent(this.Biography, {align: 'middle', ease:'inCirc', duration: 1000})}>BIOGRAFIA</IndexLink>
+							</li>
+              <li>
+								<IndexLink  to="/fashion"
+								className='fashionLi decoration hover'
+								onClick={() => scrollToComponent(this.Fashion, {align: 'middle', ease:'inCirc', duration: 1000})}>MODA</IndexLink>
+							</li>
+              <li>
+								<IndexLink  to="/collection"
+								className='collectionLi decoration hover'
+								onClick={() => scrollToComponent(this.Collection, { align: 'middle',ease:'inCirc', duration: 1000})}>KOLEKCJE</IndexLink>
+							</li>
+              <li>
+								<IndexLink  to="/idea"
+								className='ideaLi decoration hover'
+								onClick={() => scrollToComponent(this.Idea, { align: 'middle',ease:'inCirc', duration: 1000})}>IDEA</IndexLink>
+							</li>
+              <li>
+								<IndexLink  to="/contact"
+								className='contactLi decoration hover'
+								onClick={() => scrollToComponent(this.Contact, {align: 'middle',ease:'inCirc',  duration: 1000})}>KONTAKT</IndexLink>
+							</li>
             </ul>
           </nav>
-          <div className="col-lg-10 col-md-9 col-sm-9   mainFloatRight">
-            <section  className='sliderHome' ref={(section) => { this.SliderHome = section; }}><SliderHome/></section>
-            <section  className='aboutMe' ref={(section) => { this.AboutMe = section; }}><AboutMe/></section>
-            <section  className='biografia' ref={(section) => { this.Biografia = section; }}><Biografia/></section>
-            <section  className='moda' ref={(section) => { this.Moda = section; }}><Moda/></section>
-            <section  className='kolekcje' ref={(section) => { this.Kolekcje = section; }}><Kolekcje/></section>
-            <section  className='aktorka' ref={(section) => { this.Aktorka = section; }}><Aktorka/></section>
-            <section  className='kontakt' ref={(section) => { this.Kontakt = section; }}><Kontakt/></section>
-          <Footer/>
+          <div className="mainFloatRight col-lg-10 col-md-9 col-sm-9">
+            <section  className='sliderHome'
+							ref={(section) => { this.SliderHome = section; }}><SliderHome/></section>
+            <section  className='aboutMe'
+							ref={(section) => { this.AboutMe = section; }}><AboutMe/></section>
+            <section  className='biography'
+							ref={(section) => { this.Biography = section; }}><Biography/></section>
+            <section  className='fashion'
+							ref={(section) => { this.Fashion = section; }}><Fashion/></section>
+            <section  className='collection'
+							ref={(section) => { this.Collection = section; }}><Collection/></section>
+            <section  className='idea'
+							ref={(section) => { this.Idea = section; }}><Idea/></section>
+            <section  className='contact'
+							ref={(section) => { this.Contact = section; }}><Contact/></section>
+						<Footer />
           </div>
         </div>
-      </div>
-    )
+      </div>)
   }
 }
 class NotFound extends React.Component {
@@ -152,7 +145,9 @@ class NotFound extends React.Component {
   return <h1>404,Nothing is here</h1>;
   }
 }
-/*MAIN*/
+
+
+/* ------ MAIN Sections ------ */
 class SliderHome extends React.Component {
   render() {
   return (
@@ -180,11 +175,11 @@ class SliderHome extends React.Component {
 class AboutMe extends React.Component {
   render() {
   return (
-      <div className='test1 row relative'>
+      <div className='row relative'>
         <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 ' >
           <img className="heightImgAM  col-lg-12 col-md-12 col-sm-12 col-xsm-12 "  />
         </div>
-        <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
+        <div className=" headerBox col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
           <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
           <div className=' col-lg-11 col-md-11 col-sm-11 '>
             <div>
@@ -230,34 +225,34 @@ class AboutMe extends React.Component {
           </div>)
       }
     }
-class Biografia extends React.Component {
 
+class Biography extends React.Component {
   render() {
   return (
-      <div className=' row relative'>
-        <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 ' >
-          <img className="heightImgDz  col-lg-12 col-md-12 col-sm-12 col-xsm-12 "  />
+      <div className='row relative'>
+        <div className='col-lg-12 col-md-12 col-sm-12 col-xsm-12 ' >
+          <img className="heightImgBg col-lg-12 col-md-12 col-sm-12 col-xsm-12 "/>
         </div>
         <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
           <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
           <div className=' col-lg-11 col-md-11 col-sm-11 col-xsm-11'>
             <div>
               <h4 className='headerText col-lg-7 col-md-7 col-sm-7'>BIOGRAFIA</h4>
-            </div>
+          	</div>
             <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 '>
               <div className='offerNameBox col-lg-2 col-md-2 col-sm-2 col-xsm-2'>
-                {listOfBiographyName}
+                {nameList}
               </div>
               <div className='offerBox col-lg-10 col-md-10 col-sm-10 '>
-                {listOfBiography}
+                {textList}
               </div>
-          </div>
-        </div>
+          	</div>
+        	</div>
         </div>
       </div>);
   }
 }
-//NAME BIOGRAFIA
+			//Biography list of name
       class BiographyName extends React.Component {
 				constructor(props) {
             super(props)
@@ -266,7 +261,7 @@ class Biografia extends React.Component {
 								opacity:'',
 							}
 						}
-        myFunction(name)  {
+        biographyNameList(name)  {
           var nameClass = document.querySelector('.'+name);
 
             if (nameClass.style.display === 'block') {
@@ -293,7 +288,6 @@ class Biografia extends React.Component {
 								background:'silver',
 								opacity: '0.2',
 							})
-
             }
         }
         render() {
@@ -301,7 +295,7 @@ class Biografia extends React.Component {
             <div className='offerName'>
               <p className='offerHeaderName'>{this.props.name}</p>
               <div className='offerOpacityBox '
-                onClick={() => this.myFunction(this.props.name)}
+                onClick={() => this.biographyNameList(this.props.name)}
 								style={{
 									backgroundColor:this.state.background,
 									opacity:this.state.opacity}}>
@@ -309,7 +303,7 @@ class Biografia extends React.Component {
             </div>
           )}
         }
-      const listOfBiographyName = biography.map(biography => {
+      const nameList = biography.map(biography => {
         return (
           <BiographyName
           key={biography.name}
@@ -317,8 +311,8 @@ class Biografia extends React.Component {
 					class={biography.class}/>
         )
       })
-//TEXT BIOGRAFIA
-      class BiographyList extends React.Component {
+			//Biography list of text
+      class BiographyText extends React.Component {
         render() {
           return(
             <div className='offer col-lg-'>
@@ -327,21 +321,22 @@ class Biografia extends React.Component {
             </div>
           )}
         }
-      const listOfBiography = biography.map(biography => {
+      const textList = biography.map(biography => {
         return (
-          <BiographyList
+          <BiographyText
           key={biography.name}
           text={biography.text}
           name={biography.name}
 					class={biography.class}/>
         )
       })
-class Moda extends React.Component {
+
+class Fashion extends React.Component {
   render() {
   return (
     <div className=' row relative'>
       <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12 ' >
-        <img className="heightImgDesigner  col-lg-12 col-md-12 col-sm-12 col-xsm-12 " />
+        <img className="heightImgFashion  col-lg-12 col-md-12 col-sm-12 col-xsm-12 " />
       </div>
       <div className=" headerBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12 ">
         <div className="col-lg-1 col-md-1 col-sm-1 col-xsm-1"></div>
@@ -349,32 +344,32 @@ class Moda extends React.Component {
           <div className='  col-lg-12 col-md-12 col-sm-12 col-xsm-12 '>
             <h4 className='headerText col-lg-7 col-md-9 col-sm-7 col-xsm-7'>MODA</h4>
           </div>
-          <div className='boxContent boxContentModa col-lg-8 col-md-10 col-sm-10 col-xsm-10'>
+          <div className='boxContent boxContentFashion col-lg-8 col-md-10 col-sm-10 col-xsm-10'>
             <p className=" textContent lineHeight">Po uda­nym de­biu­cie i ak­cep­ta­cji her­me­tycz­ne­go śro­do­wi­ska mo­dy, mło­dym ge­niu­szem za­in­te­re­so­wał się pre­zy­dent kon­cer­nu LVMH – Ber­nard Ar­nault.
 							W 2000 ro­ku Guc­ci od­ku­pi­ło 51 pro­cent udzia­łów we mar­ce McQu­eena, któ­ry ca­łą swo­ją ener­gię po­świę­cił na jej roz­wój. No­wy in­we­stor po­zwo­lił na otwo­rze­nie bu­ti­ków mar­ki w No­wym Jor­ku, Me­dio­la­nie, Lon­dy­nie, Las Ve­gas i Los An­ge­les. A tak­że na speł­nia­nie naj­bar­dziej eks­tra­wa­ganc­kich wi­zji pro­jek­to­wych oraz re­ali­za­cję spek­ta­ku­lar­nych po­ka­zów.
 					</p>
           </div>
-            <div className='quoteData col-lg-7 col-md-11 col-sm-11 col-xsm-11'>
-              <div className='marginBottom col-lg-6 col-md-6 col-sm-6 col-xsm-6'>
-                <span className='quoteNumber quoteNumberModa'>GIVENCHY</span>
-                <span className='quoteText'>stanowisko: </span>
-                <span className='quoteText'>dyrektor kreatywny domu mody </span>
-                <span className='quoteText'>od 1996</span>
-              </div>
-              <div className='marginBottom col-lg-6 col-md-6 col-sm-6 col-xsm-6'>
-                <span className='quoteNumber quoteNumberModa'>GUCCI</span>
-                <span className='quoteText'>wspólnicy: </span>
-                <span className='quoteText'>wspołwłaściciel marki McQueen</span>
-                <span className='quoteText'>od 2001</span>
-              </div>
+          <div className='quoteData col-lg-7 col-md-11 col-sm-11 col-xsm-11'>
+            <div className='marginBottom col-lg-6 col-md-6 col-sm-6 col-xsm-6'>
+              <span className='quoteNumber quoteNumberFashion'>GIVENCHY</span>
+              <span className='quoteText'>stanowisko: </span>
+              <span className='quoteText'>dyrektor kreatywny domu mody </span>
+              <span className='quoteText'>od 1996</span>
             </div>
-
+            <div className='marginBottom col-lg-6 col-md-6 col-sm-6 col-xsm-6'>
+              <span className='quoteNumber quoteNumberFashion'>GUCCI</span>
+              <span className='quoteText'>wspólnicy: </span>
+              <span className='quoteText'>wspołwłaściciel marki McQueen</span>
+              <span className='quoteText'>od 2001</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>);
   }
 }
-class Kolekcje extends React.Component {
+
+class Collection extends React.Component {
   render() {
   return (
     <div className='test4 row relative'>
@@ -390,7 +385,7 @@ class Kolekcje extends React.Component {
           <div className='row'>
             <div className='opacityDiv'></div>
             <div className=' overflow marginTop  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
-              {listOfCollections}
+              {collectionsList}
             </div>
           </div>
         </div>
@@ -398,7 +393,8 @@ class Kolekcje extends React.Component {
     </div>);
   }
 }
-      class CollectionsList extends React.Component {
+			//Collections list of Img
+      class CollectionsImg extends React.Component {
         render() {
           return(
             <div className='margin-right col-lg-'>
@@ -408,21 +404,22 @@ class Kolekcje extends React.Component {
             </div>)
           }
       }
-      const listOfCollections = collections.map(collection => {
+      const collectionsList = collections.map(collection => {
 		    return (
-		      <CollectionsList
+		      <CollectionsImg
 		      key={collection.name}
 		      name={collection.name}
 		      year={collection.year}
 		      url={collection.url}/>
 		    )
 		  })
-class Aktorka extends React.Component {
+
+class Idea extends React.Component {
   render() {
   return (
       <div className='test5 row relative'>
         <div className=' col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
-          <img className="heightImgSS  col-lg-12 col-md-12 col-sm-12 col-xsm-12"  />
+          <img className="heightImgIdea  col-lg-12 col-md-12 col-sm-12 col-xsm-12"  />
         </div>
         <div className='actBox  col-lg-12 col-md-12 col-sm-12 col-xsm-12'>
           <div className="col-lg-5 col-md-3 col-sm-1"></div>
@@ -434,7 +431,8 @@ class Aktorka extends React.Component {
       </div>);
   }
 }
-class Kontakt extends React.Component {
+
+class Contact extends React.Component {
   render() {
   return (
     <div className=' test7 row relative'>
@@ -456,6 +454,7 @@ class Kontakt extends React.Component {
     </div>);
   }
 }
+			//Contakt Form
       class ContactForm extends React.Component {
         constructor(props) {
             super(props)
@@ -594,10 +593,12 @@ class Kontakt extends React.Component {
 								 <div className='boxTextHidden'>Dziękujemy! <br />  Wiadomość została wysłana do przedstawicieli marki McQueen.</div>
 						 </div>
 						 </div>
-				 )
+				 		)
 				 }
 			 }
-/*FOOTER*/
+
+
+/* ----- FOOTER ------ */
 class Footer extends React.Component {
   render() {
   return (
@@ -607,12 +608,13 @@ class Footer extends React.Component {
           <IconsFooter />
         </div>
         <div className='col-lg-10 col-md-10 col-sm-10'>
-          <p className='textFooter'>pro­jekt i wy­ko­na­nie Iwo­na ja­niak 2017 © kod ser­wi­su praw­nie chro­nio­ny: –)</p>
+          <p className='textFooter'>pro­jekt i wy­ko­na­nie Iwo­na ja­niak 2017 © kod ser­wi­su praw­nie chro­nio­ny:–)</p>
         </div>
       </div>
-  </div>);
+  	</div>);
   }
 }
+			//Footer Icons
       class IconsFooter extends React.Component {
         render() {
             return (
@@ -622,29 +624,30 @@ class Footer extends React.Component {
               </div>)
           }
       }
-/*TOTAL CONTENT*/
+
+
+/* ------ RENDER ------ */
+class NavMainRouter extends React.Component {
+  render() {
+  return <Router history={hashHistory}>
+      <Route path='/' component={SectionNav}>
+        <IndexRoute component={AboutMe} />
+        <Route path='/biography' component={Biography} />
+        <Route path='/fashion' component={Fashion} />
+        <Route path='/kolekcje' component={Collection} />
+        <Route path='/idea' component={Idea} />
+        <Route path='/contact' component={Contact} />
+        <Route path='*' component={NotFound}/>
+      </Route>
+  </Router>
+  }
+}
 class Content extends React.Component {
   render() {
   return (
     <NavMainRouter/>
   )}
 }
-class NavMainRouter extends React.Component {
-  render() {
-  return <Router history={hashHistory}>
-      <Route path='/' component={Section}>
-        <IndexRoute component={AboutMe} />
-        <Route path='/biografia' component={Biografia} />
-        <Route path='/moda' component={Moda} />
-        <Route path='/kolekcje' component={Kolekcje} />
-        <Route path='/aktorka' component={Aktorka} />
-        <Route path='/kontakt' component={Kontakt} />
-        <Route path='*' component={NotFound}/>
-      </Route>
-  </Router>
-  }
-}
-/*END*/
 class App extends React.Component {
   render() {
     return(<div>

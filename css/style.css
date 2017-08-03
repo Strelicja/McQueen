@@ -1,4 +1,192 @@
 @charset "UTF-8";
+/* ------ FOOTER ------ */
+.iconBox {
+  padding: 1%;
+  text-align: center; }
+
+.iconSocial {
+  font-size: 25px;
+  color: #575757;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: inline; }
+
+.iconSocial:hover {
+  color: #626262; }
+
+.textFooter {
+  line-height: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: black;
+  padding: 2%;
+  text-align: center;
+  text-justify: inter-word; }
+  .textFooter a {
+    text-decoration: none;
+    color: black; }
+  .textFooter a:hover {
+    color: #626262; }
+
+/* ------ ICONS FORM ------ */
+.name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 17px;
+  background-repeat: no-repeat; }
+
+.email {
+  background-image: url(https://cdn3.iconfinder.com/data/icons/glyph/227/Email-512.png);
+  background-size: 30px 30px;
+  background-position: 11px 17px;
+  background-repeat: no-repeat; }
+
+.comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 17px;
+  background-repeat: no-repeat; }
+
+/* ------ FORM ------ */
+.boxContact {
+  margin-top: 10%;
+  display: block; }
+  .boxContact .inputBox {
+    margin-bottom: 15%;
+    line-height: 0;
+    border-radius: 2px; }
+
+.boxContactHidden {
+  margin-top: 10%;
+  display: none;
+  background-color: white;
+  border: 1px solid silver; }
+
+.boxTextHidden {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding: 1em; }
+
+.buttonBox {
+  margin-top: 27%; }
+
+.inputText,
+.textareaText {
+  width: 100%;
+  height: 60px;
+  padding-left: 16%;
+  padding-right: 16%;
+  font-size: 16px;
+  border: 1px solid silver; }
+
+.buttonText {
+  width: 60%;
+  height: 35px;
+  float: right;
+  background-color: black;
+  color: white;
+  border: 1px solid darkgrey;
+  font-size: 12px;
+  border-radius: 3px; }
+
+.buttonText:hover {
+  color: #626262; }
+
+.textareaText {
+  height: 150px;
+  padding-top: 5%; }
+
+.messageText {
+  z-index: 999;
+  margin-top: -10.5%;
+  padding-right: 5%;
+  text-align: right;
+  font-size: 20px; }
+
+.messageTextarea {
+  margin-top: -23%; }
+
+.labelText {
+  font-size: 16px;
+  margin-top: 2.8%;
+  margin-left: 12.9%;
+  color: grey;
+  display: block; }
+
+.labelTextName {
+  position: absolute;
+  content: 'Wpisz swoje imię!';
+  margin-top: -0.6%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px; }
+
+.labelTextEmail {
+  content: 'Wpisz swój adres e-mail!';
+  position: absolute;
+  margin-top: -0.6%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px; }
+
+.labelTextMessage {
+  content: 'Wpisz swoją wiadomość!';
+  position: absolute;
+  margin-top: 11%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 2px; }
+
+/* ------ ANIMATE ------ */
+.inputText:focus,
+.textareaText:focus {
+  border-color: red;
+  border-width: thin; }
+
+.newLabel {
+  margin-top: -2.2em; }
+
+.newLabel3 {
+  margin-top: -0.1em; }
+
+.inputText:focus + .labelText {
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+  transform: translate(0, -2.3em) scale(0.9, 0.9);
+  margin-top: -2.2em;
+  font-weight: 200;
+  color: grey; }
+
+.textareaText:focus + .labelText {
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+  transform: translate(0, -2.3em) scale(0.9, 0.9);
+  margin-top: -0.1em;
+  font-weight: 200;
+  color: grey; }
+
+.inputText:focus + .labelText,
+.inputText:valid + .labelText {
+  -webkit-transition-duration: .7s;
+  transition-duration: .7s;
+  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
+  transform: translate(0, -2.3em) scale(0.9, 0.9); }
+
+.textareaText:focus + .labelText,
+.textareaText:valid + .labelText {
+  -webkit-transition-duration: .7s;
+  transition-duration: .7s;
+  -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
+  transform: translate(0, -10em) scale(0.9, 0.9); }
+
+.inputText + .labelText,
+.textareaText + .labelText {
+  pointer-events: none; }
+
+/* ------ GRID ------ */
 .col-xsm-1 {
   width: 8.33333%; }
 
@@ -37,13 +225,7 @@
 
 @media (min-width: 640px) {
   .col-sm-1 {
-    width: 8.33333%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 8.33333%; }
     .col-sm-1 .sliderPhone {
       margin-top: 30%; }
     .col-sm-1 .sliderTextSmall {
@@ -130,13 +312,7 @@
     .col-sm-1 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-2 {
-    width: 16.66667%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 16.66667%; }
     .col-sm-2 .sliderPhone {
       margin-top: 30%; }
     .col-sm-2 .sliderTextSmall {
@@ -223,13 +399,7 @@
     .col-sm-2 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-3 {
-    width: 25%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 25%; }
     .col-sm-3 .sliderPhone {
       margin-top: 30%; }
     .col-sm-3 .sliderTextSmall {
@@ -316,13 +486,7 @@
     .col-sm-3 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-4 {
-    width: 33.33333%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 33.33333%; }
     .col-sm-4 .sliderPhone {
       margin-top: 30%; }
     .col-sm-4 .sliderTextSmall {
@@ -409,13 +573,7 @@
     .col-sm-4 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-5 {
-    width: 41.66667%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 41.66667%; }
     .col-sm-5 .sliderPhone {
       margin-top: 30%; }
     .col-sm-5 .sliderTextSmall {
@@ -502,13 +660,7 @@
     .col-sm-5 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-6 {
-    width: 50%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 50%; }
     .col-sm-6 .sliderPhone {
       margin-top: 30%; }
     .col-sm-6 .sliderTextSmall {
@@ -595,13 +747,7 @@
     .col-sm-6 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-7 {
-    width: 58.33333%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 58.33333%; }
     .col-sm-7 .sliderPhone {
       margin-top: 30%; }
     .col-sm-7 .sliderTextSmall {
@@ -688,13 +834,7 @@
     .col-sm-7 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-8 {
-    width: 66.66667%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 66.66667%; }
     .col-sm-8 .sliderPhone {
       margin-top: 30%; }
     .col-sm-8 .sliderTextSmall {
@@ -781,13 +921,7 @@
     .col-sm-8 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-9 {
-    width: 75%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 75%; }
     .col-sm-9 .sliderPhone {
       margin-top: 30%; }
     .col-sm-9 .sliderTextSmall {
@@ -874,13 +1008,7 @@
     .col-sm-9 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-10 {
-    width: 83.33333%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 83.33333%; }
     .col-sm-10 .sliderPhone {
       margin-top: 30%; }
     .col-sm-10 .sliderTextSmall {
@@ -967,13 +1095,7 @@
     .col-sm-10 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-11 {
-    width: 91.66667%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 91.66667%; }
     .col-sm-11 .sliderPhone {
       margin-top: 30%; }
     .col-sm-11 .sliderTextSmall {
@@ -1060,13 +1182,7 @@
     .col-sm-11 .boxContactHidden {
       margin-top: 50%; }
   .col-sm-12 {
-    width: 100%;
-    /*
-			.imgCollection {
-		    width: 300px  ;
-		    height: 402px  ;
-			}
-			*/ }
+    width: 100%; }
     .col-sm-12 .sliderPhone {
       margin-top: 30%; }
     .col-sm-12 .sliderTextSmall {
@@ -3161,15 +3277,6 @@
       line-height: 34px;
       font-size: 28px; } }
 
-* {
-  box-sizing: border-box;
-  margin: 0; }
-
-body {
-  font-family: 'Quicksand', serif;
-  font-size: 14px;
-  background-color: #f7f7f7; }
-
 .row:before,
 .row:after {
   content: '';
@@ -3184,13 +3291,16 @@ body {
 .collapsed {
   padding: 0; }
 
-.nav {
-  position: fixed;
-  background-color: white;
-  border-right: 1px solid silver;
-  height: 100%; }
+* {
+  box-sizing: border-box;
+  margin: 0; }
 
-/*LogotypeMain*/
+body {
+  font-family: 'Quicksand', serif;
+  font-size: 14px;
+  background-color: #f7f7f7; }
+
+/* ------ LogotypeMain ------ */
 .logoImg {
   width: 100%; }
 
@@ -3210,7 +3320,13 @@ body {
   padding-left: 5px;
   padding-right: 5px; }
 
-/*NavMain*/
+/* ------ SectionNav ------ */
+.nav {
+  position: fixed;
+  background-color: white;
+  border-right: 1px solid silver;
+  height: 100%; }
+
 .navList {
   padding: 0;
   list-style: none; }
@@ -3233,9 +3349,6 @@ body {
   font-size: 20px;
   padding-right: 7px; }
 
-.active {
-  color: #626262; }
-
 .hover:hover {
   color: #626262;
   background-color: 'silver'; }
@@ -3243,50 +3356,12 @@ body {
 .hoverLogo:hover {
   color: silver; }
 
-/*MAIN*/
 .mainFloatRight {
   float: right; }
 
-/*SLIDER HOME*/
+/* ------ SliderHome ------ */
 .heightImgSH {
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/f3/cd/d5/f3cdd55111a32999cc04bff4f1944d41.jpg");
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden; }
-
-.heightImgAM {
-  background-image: url("https://i1.wp.com/www.uselessdaily.com/wp-content/uploads/2017/07/alexander-mcqueen-biopic-0.jpg?resize=700%2C300&ssl=1");
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden; }
-
-.heightImgDz {
-  background-image: url("http://4.bp.blogspot.com/-HxoEqfSV0KI/UWxysE-BcHI/AAAAAAAAJxk/4OxCzfzFdUY/s1600/AdorningTheQueen.jpg");
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-  position: relative; }
-
-.heightImgDesigner {
-  background-image: url("https://pmcwwd.files.wordpress.com/2017/03/a-mcqueen-det-030617-ar0922.jpg?w=1024");
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden; }
-
-.heightImgSS {
-  background-image: url("http://www.schonmagazine.com/wp-content/uploads/2015/08/Tracy-Ann-Oberman-as-Isabella-Blow-and-Stephen-Wight-as-Lee-in-McQueen-credit-Specular-2.jpg");
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden; }
-
-.heightImgCollection {
-  background-image: url("http://media2.s-nbcnews.com/j/MSNBC/Components/Slideshows/_production/ss-100211-Alexander-McQueen/ss-100211-Alexander-McQueen-2003-show.today-ss-slide-desktop.jpg");
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden; }
-
-.heightImgContact {
-  background-image: url("http://wallpapercave.com/wp/wkjs1Ur.jpg");
   height: 100vh;
   background-size: cover;
   overflow: hidden; }
@@ -3295,9 +3370,6 @@ body {
   list-style: none;
   padding: 0;
   height: 100%; }
-
-.hidden {
-  display: none; }
 
 .sliderPhone {
   margin-top: 40%; }
@@ -3331,7 +3403,13 @@ body {
   padding: 5px 15px;
   text-align: center; }
 
-/*ABOUTEME*/
+/* ------ AboutMe ------ */
+.heightImgAM {
+  background-image: url("https://i1.wp.com/www.uselessdaily.com/wp-content/uploads/2017/07/alexander-mcqueen-biopic-0.jpg?resize=700%2C300&ssl=1");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
 .headerText {
   font-size: 28px;
   line-height: 34px;
@@ -3367,18 +3445,12 @@ body {
   text-align: justify;
   text-justify: inter-word; }
 
-.textBlack {
-  color: black; }
-
 .boxContent {
   line-height: 27px;
   color: black;
   position: absolute;
   margin-top: 7%;
   display: block; }
-
-.boxContentContact {
-  margin-top: 15%; }
 
 .tdHidden {
   display: none; }
@@ -3392,7 +3464,14 @@ body {
     padding: 10px 5px;
     font-size: 16px; }
 
-/*BIOGRAFIA OFFER*/
+/* ------ Biography ------ */
+.heightImgBg {
+  background-image: url("http://4.bp.blogspot.com/-HxoEqfSV0KI/UWxysE-BcHI/AAAAAAAAJxk/4OxCzfzFdUY/s1600/AdorningTheQueen.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  position: relative; }
+
 .offerBox {
   line-height: 27px;
   color: white;
@@ -3456,7 +3535,13 @@ body {
 .offerVisible {
   display: none; }
 
-/*Moda*/
+/* ------ Fashion ------ */
+.heightImgFashion {
+  background-image: url("https://pmcwwd.files.wordpress.com/2017/03/a-mcqueen-det-030617-ar0922.jpg?w=1024");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
 .lineHeight {
   line-height: 18px;
   font-size: 18px;
@@ -3464,7 +3549,7 @@ body {
   height: 270px;
   padding-bottom: 50%; }
 
-.quoteNumberModa {
+.quoteNumberFashion {
   color: #ababab;
   font-size: 18px; }
 
@@ -3490,11 +3575,17 @@ body {
   margin-bottom: 2%;
   margin-top: 2%; }
 
-.boxContentModa {
+.boxContentFashion {
   margin-top: 15%;
   line-height: 5px; }
 
-/*Kolekcje*/
+/* ------ Collection ------ */
+.heightImgCollection {
+  background-image: url("http://media2.s-nbcnews.com/j/MSNBC/Components/Slideshows/_production/ss-100211-Alexander-McQueen/ss-100211-Alexander-McQueen-2003-show.today-ss-slide-desktop.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
 .overflow {
   overflow: scroll;
   overflow-y: hidden;
@@ -3530,15 +3621,6 @@ body {
   text-align: center;
   text-shadow: 2px 2px 4px #000000; }
 
-.timelineText {
-  line-height: 23px;
-  font-size: 13px;
-  width: 100%;
-  margin-bottom: 13%;
-  font-weight: 300;
-  display: block;
-  color: black; }
-
 .timelineDate {
   padding: 0 13px;
   font-size: 15px;
@@ -3570,7 +3652,13 @@ body {
   height: 360px;
   transition: width 1s; }
 
-/*AKTORKA*/
+/* ------ Idea ------ */
+.heightImgIdea {
+  background-image: url("http://www.schonmagazine.com/wp-content/uploads/2015/08/Tracy-Ann-Oberman-as-Isabella-Blow-and-Stephen-Wight-as-Lee-in-McQueen-credit-Specular-2.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
+
 .actBox {
   color: #626262;
   letter-spacing: 0.02em;
@@ -3596,198 +3684,18 @@ body {
   padding-right: 50px;
   display: block; }
 
-/*KONTAKT*/
-.textContentEmail {
-  margin-top: -5%; }
-
-.boxContact {
-  margin-top: 10%;
-  display: block; }
-  .boxContact .inputBox {
-    margin-bottom: 15%;
-    line-height: 0;
-    border-radius: 2px; }
-
-.boxContactHidden {
-  margin-top: 10%;
-  display: none;
-  background-color: white;
-  border: 1px solid silver; }
-
-.boxTextHidden {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  padding: 1em; }
-
-.buttonBox {
-  margin-top: 27%; }
-
-.inputText,
-.textareaText {
-  width: 100%;
-  height: 60px;
-  padding-left: 16%;
-  padding-right: 16%;
-  font-size: 16px;
-  border: 1px solid silver; }
-
-.buttonText {
-  width: 60%;
-  height: 35px;
-  float: right;
-  background-color: black;
-  color: white;
-  border: 1px solid darkgrey;
-  font-size: 12px;
-  border-radius: 3px; }
-
-.buttonText:hover {
-  color: #626262; }
-
-.textareaText {
-  height: 150px;
-  padding-top: 5%; }
-
-.messageText {
-  z-index: 999;
-  margin-top: -10.5%;
-  padding-right: 5%;
-  text-align: right;
-  font-size: 20px; }
-
-.messageTextarea {
-  margin-top: -23%; }
-
-.labelText {
-  font-size: 16px;
-  margin-top: 2.8%;
-  margin-left: 12.9%;
-  color: grey;
-  display: block; }
-
-.labelTextName {
-  position: absolute;
-  content: 'Wpisz swoje imię!';
-  margin-top: -0.6%;
-  background-color: white;
-  padding: 1%;
-  border-radius: 2px; }
-
-.labelTextEmail {
-  content: 'Wpisz swój adres e-mail!';
-  position: absolute;
-  margin-top: -0.6%;
-  background-color: white;
-  padding: 1%;
-  border-radius: 2px; }
+/* ------ Contact ------ */
+.heightImgContact {
+  background-image: url("http://wallpapercave.com/wp/wkjs1Ur.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden; }
 
 .boxContentContact {
   margin-top: 15%; }
 
-.labelTextMessage {
-  content: 'Wpisz swoją wiadomość!';
-  position: absolute;
-  margin-top: 11%;
-  background-color: white;
-  padding: 1%;
-  border-radius: 2px; }
+.textBlack {
+  color: black; }
 
-/*ICONS FORM*/
-.name {
-  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-  background-size: 30px 30px;
-  background-position: 11px 17px;
-  background-repeat: no-repeat; }
-
-.email {
-  background-image: url(https://cdn3.iconfinder.com/data/icons/glyph/227/Email-512.png);
-  background-size: 30px 30px;
-  background-position: 11px 17px;
-  background-repeat: no-repeat; }
-
-.comment {
-  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-  background-size: 30px 30px;
-  background-position: 11px 17px;
-  background-repeat: no-repeat; }
-
-.inputText:focus,
-.textareaText:focus {
-  border-color: red;
-  border-width: thin; }
-
-.newLabel {
-  margin-top: -2.2em; }
-
-.newLabel3 {
-  margin-top: -0.1em; }
-
-/*type="email" to powinno być ponizej nad placeholder w input mail*/
-.inputText:focus + .labelText {
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
-  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
-  transform: translate(0, -2.3em) scale(0.9, 0.9);
-  margin-top: -2.2em;
-  font-weight: 200;
-  color: grey; }
-
-.textareaText:focus + .labelText {
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
-  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
-  transform: translate(0, -2.3em) scale(0.9, 0.9);
-  margin-top: -0.1em;
-  font-weight: 200;
-  color: grey; }
-
-.nowaklasa {
-  margin-top: -2.2em; }
-
-.inputText:focus + .labelText,
-.inputText:valid + .labelText {
-  -webkit-transition-duration: .7s;
-  transition-duration: .7s;
-  -webkit-transform: translate(0, -2.4em) scale(0.9, 0.9);
-  transform: translate(0, -2.3em) scale(0.9, 0.9); }
-
-.textareaText:focus + .labelText,
-.textareaText:valid + .labelText {
-  -webkit-transition-duration: .7s;
-  transition-duration: .7s;
-  -webkit-transform: translate(0, -10em) scale(0.9, 0.9);
-  transform: translate(0, -10em) scale(0.9, 0.9); }
-
-.inputText + .labelText,
-.textareaText + .labelText {
-  pointer-events: none; }
-
-/*FOOTER*/
-.iconBox {
-  padding: 1%;
-  text-align: center; }
-
-.iconSocial {
-  font-size: 25px;
-  color: #575757;
-  padding-right: 5px;
-  padding-left: 5px;
-  display: inline; }
-
-.iconSocial:hover {
-  color: #626262; }
-
-.textFooter {
-  line-height: 20px;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: black;
-  padding: 2%;
-  text-align: center;
-  text-justify: inter-word; }
-  .textFooter a {
-    text-decoration: none;
-    color: black; }
-  .textFooter a:hover {
-    color: #626262; }
+.boxContentContact {
+  margin-top: 15%; }
