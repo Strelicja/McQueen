@@ -29,6 +29,7 @@ class LogotypeMain extends React.Component {
   }
 }
 
+
 /* ------ NAV Scroll to Sections ------ */
 class SectionNav extends React.Component {
   componentDidMount() {
