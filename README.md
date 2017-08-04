@@ -13,7 +13,7 @@ The project was created to illustrate the skills acquired during the course of t
  to clone repository
 2. Write in a terminal npm install to install all deps
 
-##### React is available as the react package on [npm] (https://www.npmjs.com/package/react). It is also available on a CDN.
+##### React is available as the react package on [npm](https://www.npmjs.com/package/react). It is also available on a CDN.
 
 ## Usage:
 
