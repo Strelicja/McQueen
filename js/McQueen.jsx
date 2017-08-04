@@ -9,8 +9,8 @@ import AtvImg from 'react-atv-img';
 import collections from './collections';
 import biography from './biography';
 import style from '../sass/style.scss';
-var Scroll = require('react-scroll');
-var ScrollArea = require('react-scrollbar');
+//var Scroll = require('react-scroll');
+//var ScrollArea = require('react-scrollbar');
 "use strict";
 //./node_modules/.bin/webpack-dev-server --hot
 
