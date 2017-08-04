@@ -16,9 +16,9 @@ The project was created to illustrate the skills acquired during the course of t
 ##### React is available as the react package on [npm](https://www.npmjs.com/package/react).
 
 ## Usage:
-`
+
 `npm install react-icons`;
-`
+
 `npm install react-scroll-to-component`;
 
  import scrollToComponent from 'react-scroll-to-component';
