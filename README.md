@@ -9,7 +9,7 @@ The project was created to illustrate the skills acquired during the course of t
 
 ## Installation:
 1. Write in a terminal:
- git clone https://strelicja.github.io/McQueen/
+ `git clone https://strelicja.github.io/McQueen/`
  to clone repository
 2. Write in a terminal npm install to install all deps
 
